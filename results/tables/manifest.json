@@ -1,0 +1,100 @@
+{
+ "cells": {
+  "blocks": {
+   "expected": 5,
+   "measured": 27,
+   "other": 4
+  },
+  "catalog": {
+   "expected": 0,
+   "measured": 0,
+   "other": 0
+  },
+  "costmodel": {
+   "expected": 0,
+   "measured": 30,
+   "other": 0
+  },
+  "dynamic": {
+   "expected": 0,
+   "measured": 51,
+   "other": 0
+  },
+  "dynamic_modeled": {
+   "expected": 0,
+   "measured": 0,
+   "other": 108
+  },
+  "e2e": {
+   "expected": 0,
+   "measured": 51,
+   "other": 3
+  },
+  "factorial": {
+   "expected": 0,
+   "measured": 0,
+   "other": 18
+  },
+  "web": {
+   "expected": 0,
+   "measured": 33,
+   "other": 0
+  }
+ },
+ "code_commit": "tree-82382e7694b9f0b483c613166aaa04273fb3a232df1df1f58f077df1fab103b6",
+ "errors": {},
+ "expectations": {
+  "cost_model": "calibration/fitted_model.json",
+  "dealer_rate_bytes_per_s": 121117298.82055454,
+  "dealer_rate_source": "dcf_gen rate of raw/primitives.jsonl",
+  "model_label": "MEASURED_NATIVE"
+ },
+ "generated_utc": "2026-10-14T21:50:47Z",
+ "inputs": {
+  "cpp_bench": {
+   "malformed": 0,
+   "present": true,
+   "records": 79
+  },
+  "factorial": {
+   "malformed": 0,
+   "present": true,
+   "records": 3960
+  },
+  "primitives": {
+   "malformed": 0,
+   "present": true,
+   "records": 27
+  },
+  "sessions": {
+   "malformed": 0,
+   "present": true,
+   "records": 239
+  },
+  "simulation": {
+   "malformed": 0,
+   "present": true,
+   "records": 16500
+  },
+  "web": {
+   "malformed": 0,
+   "present": true,
+   "records": 36
+  }
+ },
+ "records_by_status": {
+  "MEASURED_NATIVE": 381,
+  "MODELED": 20460
+ },
+ "retired": [],
+ "tables": [
+  "catalog",
+  "blocks",
+  "costmodel",
+  "dynamic",
+  "dynamic_modeled",
+  "factorial",
+  "e2e",
+  "web"
+ ]
+}

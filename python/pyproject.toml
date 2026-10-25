@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+# The package is run in place, without installation: the tests (python/tests/conftest.py) and the
+# scripts (scripts/*.py) put python/ on the import path themselves, and the package locates results/
+# and cpp/tests/vectors relative to its own files. "python -m pytest python/tests" works from the
+# artifact root and from python/ (this file is the pytest configuration). "pip install -e python/" is
+# the only supported install form.
+[project]
+name = "opencrab2"
+version = "2.0.0"
+description = "OpenCrab v2: state-aware private Web inference (SH2P-TrustedOffline-v1)"
+requires-python = ">=3.12"
+dependencies = ["numpy>=2.0", "scipy", "cryptography", "aiohttp"]
+
+[project.optional-dependencies]
+native = ["tenseal==0.3.17", "pycryptodomex", "psutil"]
+models = ["transformers", "safetensors", "huggingface_hub"]
+dev = ["pytest"]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["opencrab2*"]
+
+[tool.setuptools.package-data]
+opencrab2 = ["highlevel/proof_ledger.json", "platform/browser_client/*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]

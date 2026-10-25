@@ -1,0 +1,647 @@
+{
+ "campaign": {
+  "campaign_id": "20261011T001645",
+  "code_commit": "tree-eb535d2942567b5d459daec1174c2bd5b7811b6f485bf689fc488d67f61c18b4",
+  "contract": "NC-v2-f16-l40",
+  "dealer_mode": "ISOLATED_RECIPIENT_BUNDLES",
+  "elapsed_s": 16436.54352940002,
+  "formulas_sha256": "454c5a25a48400b30ae12fb75331e3761b821d2bfe6dcf9673909ea73d0d3512",
+  "host": {
+   "cpu_count": 32,
+   "platform": "Windows-11-10.0.26200-SP0",
+   "processor": "Intel64 Family 6 Model 183 Stepping 1, GenuineIntel",
+   "python": "3.12.10"
+  },
+  "networks": [
+   "LAN",
+   "WAN",
+   "WAN-c",
+   "WAN-mid"
+  ],
+  "per_network_s": {
+   "LAN": 1275.9014441999898,
+   "WAN": 2679.9667647999886,
+   "WAN-c": 8518.555296000006,
+   "WAN-mid": 3959.0906465000007
+  },
+  "quick": false,
+  "repeats": 3
+ },
+ "component_status": {
+  "a2h_exact": "MEASURED_NATIVE",
+  "argmax_k2": "MEASURED_NATIVE",
+  "argmax_k4": "MEASURED_NATIVE",
+  "argmax_k8": "MEASURED_NATIVE",
+  "embedding_generic": "MEASURED_NATIVE",
+  "embedding_wmask": "MEASURED_NATIVE",
+  "gelu_clip12": "MEASURED_NATIVE",
+  "install_wmask": "MEASURED_NATIVE",
+  "layernorm_rows": "MEASURED_NATIVE",
+  "linear_generic": "MEASURED_NATIVE",
+  "linear_wmask": "MEASURED_NATIVE",
+  "matmul_shared": "MEASURED_NATIVE",
+  "ring_to_field": "MEASURED_NATIVE",
+  "softmax_rows_k2": "MEASURED_NATIVE",
+  "softmax_rows_k4": "MEASURED_NATIVE",
+  "trunc_faithful": "MEASURED_NATIVE"
+ },
+ "fitted_components": [
+  "a2h_exact",
+  "argmax_k2",
+  "argmax_k4",
+  "argmax_k8",
+  "embedding_generic",
+  "embedding_wmask",
+  "gelu_clip12",
+  "install_wmask",
+  "layernorm_rows",
+  "linear_generic",
+  "linear_wmask",
+  "matmul_shared",
+  "ring_to_field",
+  "softmax_rows_k2",
+  "softmax_rows_k4",
+  "trunc_faithful"
+ ],
+ "informative_pair_note": "accuracy restricted to lane groups whose measured winner changes inside the split; dominated groups (one winner everywhere) are reported separately",
+ "models": {
+  "fitted_MEASURED_NATIVE": {
+   "test": {
+    "coverage_2sigma": 0.7216494845360825,
+    "dominated_pair_acc": 0.8732394366197183,
+    "dominated_pair_decisions": 71,
+    "far_threshold_acc": 0.875,
+    "far_threshold_decisions": 72,
+    "groups": {
+     "argmax": {
+      "accuracy": 1.0,
+      "decisions": 3,
+      "informative": false,
+      "measured_winners": [
+       "argmax_k2"
+      ],
+      "regret_s": 0.0,
+      "top1": 3
+     },
+     "embedding": {
+      "accuracy": 0.8571428571428571,
+      "decisions": 14,
+      "informative": false,
+      "measured_winners": [
+       "embedding_wmask"
+      ],
+      "regret_s": 2.570400299999165,
+      "top1": 12
+     },
+     "linear": {
+      "accuracy": 0.8703703703703703,
+      "decisions": 54,
+      "informative": false,
+      "measured_winners": [
+       "linear_wmask"
+      ],
+      "regret_s": 1.387656566677227,
+      "top1": 47
+     },
+     "softmax": {
+      "accuracy": 0.8888888888888888,
+      "decisions": 9,
+      "informative": true,
+      "measured_winners": [
+       "softmax_rows_k2",
+       "softmax_rows_k4"
+      ],
+      "regret_s": 0.02762280000994588,
+      "top1": 8
+     }
+    },
+    "informative_pair_acc": 0.8888888888888888,
+    "informative_pair_correct": 8,
+    "informative_pair_decisions": 9,
+    "kendall": 0.8874517901993547,
+    "lane_decisions": 80,
+    "mape": 0.3026479708632746,
+    "median_rel_err": 0.03902324857509412,
+    "n": 873,
+    "near_threshold_acc": 0.875,
+    "near_threshold_decisions": 8,
+    "p95_rel_err": 1.584295875778041,
+    "plan_identity": 0.8333333333333334,
+    "plans": 6,
+    "realized_regret_s": 3.985679666686338,
+    "spearman": 0.9745109490731924,
+    "top1_lane_acc": 0.875
+   },
+   "train": {
+    "coverage_2sigma": 0.8233918128654971,
+    "dominated_pair_acc": 0.8958333333333334,
+    "dominated_pair_decisions": 48,
+    "far_threshold_acc": 0.9142857142857143,
+    "far_threshold_decisions": 70,
+    "groups": {
+     "argmax": {
+      "accuracy": 0.8888888888888888,
+      "decisions": 9,
+      "informative": true,
+      "measured_winners": [
+       "argmax_k2",
+       "argmax_k8"
+      ],
+      "regret_s": 0.4600868333266892,
+      "top1": 8
+     },
+     "embedding": {
+      "accuracy": 0.8888888888888888,
+      "decisions": 18,
+      "informative": false,
+      "measured_winners": [
+       "embedding_wmask"
+      ],
+      "regret_s": 0.935750499998297,
+      "top1": 16
+     },
+     "linear": {
+      "accuracy": 0.9,
+      "decisions": 30,
+      "informative": false,
+      "measured_winners": [
+       "linear_wmask"
+      ],
+      "regret_s": 0.06404710000303264,
+      "top1": 27
+     },
+     "softmax": {
+      "accuracy": 1.0,
+      "decisions": 27,
+      "informative": true,
+      "measured_winners": [
+       "softmax_rows_k2",
+       "softmax_rows_k4"
+      ],
+      "regret_s": 0.0,
+      "top1": 27
+     }
+    },
+    "informative_pair_acc": 0.9722222222222222,
+    "informative_pair_correct": 35,
+    "informative_pair_decisions": 36,
+    "kendall": 0.92713751592095,
+    "lane_decisions": 84,
+    "mape": 0.2800611931316416,
+    "median_rel_err": 0.0359451626371034,
+    "n": 855,
+    "near_threshold_acc": 1.0,
+    "near_threshold_decisions": 14,
+    "p95_rel_err": 0.9222963777385791,
+    "plan_identity": 1.0,
+    "plans": 6,
+    "realized_regret_s": 1.4598844333280188,
+    "spearman": 0.9884207934555409,
+    "top1_lane_acc": 0.9285714285714286
+   }
+  },
+  "handwritten_MODELED": {
+   "test": {
+    "coverage_2sigma": NaN,
+    "dominated_pair_acc": 0.9577464788732394,
+    "dominated_pair_decisions": 71,
+    "far_threshold_acc": 0.9583333333333334,
+    "far_threshold_decisions": 72,
+    "groups": {
+     "argmax": {
+      "accuracy": 0.0,
+      "decisions": 3,
+      "informative": false,
+      "measured_winners": [
+       "argmax_k2"
+      ],
+      "regret_s": 38.893168099981274,
+      "top1": 0
+     },
+     "embedding": {
+      "accuracy": 1.0,
+      "decisions": 14,
+      "informative": false,
+      "measured_winners": [
+       "embedding_wmask"
+      ],
+      "regret_s": 0.0,
+      "top1": 14
+     },
+     "linear": {
+      "accuracy": 1.0,
+      "decisions": 54,
+      "informative": false,
+      "measured_winners": [
+       "linear_wmask"
+      ],
+      "regret_s": 0.0,
+      "top1": 54
+     },
+     "softmax": {
+      "accuracy": 0.8888888888888888,
+      "decisions": 9,
+      "informative": true,
+      "measured_winners": [
+       "softmax_rows_k2",
+       "softmax_rows_k4"
+      ],
+      "regret_s": 0.02762280000994588,
+      "top1": 8
+     }
+    },
+    "informative_pair_acc": 0.8888888888888888,
+    "informative_pair_correct": 8,
+    "informative_pair_decisions": 9,
+    "kendall": 0.8428255409481173,
+    "lane_decisions": 80,
+    "mape": 0.2874150419221721,
+    "median_rel_err": 0.07752354459471948,
+    "n": 873,
+    "near_threshold_acc": 0.875,
+    "near_threshold_decisions": 8,
+    "p95_rel_err": 1.1763877715355011,
+    "plan_identity": 0.8333333333333334,
+    "plans": 6,
+    "realized_regret_s": 38.92079089999122,
+    "spearman": 0.9495803962885266,
+    "top1_lane_acc": 0.95
+   },
+   "train": {
+    "coverage_2sigma": NaN,
+    "dominated_pair_acc": 1.0,
+    "dominated_pair_decisions": 48,
+    "far_threshold_acc": 0.9142857142857143,
+    "far_threshold_decisions": 70,
+    "groups": {
+     "argmax": {
+      "accuracy": 0.4444444444444444,
+      "decisions": 9,
+      "informative": true,
+      "measured_winners": [
+       "argmax_k2",
+       "argmax_k8"
+      ],
+      "regret_s": 66.05394963337069,
+      "top1": 4
+     },
+     "embedding": {
+      "accuracy": 1.0,
+      "decisions": 18,
+      "informative": false,
+      "measured_winners": [
+       "embedding_wmask"
+      ],
+      "regret_s": 0.0,
+      "top1": 18
+     },
+     "linear": {
+      "accuracy": 1.0,
+      "decisions": 30,
+      "informative": false,
+      "measured_winners": [
+       "linear_wmask"
+      ],
+      "regret_s": 0.0,
+      "top1": 30
+     },
+     "softmax": {
+      "accuracy": 0.9259259259259259,
+      "decisions": 27,
+      "informative": true,
+      "measured_winners": [
+       "softmax_rows_k2",
+       "softmax_rows_k4"
+      ],
+      "regret_s": 0.09744749998208105,
+      "top1": 25
+     }
+    },
+    "informative_pair_acc": 0.8055555555555556,
+    "informative_pair_correct": 29,
+    "informative_pair_decisions": 36,
+    "kendall": 0.8250188312310832,
+    "lane_decisions": 84,
+    "mape": 0.2216099660126801,
+    "median_rel_err": 0.07086077127265351,
+    "n": 855,
+    "near_threshold_acc": 0.9285714285714286,
+    "near_threshold_decisions": 14,
+    "p95_rel_err": 0.8943660594793457,
+    "plan_identity": 0.6666666666666666,
+    "plans": 6,
+    "realized_regret_s": 66.15139713335277,
+    "spearman": 0.9302836149548199,
+    "top1_lane_acc": 0.9166666666666666
+   }
+  },
+  "historical_HISTORICAL": {
+   "test": {
+    "coverage_2sigma": 0.6471935853379153,
+    "dominated_pair_acc": 0.9577464788732394,
+    "dominated_pair_decisions": 71,
+    "far_threshold_acc": 0.9583333333333334,
+    "far_threshold_decisions": 72,
+    "groups": {
+     "argmax": {
+      "accuracy": 0.0,
+      "decisions": 3,
+      "informative": false,
+      "measured_winners": [
+       "argmax_k2"
+      ],
+      "regret_s": 32.581944700000655,
+      "top1": 0
+     },
+     "embedding": {
+      "accuracy": 1.0,
+      "decisions": 14,
+      "informative": false,
+      "measured_winners": [
+       "embedding_wmask"
+      ],
+      "regret_s": 0.0,
+      "top1": 14
+     },
+     "linear": {
+      "accuracy": 1.0,
+      "decisions": 54,
+      "informative": false,
+      "measured_winners": [
+       "linear_wmask"
+      ],
+      "regret_s": 0.0,
+      "top1": 54
+     },
+     "softmax": {
+      "accuracy": 0.7777777777777778,
+      "decisions": 9,
+      "informative": true,
+      "measured_winners": [
+       "softmax_rows_k2",
+       "softmax_rows_k4"
+      ],
+      "regret_s": 0.04456276667770043,
+      "top1": 7
+     }
+    },
+    "informative_pair_acc": 0.7777777777777778,
+    "informative_pair_correct": 7,
+    "informative_pair_decisions": 9,
+    "kendall": 0.8531663461437414,
+    "lane_decisions": 80,
+    "mape": 0.24258226725078955,
+    "median_rel_err": 0.08998347129168639,
+    "n": 873,
+    "near_threshold_acc": 0.75,
+    "near_threshold_decisions": 8,
+    "p95_rel_err": 0.9346339399402082,
+    "plan_identity": 0.8333333333333334,
+    "plans": 6,
+    "realized_regret_s": 32.626507466678355,
+    "spearman": 0.949468607996712,
+    "top1_lane_acc": 0.9375
+   },
+   "train": {
+    "coverage_2sigma": 0.6619883040935672,
+    "dominated_pair_acc": 1.0,
+    "dominated_pair_decisions": 48,
+    "far_threshold_acc": 0.7714285714285715,
+    "far_threshold_decisions": 70,
+    "groups": {
+     "argmax": {
+      "accuracy": 0.1111111111111111,
+      "decisions": 9,
+      "informative": true,
+      "measured_winners": [
+       "argmax_k2",
+       "argmax_k8"
+      ],
+      "regret_s": 88.37009743336239,
+      "top1": 1
+     },
+     "embedding": {
+      "accuracy": 1.0,
+      "decisions": 18,
+      "informative": false,
+      "measured_winners": [
+       "embedding_wmask"
+      ],
+      "regret_s": 0.0,
+      "top1": 18
+     },
+     "linear": {
+      "accuracy": 1.0,
+      "decisions": 30,
+      "informative": false,
+      "measured_winners": [
+       "linear_wmask"
+      ],
+      "regret_s": 0.0,
+      "top1": 30
+     },
+     "softmax": {
+      "accuracy": 0.6666666666666666,
+      "decisions": 27,
+      "informative": true,
+      "measured_winners": [
+       "softmax_rows_k2",
+       "softmax_rows_k4"
+      ],
+      "regret_s": 0.5239002999248139,
+      "top1": 18
+     }
+    },
+    "informative_pair_acc": 0.5277777777777778,
+    "informative_pair_correct": 19,
+    "informative_pair_decisions": 36,
+    "kendall": 0.7929276743771998,
+    "lane_decisions": 84,
+    "mape": 0.2512756647303413,
+    "median_rel_err": 0.08471875557701453,
+    "n": 855,
+    "near_threshold_acc": 0.9285714285714286,
+    "near_threshold_decisions": 14,
+    "p95_rel_err": 0.9465575917954847,
+    "plan_identity": 0.5,
+    "plans": 6,
+    "realized_regret_s": 88.89399773328721,
+    "spearman": 0.8958139797816682,
+    "top1_lane_acc": 0.7976190476190477
+   }
+  },
+  "uncertainty_MEASURED_NATIVE": {
+   "test": {
+    "coverage_2sigma": 0.7216494845360825,
+    "dominated_pair_acc": 0.9014084507042254,
+    "dominated_pair_decisions": 71,
+    "far_threshold_acc": 0.9027777777777778,
+    "far_threshold_decisions": 72,
+    "groups": {
+     "argmax": {
+      "accuracy": 1.0,
+      "decisions": 3,
+      "informative": false,
+      "measured_winners": [
+       "argmax_k2"
+      ],
+      "regret_s": 0.0,
+      "top1": 3
+     },
+     "embedding": {
+      "accuracy": 0.8571428571428571,
+      "decisions": 14,
+      "informative": false,
+      "measured_winners": [
+       "embedding_wmask"
+      ],
+      "regret_s": 2.570400299999165,
+      "top1": 12
+     },
+     "linear": {
+      "accuracy": 0.9074074074074074,
+      "decisions": 54,
+      "informative": false,
+      "measured_winners": [
+       "linear_wmask"
+      ],
+      "regret_s": 0.6586047666399584,
+      "top1": 49
+     },
+     "softmax": {
+      "accuracy": 0.5555555555555556,
+      "decisions": 9,
+      "informative": true,
+      "measured_winners": [
+       "softmax_rows_k2",
+       "softmax_rows_k4"
+      ],
+      "regret_s": 0.1368777333312512,
+      "top1": 5
+     }
+    },
+    "informative_pair_acc": 0.5555555555555556,
+    "informative_pair_correct": 5,
+    "informative_pair_decisions": 9,
+    "kendall": 0.8874517901993547,
+    "lane_decisions": 80,
+    "mape": 0.3026479708632746,
+    "median_rel_err": 0.03902324857509412,
+    "n": 873,
+    "near_threshold_acc": 0.5,
+    "near_threshold_decisions": 8,
+    "p95_rel_err": 1.584295875778041,
+    "plan_identity": 0.8333333333333334,
+    "plans": 6,
+    "realized_regret_s": 3.3658827999703744,
+    "spearman": 0.9745109490731924,
+    "top1_lane_acc": 0.8625
+   },
+   "train": {
+    "coverage_2sigma": 0.8233918128654971,
+    "dominated_pair_acc": 0.9583333333333334,
+    "dominated_pair_decisions": 48,
+    "far_threshold_acc": 0.9571428571428572,
+    "far_threshold_decisions": 70,
+    "groups": {
+     "argmax": {
+      "accuracy": 0.8888888888888888,
+      "decisions": 9,
+      "informative": true,
+      "measured_winners": [
+       "argmax_k2",
+       "argmax_k8"
+      ],
+      "regret_s": 0.4600868333266892,
+      "top1": 8
+     },
+     "embedding": {
+      "accuracy": 1.0,
+      "decisions": 18,
+      "informative": false,
+      "measured_winners": [
+       "embedding_wmask"
+      ],
+      "regret_s": 0.0,
+      "top1": 18
+     },
+     "linear": {
+      "accuracy": 0.9333333333333333,
+      "decisions": 30,
+      "informative": false,
+      "measured_winners": [
+       "linear_wmask"
+      ],
+      "regret_s": 0.018882266682339832,
+      "top1": 28
+     },
+     "softmax": {
+      "accuracy": 1.0,
+      "decisions": 27,
+      "informative": true,
+      "measured_winners": [
+       "softmax_rows_k2",
+       "softmax_rows_k4"
+      ],
+      "regret_s": 0.0,
+      "top1": 27
+     }
+    },
+    "informative_pair_acc": 0.9722222222222222,
+    "informative_pair_correct": 35,
+    "informative_pair_decisions": 36,
+    "kendall": 0.92713751592095,
+    "lane_decisions": 84,
+    "mape": 0.2800611931316416,
+    "median_rel_err": 0.0359451626371034,
+    "n": 855,
+    "near_threshold_acc": 1.0,
+    "near_threshold_decisions": 14,
+    "p95_rel_err": 0.9222963777385791,
+    "plan_identity": 1.0,
+    "plans": 6,
+    "realized_regret_s": 0.47896910000902904,
+    "spearman": 0.9884207934555409,
+    "top1_lane_acc": 0.9642857142857143
+   }
+  }
+ },
+ "n_rows": 1728,
+ "n_test": 873,
+ "n_train": 855,
+ "rows_with_stalls": 0,
+ "sigma_compute_s": {
+  "a2h_exact": 0.01070290197373912,
+  "argmax_k2": 0.08120248521134144,
+  "argmax_k4": 2.9296894065517436,
+  "argmax_k8": 1.082149848772744,
+  "embedding_generic": 0.3492748449268195,
+  "embedding_wmask": 0.09929626768101499,
+  "gelu_clip12": 0.034242050249239736,
+  "install_wmask": 0.022434021851076003,
+  "layernorm_rows": 0.0020254982756428416,
+  "linear_generic": 0.0255458596996044,
+  "linear_wmask": 0.017213813629893656,
+  "matmul_shared": 0.01943885507967745,
+  "ring_to_field": 0.0452491759527441,
+  "softmax_rows_k2": 0.019157375814356992,
+  "softmax_rows_k4": 0.05310366434953472,
+  "trunc_faithful": 0.015286685056793597
+ },
+ "skipped": [],
+ "split_rule": {
+  "holdout_n": 32,
+  "holdout_network": "WAN-mid",
+  "holdout_shapes": [
+   [
+    1024,
+    1024
+   ],
+   [
+    3072,
+    768
+   ]
+  ]
+ },
+ "uncertainty_z": 1.0
+}

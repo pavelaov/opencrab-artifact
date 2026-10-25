@@ -1,0 +1,6508 @@
+{
+  "format": "opencrab2-controller-vectors-v1",
+  "generator": "cpp/tests/test_decision.cpp --vectors (SplitMix64 seed 777)",
+  "instances": [
+    {
+      "candidates": [
+        {
+          "c_install_s": 0.3462153796617262,
+          "c_install_sigma": 0.0,
+          "c_wait_s": 0.0,
+          "exec_s_by_epoch": [],
+          "exec_s_per_epoch": 8.23002635983945,
+          "exec_sigma": 0.15175683071784746,
+          "exec_sigma_by_epoch": [],
+          "feasible": true,
+          "install_cost_by_object": {
+            "lm_head": 0.3462153796617262
+          },
+          "install_objects": [
+            "lm_head"
+          ],
+          "material_by_type": {},
+          "material_bytes_per_epoch": 0,
+          "mem_peak_bytes": 0,
+          "online_bytes_per_epoch": 0,
+          "plan": {
+            "argmax_k": 4,
+            "embedding": "generic",
+            "linear": "generic",
+            "max_k": 2
+          },
+          "reason": "",
+          "rounds_per_epoch": 0
+        },
+        {
+          "c_install_s": 21.47245227609959,
+          "c_install_sigma": 0.013887606751939209,
+          "c_wait_s": 0.0,
+          "exec_s_by_epoch": [],
+          "exec_s_per_epoch": 9.24005762269202,
+          "exec_sigma": 0.06498513886165103,
+          "exec_sigma_by_epoch": [],
+          "feasible": true,
+          "install_cost_by_object": {
+            "obj0": 21.47245227609959
+          },
+          "install_objects": [
+            "obj0"
+          ],
+          "material_by_type": {},
+          "material_bytes_per_epoch": 0,
+          "mem_peak_bytes": 0,
+          "online_bytes_per_epoch": 0,
+          "plan": {
+            "argmax_k": 8,
+            "embedding": "generic",
+            "linear": "wmask",
+            "max_k": 2
+          },
+          "reason": "",
+          "rounds_per_epoch": 0
+        }
+      ],
+      "config": {
+        "dwell_prior": 5.0,
+        "env_change_rel": 0.25,
+        "epoch_corr": 0.0,
+        "hysteresis_s": 1.0,
+        "ignore_install": false,
+        "min_residency": 1,
+        "stationary_survival": false,
+        "use_uncertainty": true,
+        "z": 2.0
+      },
+      "decision": {
+        "chosen": {
+          "argmax_k": 4,
+          "embedding": "generic",
+          "linear": "generic",
+          "max_k": 2
+        },
+        "lower_bound_gain": -24.30044884280071,
+        "q_best": 22.078628736112773,
+        "q_keep": 22.078628736112773,
+        "reason": "INCUMBENT_OPTIMAL",
+        "switched": false,
+        "u_diff": 0.2535490714463867
+      },
+      "epoch": 3,
+      "id": 0,
+      "state": {
+        "contract_hash": "9c357c649b5264717a658c4edd57fcb149ef354c8759809088f8ee20896f4b88",
+        "incumbent": {
+          "argmax_k": 4,
+          "embedding": "generic",
+          "linear": "generic",
+          "max_k": 2
+        },
+        "installed": {},
+        "kv_bucket": 32,
+        "model_version": "gpt2@test",
+        "remaining_epochs": 3,
+        "session_id": "vec0",
+        "stock": {}
+      },
+      "survival": [
+        1.0,
+        0.875,
+        0.765625
+      ],
+      "telemetry": [
+        {
+          "bandwidth_bps": 162373232.70563233,
+          "cpu_load": 0.0,
+          "epoch": 0,
+          "rtt_s": 0.024699303072701476,
+          "seq": 0,
+          "t": 0.0
+        },
+        {
+          "bandwidth_bps": 162373232.70563233,
+          "cpu_load": 0.0,
+          "epoch": 1,
+          "rtt_s": 0.024699303072701476,
+          "seq": 1,
+          "t": 1.0
+        },
+        {
+          "bandwidth_bps": 162373232.70563233,
+          "cpu_load": 0.0,
+          "epoch": 2,
+          "rtt_s": 0.024699303072701476,
+          "seq": 2,
+          "t": 2.0
+        },
+        {
+          "bandwidth_bps": 162373232.70563233,
+          "cpu_load": 0.0,
+          "epoch": 3,
+          "rtt_s": 0.024699303072701476,
+          "seq": 3,
+          "t": 3.0
+        }
+      ]
+    },
+    {
+      "candidates": [
+        {
+          "c_install_s": 0.0,
+          "c_install_sigma": 0.0,
+          "c_wait_s": 0.0,
+          "exec_s_by_epoch": [],
+          "exec_s_per_epoch": 5.39080644922293,
+          "exec_sigma": 0.28191900436655987,
+          "exec_sigma_by_epoch": [],
+          "feasible": true,
+          "install_cost_by_object": {},
+          "install_objects": [],
+          "material_by_type": {},
+          "material_bytes_per_epoch": 0,
+          "mem_peak_bytes": 0,
+          "online_bytes_per_epoch": 0,
+          "plan": {
+            "argmax_k": 8,
+            "embedding": "generic",
+            "linear": "wmask",
+            "max_k": 4
+          },
+          "reason": "",
+          "rounds_per_epoch": 0
+        },
+        {
+          "c_install_s": 24.42458569240508,
+          "c_install_sigma": 0.014418233210434473,
+          "c_wait_s": 0.0,
+          "exec_s_by_epoch": [],
+          "exec_s_per_epoch": 8.002923925809958,
+          "exec_sigma": 0.13780558607822324,
+          "exec_sigma_by_epoch": [],
+          "feasible": false,
+          "install_cost_by_object": {
+            "obj0": 24.42458569240508
+          },
+          "install_objects": [
+            "obj0"
+          ],
+          "material_by_type": {},
+          "material_bytes_per_epoch": 0,
+          "mem_peak_bytes": 0,
+          "online_bytes_per_epoch": 0,
+          "plan": {
+            "argmax_k": 2,
+            "embedding": "wmask",
+            "linear": "wmask",
+            "max_k": 4
+          },
+          "reason": "INSUFFICIENT_MATERIAL",
+          "rounds_per_epoch": 0
+        },
+        {
+          "c_install_s": 14.281569920413546,
+          "c_install_sigma": 0.11536100869472693,
+          "c_wait_s": 0.0,
+          "exec_s_by_epoch": [],
+          "exec_s_per_epoch": 2.7613344524041077,
+          "exec_sigma": 0.013736754536076146,
+          "exec_sigma_by_epoch": [],
+          "feasible": true,
+          "install_cost_by_object": {
+            "obj1": 14.281569920413546
+          },
+          "install_objects": [
+            "obj1"
+          ],
+          "material_by_type": {},
+          "material_bytes_per_epoch": 0,
+          "mem_peak_bytes": 0,
+          "online_bytes_per_epoch": 0,
+          "plan": {
+            "argmax_k": 8,
+            "embedding": "generic",
+            "linear": "wmask",
+            "max_k": 2
+          },
+          "reason": "",
+          "rounds_per_epoch": 0
+        },
+        {
+          "c_install_s": 18.670516136201336,
+          "c_install_sigma": 0.1640160041009573,
+          "c_wait_s": 0.0,
+          "exec_s_by_epoch": [],
+          "exec_s_per_epoch": 8.314531855360393,
+          "exec_sigma": 0.27569811317196385,
+          "exec_sigma_by_epoch": [],
+          "feasible": true,
+          "install_cost_by_object": {
+            "obj2": 18.670516136201336
+          },
+          "install_objects": [
+            "obj2"
+          ],
+          "material_by_type": {},
+          "material_bytes_per_epoch": 0,
+          "mem_peak_bytes": 0,
+          "online_bytes_per_epoch": 0,
+          "plan": {
+            "argmax_k": 4,
+            "embedding": "wmask",
+            "linear": "wmask",
+            "max_k": 4
+          },
+          "reason": "",
+          "rounds_per_epoch": 0
+        },
+        {
+          "c_install_s": 24.32691686052629,
+          "c_install_sigma": 0.19098529722020952,
+          "c_wait_s": 0.19154265290265293,
+          "exec_s_by_epoch": [],
+          "exec_s_per_epoch": 1.258179226873534,
+          "exec_sigma": 0.291190854729441,
+          "exec_sigma_by_epoch": [],
+          "feasible": true,
+          "install_cost_by_object": {
+            "obj3": 24.32691686052629
+          },
+          "install_objects": [
+            "obj3"
+          ],
+          "material_by_type": {},
+          "material_bytes_per_epoch": 0,
+          "mem_peak_bytes": 0,
+          "online_bytes_per_epoch": 0,
+          "plan": {
+            "argmax_k": 2,
+            "embedding": "generic",
+            "linear": "generic",
+            "max_k": 4
+          },
+          "reason": "",
+          "rounds_per_epoch": 0
+        }
+      ],
+      "config": {
+        "dwell_prior": 5.0,
+        "env_change_rel": 0.25,
+        "epoch_corr": 0.0,
+        "hysteresis_s": 0.5,
+        "ignore_install": true,
+        "min_residency": 1,
+        "stationary_survival": true,
+        "use_uncertainty": true,
+        "z": 1.0
+      },
+      "decision": {
+        "chosen": {
+          "argmax_k": 2,
+          "embedding": "generic",
+          "linear": "generic",
+          "max_k": 4
+        },
+        "lower_bound_gain": 23.611435390505672,
+        "q_best": 7.740618014143856,
+        "q_keep": 32.344838695337586,
+        "reason": "LOWER_BOUND_GAIN_EXCEEDS_HYSTERESIS",
+        "switched": true,
+        "u_diff": 0.9927852906880565
+      },
+      "epoch": 2,
+      "id": 1,
+      "state": {
+        "contract_hash": "9c357c649b5264717a658c4edd57fcb149ef354c8759809088f8ee20896f4b88",
+        "incumbent": {
+          "argmax_k": 8,
+          "embedding": "generic",
+          "linear": "wmask",
+          "max_k": 4
+        },
+        "installed": {},
+        "kv_bucket": 32,
+        "model_version": "gpt2@test",
+        "remaining_epochs": 6,
+        "session_id": "vec1",
+        "stock": {}
+      },
+      "survival": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "telemetry": [
+        {
+          "bandwidth_bps": 88482184.02683814,
+          "cpu_load": 0.0,
+          "epoch": 0,
+          "rtt_s": 0.014379091023459706,
+          "seq": 0,
+          "t": 0.0
+        }
+      ]
+    },
+    {
+      "candidates": [
+        {
+          "c_install_s": 0.4005153652538507,
+          "c_install_sigma": 0.0,
+          "c_wait_s": 0.0,
+          "exec_s_by_epoch": [],
+          "exec_s_per_epoch": 7.667752187939442,
+          "exec_sigma": 0.4362513801935247,
+          "exec_sigma_by_epoch": [],
+          "feasible": true,
+          "install_cost_by_object": {
+            "lm_head": 0.4005153652538507
+          },
+          "install_objects": [
+            "lm_head"
+          ],
+          "material_by_type": {},
+          "material_bytes_per_epoch": 0,
+          "mem_peak_bytes": 0,
+          "online_bytes_per_epoch": 0,
+          "plan": {
+            "argmax_k": 4,
+            "embedding": "generic",
+            "linear": "generic",
+            "max_k": 2
+          },
+          "reason": "",
+          "rounds_per_epoch": 0
+        },
+        {
+          "c_install_s": 6.8350918096407165,
+          "c_install_sigma": 0.19362769753088863,
+          "c_wait_s": 0.0,
+          "exec_s_by_epoch": [],
+          "exec_s_per_epoch": 1.5387085453828124,
+          "exec_sigma": 0.23090680324732266,
+          "exec_sigma_by_epoch": [],
+          "feasible": true,
+          "install_cost_by_object": {
+            "obj0": 6.8350918096407165
+          },
+          "install_objects": [
+            "obj0"
+          ],
+          "material_by_type": {},
+          "material_bytes_per_epoch": 0,
+          "mem_peak_bytes": 0,
+          "online_bytes_per_epoch": 0,
+          "plan": {
+            "argmax_k": 4,
+            "embedding": "generic",
+            "linear": "wmask",
+            "max_k": 2
+          },
+          "reason": "",
+          "rounds_per_epoch": 0
+        },
+        {
+          "c_install_s": 17.18928000747623,
+          "c_install_sigma": 0.036799694774387895,
+          "c_wait_s": 0.0,
+          "exec_s_by_epoch": [],
+          "exec_s_per_epoch": 4.247401245309779,
+          "exec_sigma": 0.1516126015972768,
+          "exec_sigma_by_epoch": [],
+          "feasible": true,
+          "install_cost_by_object": {
+            "obj1": 17.18928000747623
+          },
+          "install_objects": [
+            "obj1"
+          ],
+          "material_by_type": {},
+          "material_bytes_per_epoch": 0,
+          "mem_peak_bytes": 0,
+          "online_bytes_per_epoch": 0,
+          "plan": {
+            "argmax_k": 8,
+            "embedding": "generic",
+            "linear": "wmask",
+            "max_k": 4
+          },
+          "reason": "",
+          "rounds_per_epoch": 0
+        }
+      ],
+      "config": {
+        "dwell_prior": 5.0,
+        "env_change_rel": 0.25,
+        "epoch_corr": 0.0,
+        "hysteresis_s": 1.0,
+        "ignore_install": false,
+        "min_residency": 1,
+        "stationary_survival": false,
+        "use_uncertainty": true,
+        "z": 2.0
+      },
+      "decision": {
+        "chosen": {
+          "argmax_k": 4,
+          "embedding": "generic",
+          "linear": "wmask",
+          "max_k": 2
+        },
+        "lower_bound_gain": 25.373141861482424,
+        "q_best": 15.300438111338526,
+        "q_keep": 42.58535785624005,
+        "reason": "LOWER_BOUND_GAIN_EXCEEDS_HYSTERESIS",
+        "switched": true,
+        "u_diff": 0.9558889417095502
+      },
+      "epoch": 3,
+      "id": 2,
+      "state": {
+        "contract_hash": "9c357c649b5264717a658c4edd57fcb149ef354c8759809088f8ee20896f4b88",
+        "incumbent": {
+          "argmax_k": 4,
+          "embedding": "generic",
+          "linear": "generic",
+          "max_k": 2
+        },
+        "installed": {},
+        "kv_bucket": 32,
+        "model_version": "gpt2@test",
+        "remaining_epochs": 10,
+        "session_id": "vec2",
+        "stock": {}
+      },
+      "survival": [
+        1.0,
+        0.8571428571428572,
+        0.7346938775510206,
+        0.6297376093294462,
+        0.5397750937109539,
+        0.4626643660379605,
+        0.3965694566039662,
+        0.33991667708911394,
+        0.2913571517906691,
+        0.24973470153485924
+      ],
+      "telemetry": [
+        {
+          "bandwidth_bps": 61389563.731629476,
+          "cpu_load": 0.0,
+          "epoch": 0,
+          "rtt_s": 0.04000213286696808,
+          "seq": 0,
+          "t": 0.0
+        },
+        {
+          "bandwidth_bps": 61389563.731629476,
+          "cpu_load": 0.0,
+          "epoch": 1,
+          "rtt_s": 0.04000213286696808,
+          "seq": 1,
+          "t": 1.0
+        },
+        {
+          "bandwidth_bps": 61389563.731629476,
+          "cpu_load": 0.0,
+          "epoch": 2,
+          "rtt_s": 0.04000213286696808,
+          "seq": 2,
+          "t": 2.0
+        }
+      ]
+    },
+    {
+      "candidates": [
+        {
+          "c_install_s": 0.7404170107656777,
+          "c_install_sigma": 0.0,
+          "c_wait_s": 0.0,
+          "exec_s_by_epoch": [],
+          "exec_s_per_epoch": 8.820368095649602,
+          "exec_sigma": 0.49228898871959975,
+          "exec_sigma_by_epoch": [],
+          "feasible": true,
+          "install_cost_by_object": {
+            "lm_head": 0.7404170107656777
+          },
+          "install_objects": [
+            "lm_head"
+          ],
+          "material_by_type": {},
+          "material_bytes_per_epoch": 0,
+          "mem_peak_bytes": 0,
+          "online_bytes_per_epoch": 0,
+          "plan": {
+            "argmax_k": 2,
+            "embedding": "wmask",
+            "linear": "wmask",
+            "max_k": 4
+          },
+          "reason": "",
+          "rounds_per_epoch": 0
+        },
+        {
+          "c_install_s": 2.855260147968899,
+          "c_install_sigma": 0.1843572519832283,
+          "c_wait_s": 0.0,
+          "exec_s_by_epoch": [],
+          "exec_s_per_epoch": 7.282705196181192,
+          "exec_sigma": 0.247412591351571,
+          "exec_sigma_by_epoch": [],
+          "feasible": true,
+          "install_cost_by_object": {
+            "obj0": 2.855260147968899
+          },
+          "install_objects": [
+            "obj0"
+          ],
+          "material_by_type": {},
+          "material_bytes_per_epoch": 0,
+          "mem_peak_bytes": 0,
+          "online_bytes_per_epoch": 0,
+          "plan": {
+            "argmax_k": 4,
+            "embedding": "generic",
+            "linear": "wmask",
+            "max_k": 2
+          },
+          "reason": "",
+          "rounds_per_epoch": 0
+        },
+        {
+          "c_install_s": 6.72753771893103,
+          "c_install_sigma": 0.006374834127990359,
+          "c_wait_s": 0.0,
+          "exec_s_by_epoch": [],
+          "exec_s_per_epoch": 3.620445008468532,
+          "exec_sigma": 0.30274788457450885,
+          "exec_sigma_by_epoch": [],
+          "feasible": true,
+          "install_cost_by_object": {
+            "obj1": 6.72753771893103
+          },
+          "install_objects": [
+            "obj1"
+          ],
+          "material_by_type": {},
+          "material_bytes_per_epoch": 0,
+          "mem_peak_bytes": 0,
+          "online_bytes_per_epoch": 0,
+          "plan": {
+            "argmax_k": 8,
+            "embedding": "wmask",
+            "linear": "wmask",
+            "max_k": 4
+          },
+          "reason": "",
+          "rounds_per_epoch": 0
+        },
+        {
+          "c_install_s": 21.10603203750849,
+          "c_install_sigma": 0.12955703408056982,
+          "c_wait_s": 0.3099993858321288,
+          "exec_s_by_epoch": [],
+          "exec_s_per_epoch": 2.139133211434675,
+          "exec_sigma": 0.3638868616030798,
+          "exec_sigma_by_epoch": [],
+          "feasible": true,
+          "install_cost_by_object": {
+            "obj2": 21.10603203750849
+          },
+          "install_objects": [
+            "obj2"
+          ],
+          "material_by_type": {},
+          "material_bytes_per_epoch": 0,
+          "mem_peak_bytes": 0,
+          "online_bytes_per_epoch": 0,
+          "plan": {
+            "argmax_k": 2,
+            "embedding": "generic",
+            "linear": "generic",
+            "max_k": 2
+          },
+          "reason": "",
+          "rounds_per_epoch": 0
+        },
+        {
+          "c_install_s": 0.04334804091116973,
+          "c_install_sigma": 0.016021606908379903,
+          "c_wait_s": 0.0,
+          "exec_s_by_epoch": [],
+          "exec_s_per_epoch": 8.49997983460938,
+          "exec_sigma": 0.07025080863490263,
+          "exec_sigma_by_epoch": [],
+          "feasible": true,
+          "install_cost_by_object": {
+            "obj3": 0.04334804091116973
+          },
+          "install_objects": [
+            "obj3"
+          ],
+          "material_by_type": {},
+          "material_bytes_per_epoch": 0,
+          "mem_peak_bytes": 0,
+          "online_bytes_per_epoch": 0,
+          "plan": {
+            "argmax_k": 4,
+            "embedding": "wmask",
+            "linear": "wmask",
+            "max_k": 4
+          },
+          "reason": "",
+          "rounds_per_epoch": 0
+        }
+      ],
+      "config": {
+        "dwell_prior": 5.0,
+        "env_change_rel": 0.25,
+        "epoch_corr": 0.0,
+        "hysteresis_s": 0.5,
+        "ignore_install": false,
+        "min_residency": 1,
+        "stationary_survival": false,
+        "use_uncertainty": true,
+        "z": 1.0
+      },
+      "decision": {
+        "chosen": {
+          "argmax_k": 8,
+          "embedding": "wmask",
+          "linear": "wmask",
+          "max_k": 4
+        },
+        "lower_bound_gain": 20.23564032194549,
+        "q_best": 25.741597502917948,
+        "q_keep": 47.063729723750384,
+        "reason": "LOWER_BOUND_GAIN_EXCEEDS_HYSTERESIS",
+        "switched": true,
+        "u_diff": 1.0864918988869463
+      },
+      "epoch": 4,
+      "id": 3,
+      "state": {
+        "contract_hash": "9c357c649b5264717a658c4edd57fcb149ef354c8759809088f8ee20896f4b88",
+        "incumbent": {
+          "argmax_k": 2,
+          "embedding": "wmask",
+          "linear": "wmask",
+          "max_k": 4
+        },
+        "installed": {},
+        "kv_bucket": 32,
+        "model_version": "gpt2@test",
+        "remaining_epochs": 9,
+        "session_id": "vec3",
+        "stock": {}
+      },
+      "survival": [
+        1.0,
+        0.8571428571428572,
+        0.7346938775510206,
+        0.6297376093294462,
+        0.5397750937109539,
+        0.4626643660379605,
+        0.3965694566039662,
+        0.33991667708911394,
+        0.2913571517906691
+      ],
+      "telemetry": [
+        {
+          "bandwidth_bps": 91769802.73755875,
+          "cpu_load": 0.0,
+          "epoch": 0,
+          "rtt_s": 0.0269863754776842,
+          "seq": 0,
+          "t": 0.0
+        },
+        {
+          "bandwidth_bps": 91769802.73755875,
+          "cpu_load": 0.0,
+          "epoch": 1,
+          "rtt_s": 0.0269863754776842,
+          "seq": 1,
+          "t": 1.0
+        },
+        {
+          "bandwidth_bps": 91769802.73755875,
+          "cpu_load": 0.0,
+          "epoch": 2,
+          "rtt_s": 0.0269863754776842,
+          "seq": 2,
+          "t": 2.0
+        }
+      ]
+    },
+    {
+      "candidates": [
+        {
+          "c_install_s": 1.0961436673960971,
+          "c_install_sigma": 0.0,
+          "c_wait_s": 0.0,
+          "exec_s_by_epoch": [],
+          "exec_s_per_epoch": 5.096319523400369,
+          "exec_sigma": 0.2966825070377833,
+          "exec_sigma_by_epoch": [],
+          "feasible": true,
+          "install_cost_by_object": {
+            "lm_head": 1.0961436673960971
+          },
+          "install_objects": [
+            "lm_head"
+          ],
+          "material_by_type": {},
+          "material_bytes_per_epoch": 0,
+          "mem_peak_bytes": 0,
+          "online_bytes_per_epoch": 0,
+          "plan": {
+            "argmax_k": 2,
+            "embedding": "wmask",
+            "linear": "generic",
+            "max_k": 4
+          },
+          "reason": "",
+          "rounds_per_epoch": 0
+        },
+        {
+          "c_install_s": 22.392079043165925,
+          "c_install_sigma": 0.1868596018218895,
+          "c_wait_s": 0.0,
+          "exec_s_by_epoch": [],
+          "exec_s_per_epoch": 7.314626178942223,
+          "exec_sigma": 0.34728050593732046,
+          "exec_sigma_by_epoch": [],
+          "feasible": true,
+          "install_cost_by_object": {
+            "obj0": 22.392079043165925
+          },
+          "install_objects": [
+            "obj0"
+          ],
+          "material_by_type": {},
+          "material_bytes_per_epoch": 0,
+          "mem_peak_bytes": 0,
+          "online_bytes_per_epoch": 0,
+          "plan": {
+            "argmax_k": 2,
+            "embedding": "wmask",
+            "linear": "wmask",
+            "max_k": 2
+          },
+          "reason": "",
+          "rounds_per_epoch": 0
+        },
+        {
+          "c_install_s": 28.31032333855854,
+          "c_install_sigma": 0.0008100597093793294,
+          "c_wait_s": 1.978672697574787,
+          "exec_s_by_epoch": [],
+          "exec_s_per_epoch": 8.14382685055984,
+          "exec_sigma": 0.46241175510173965,
+          "exec_sigma_by_epoch": [],
+          "feasible": true,
+          "install_cost_by_object": {
+            "obj1": 28.31032333855854
+          },
+          "install_objects": [
+            "obj1"
+          ],
+          "material_by_type": {},
+          "material_bytes_per_epoch": 0,
+          "mem_peak_bytes": 0,
+          "online_bytes_per_epoch": 0,
+          "plan": {
+            "argmax_k": 2,
+            "embedding": "wmask",
+            "linear": "generic",
+            "max_k": 2
+          },
+          "reason": "",
+          "rounds_per_epoch": 0
+        },
+        {
+          "c_install_s": 12.332739359290928,
+          "c_install_sigma": 0.08973092950209238,
+          "c_wait_s": 0.0,
+          "exec_s_by_epoch": [],
+          "exec_s_per_epoch": 7.294268259155081,
+          "exec_sigma": 0.07252184521536831,
+          "exec_sigma_by_epoch": [],
+          "feasible": true,
+          "install_cost_by_object": {
+            "obj2": 12.332739359290928
+          },
+          "install_objects": [
+            "obj2"
+          ],
+          "material_by_type": {},
+          "material_bytes_per_epoch": 0,
+          "mem_peak_bytes": 0,
+          "online_bytes_per_epoch": 0,
+          "plan": {
+            "argmax_k": 8,
+            "embedding": "generic",
+            "linear": "wmask",
+            "max_k": 4
+          },
+          "reason": "",
+          "rounds_per_epoch": 0
+        }
+      ],
+      "config": {
+        "dwell_prior": 5.0,
+        "env_change_rel": 0.25,
+        "epoch_corr": 0.0,
+        "hysteresis_s": 0.5,
+        "ignore_install": false,
+        "min_residency": 1,
+        "stationary_survival": false,
+        "use_uncertainty": true,
+        "z": 1.0
+      },
+      "decision": {
+        "chosen": {
+          "argmax_k": 2,
+          "embedding": "wmask",
+          "linear": "generic",
+          "max_k": 4
+        },
+        "lower_bound_gain": -22.950526480090335,
+        "q_best": 26.852119614642554,
+        "q_keep": 26.852119614642554,
+        "reason": "INCUMBENT_OPTIMAL",
+        "switched": false,
+        "u_diff": 0.6058527896622456
+      },
+      "epoch": 3,
+      "id": 4,
+      "state": {
+        "contract_hash": "9c357c649b5264717a658c4edd57fcb149ef354c8759809088f8ee20896f4b88",
+        "incumbent": {
+          "argmax_k": 2,
+          "embedding": "wmask",
+          "linear": "generic",
+          "max_k": 4
+        },
+        "installed": {},
+        "kv_bucket": 32,
+        "model_version": "gpt2@test",
+        "remaining_epochs": 7,
+        "session_id": "vec4",
+        "stock": {}
+      },
+      "survival": [
+        1.0,
+        0.8888888888888888,
+        0.7901234567901234,
+        0.7023319615912207,
+        0.624295076969974,
+        0.5549289573066435,
+        0.49327018427257197
+      ],
+      "telemetry": [
+        {
+          "bandwidth_bps": 132647590.59586562,
+          "cpu_load": 0.0,
+          "epoch": 0,
+          "rtt_s": 0.027263139339281865,
+          "seq": 0,
+          "t": 0.0
+        },
+        {
+          "bandwidth_bps": 132647590.59586562,
+          "cpu_load": 0.0,
+          "epoch": 1,
+          "rtt_s": 0.027263139339281865,
+          "seq": 1,
+          "t": 1.0
+        },
+        {
+          "bandwidth_bps": 132647590.59586562,
+          "cpu_load": 0.0,
+          "epoch": 2,
+          "rtt_s": 0.027263139339281865,
+          "seq": 2,
+          "t": 2.0
+        },
+        {
+          "bandwidth_bps": 132647590.59586562,
+          "cpu_load": 0.0,
+          "epoch": 3,
+          "rtt_s": 0.027263139339281865,
+          "seq": 3,
+          "t": 3.0
+        },
+        {
+          "bandwidth_bps": 132647590.59586562,
+          "cpu_load": 0.0,
+          "epoch": 4,
+          "rtt_s": 0.027263139339281865,
+          "seq": 4,
+          "t": 4.0
+        }
+      ]
+    },
+    {
+      "candidates": [
+        {
+          "c_install_s": 0.0,
+          "c_install_sigma": 0.0,
+          "c_wait_s": 0.0,
+          "exec_s_by_epoch": [],
+          "exec_s_per_epoch": 6.303109211175279,
+          "exec_sigma": 0.3661560483576287,
+          "exec_sigma_by_epoch": [],
+          "feasible": true,
+          "install_cost_by_object": {},
+          "install_objects": [],
+          "material_by_type": {},
+          "material_bytes_per_epoch": 0,
+          "mem_peak_bytes": 0,
+          "online_bytes_per_epoch": 0,
+          "plan": {
+            "argmax_k": 2,
+            "embedding": "generic",
+            "linear": "wmask",
+            "max_k": 2
+          },
+          "reason": "",
+          "rounds_per_epoch": 0
+        },
+        {
+          "c_install_s": 19.478360354919825,
+          "c_install_sigma": 0.12881941643203773,
+          "c_wait_s": 0.0,
+          "exec_s_by_epoch": [],
+          "exec_s_per_epoch": 4.892243477146998,
+          "exec_sigma": 0.4715821671977947,
+          "exec_sigma_by_epoch": [],
+          "feasible": true,
+          "install_cost_by_object": {
+            "obj0": 19.478360354919825
+          },
+          "install_objects": [
+            "obj0"
+          ],
+          "material_by_type": {},
+          "material_bytes_per_epoch": 0,
+          "mem_peak_bytes": 0,
+          "online_bytes_per_epoch": 0,
+          "plan": {
+            "argmax_k": 2,
+            "embedding": "wmask",
+            "linear": "wmask",
+            "max_k": 4
+          },
+          "reason": "",
+          "rounds_per_epoch": 0
+        },
+        {
+          "c_install_s": 7.393057271390818,
+          "c_install_sigma": 0.1428130640113426,
+          "c_wait_s": 0.0,
+          "exec_s_by_epoch": [],
+          "exec_s_per_epoch": 1.1227640024573153,
+          "exec_sigma": 0.2850999690646527,
+          "exec_sigma_by_epoch": [],
+          "feasible": true,
+          "install_cost_by_object": {
+            "obj1": 7.393057271390818
+          },
+          "install_objects": [
+            "obj1"
+          ],
+          "material_by_type": {},
+          "material_bytes_per_epoch": 0,
+          "mem_peak_bytes": 0,
+          "online_bytes_per_epoch": 0,
+          "plan": {
+            "argmax_k": 8,
+            "embedding": "wmask",
+            "linear": "generic",
+            "max_k": 4
+          },
+          "reason": "",
+          "rounds_per_epoch": 0
+        },
+        {
+          "c_install_s": 13.995097179367933,
+          "c_install_sigma": 0.17290963181699487,
+          "c_wait_s": 0.0,
+          "exec_s_by_epoch": [],
+          "exec_s_per_epoch": 5.273447613556882,
+          "exec_sigma": 0.07687258909334127,
+          "exec_sigma_by_epoch": [],
+          "feasible": true,
+          "install_cost_by_object": {
+            "obj2": 13.995097179367933
+          },
+          "install_objects": [
+            "obj2"
+          ],
+          "material_by_type": {},
+          "material_bytes_per_epoch": 0,
+          "mem_peak_bytes": 0,
+          "online_bytes_per_epoch": 0,
+          "plan": {
+            "argmax_k": 2,
+            "embedding": "generic",
+            "linear": "generic",
+            "max_k": 4
+          },
+          "reason": "",
+          "rounds_per_epoch": 0
+        },
+        {
+          "c_install_s": 0.7838184731931241,
+          "c_install_sigma": 0.05356105755959988,
+          "c_wait_s": 0.0,
+          "exec_s_by_epoch": [],
+          "exec_s_per_epoch": 2.2586475993615154,
+          "exec_sigma": 0.29607788541678975,
+          "exec_sigma_by_epoch": [],
+          "feasible": true,
+          "install_cost_by_object": {
+            "obj3": 0.7838184731931241
+          },
+          "install_objects": [
+            "obj3"
+          ],
+          "material_by_type": {},
+          "material_bytes_per_epoch": 0,
+          "mem_peak_bytes": 0,
+          "online_bytes_per_epoch": 0,
+          "plan": {
+            "argmax_k": 8,
+            "embedding": "generic",
+            "linear": "generic",
+            "max_k": 2
+          },
+          "reason": "",
+          "rounds_per_epoch": 0
+        }
+      ],
+      "config": {
+        "dwell_prior": 5.0,
+        "env_change_rel": 0.25,
+        "epoch_corr": 0.0,
+        "hysteresis_s": 1.0,
+        "ignore_install": false,
+        "min_residency": 1,
+        "stationary_survival": false,
+        "use_uncertainty": true,
+        "z": 2.0
+      },
+      "decision": {
+        "chosen": {
+          "argmax_k": 8,
+          "embedding": "generic",
+          "linear": "generic",
+          "max_k": 2
+        },
+        "lower_bound_gain": 10.599637772679538,
+        "q_best": 7.878622006416612,
+        "q_keep": 19.799158361127848,
+        "reason": "LOWER_BOUND_GAIN_EXCEEDS_HYSTERESIS",
+        "switched": true,
+        "u_diff": 0.6604492910158484
+      },
+      "epoch": 4,
+      "id": 5,
+      "state": {
+        "contract_hash": "9c357c649b5264717a658c4edd57fcb149ef354c8759809088f8ee20896f4b88",
+        "incumbent": {
+          "argmax_k": 2,
+          "embedding": "generic",
+          "linear": "wmask",
+          "max_k": 2
+        },
+        "installed": {},
+        "kv_bucket": 32,
+        "model_version": "gpt2@test",
+        "remaining_epochs": 8,
+        "session_id": "vec5",
+        "stock": {}
+      },
+      "survival": [
+        1.0,
+        0.7,
+        0.48999999999999994,
+        0.3429999999999999,
+        0.24009999999999995,
+        0.16806999999999994,
+        0.11764899999999996,
+        0.08235429999999996
+      ],
+      "telemetry": [
+        {
+          "bandwidth_bps": 186853547.37882838,
+          "cpu_load": 0.0,
+          "epoch": 0,
+          "rtt_s": 0.02969204778518221,
+          "seq": 0,
+          "t": 0.0
+        },
+        {
+          "bandwidth_bps": 373707094.75765675,
+          "cpu_load": 0.0,
+          "epoch": 1,
+          "rtt_s": 0.02969204778518221,
+          "seq": 1,
+          "t": 1.0
+        },
+        {
+          "bandwidth_bps": 186853547.37882838,
+          "cpu_load": 0.0,
+          "epoch": 2,
+          "rtt_s": 0.02969204778518221,
+          "seq": 2,
+          "t": 2.0
+        },
+        {
+          "bandwidth_bps": 186853547.37882838,
+          "cpu_load": 0.0,
+          "epoch": 3,
+          "rtt_s": 0.02969204778518221,
+          "seq": 3,
+          "t": 3.0
+        },
+        {
+          "bandwidth_bps": 186853547.37882838,
+          "cpu_load": 0.0,
+          "epoch": 4,
+          "rtt_s": 0.02969204778518221,
+          "seq": 4,
+          "t": 4.0
+        },
+        {
+          "bandwidth_bps": 186853547.37882838,
+          "cpu_load": 0.0,
+          "epoch": 5,
+          "rtt_s": 0.02969204778518221,
+          "seq": 5,
+          "t": 5.0
+        }
+      ]
+    },
+    {
+      "candidates": [
+        {
+          "c_install_s": 2.602931031201186,
+          "c_install_sigma": 0.0,
+          "c_wait_s": 0.0,
+          "exec_s_by_epoch": [],
+          "exec_s_per_epoch": 2.1779965393773573,
+          "exec_sigma": 0.49770597081642937,
+          "exec_sigma_by_epoch": [],
+          "feasible": true,
+          "install_cost_by_object": {
+            "lm_head": 2.602931031201186
+          },
+          "install_objects": [
+            "lm_head"
+          ],
+          "material_by_type": {},
+          "material_bytes_per_epoch": 0,
+          "mem_peak_bytes": 0,
+          "online_bytes_per_epoch": 0,
+          "plan": {
+            "argmax_k": 4,
+            "embedding": "generic",
+            "linear": "generic",
+            "max_k": 4
+          },
+          "reason": "",
+          "rounds_per_epoch": 0
+        },
+        {
+          "c_install_s": 7.9537121054555,
+          "c_install_sigma": 0.17392362147777451,
+          "c_wait_s": 0.0,
+          "exec_s_by_epoch": [],
+          "exec_s_per_epoch": 2.6554421100977024,
+          "exec_sigma": 0.2080676832457875,
+          "exec_sigma_by_epoch": [],
+          "feasible": true,
+          "install_cost_by_object": {
+            "obj0": 7.9537121054555
+          },
+          "install_objects": [
+            "obj0"
+          ],
+          "material_by_type": {},
+          "material_bytes_per_epoch": 0,
+          "mem_peak_bytes": 0,
+          "online_bytes_per_epoch": 0,
+          "plan": {
+            "argmax_k": 2,
+            "embedding": "wmask",
+            "linear": "wmask",
+            "max_k": 2
+          },
+          "reason": "",
+          "rounds_per_epoch": 0
+        },
+        {
+          "c_install_s": 16.646025101881914,
+          "c_install_sigma": 0.16896479388864827,
+          "c_wait_s": 0.0,
+          "exec_s_by_epoch": [],
+          "exec_s_per_epoch": 9.764437740333863,
+          "exec_sigma": 0.03571058837319335,
+          "exec_sigma_by_epoch": [],
+          "feasible": true,
+          "install_cost_by_object": {
+            "obj1": 16.646025101881914
+          },
+          "install_objects": [
+            "obj1"
+          ],
+          "material_by_type": {},
+          "material_bytes_per_epoch": 0,
+          "mem_peak_bytes": 0,
+          "online_bytes_per_epoch": 0,
+          "plan": {
+            "argmax_k": 2,
+            "embedding": "generic",
+            "linear": "wmask",
+            "max_k": 4
+          },
+          "reason": "",
+          "rounds_per_epoch": 0
+        },
+        {
+          "c_install_s": 23.447477896932934,
+          "c_install_sigma": 0.12335849918027238,
+          "c_wait_s": 0.0,
+          "exec_s_by_epoch": [],
+          "exec_s_per_epoch": 9.795935494019217,
+          "exec_sigma": 0.1697133154344711,
+          "exec_sigma_by_epoch": [],
+          "feasible": true,
+          "install_cost_by_object": {
+            "obj2": 23.447477896932934
+          },
+          "install_objects": [
+            "obj2"
+          ],
+          "material_by_type": {},
+          "material_bytes_per_epoch": 0,
+          "mem_peak_bytes": 0,
+          "online_bytes_per_epoch": 0,
+          "plan": {
+            "argmax_k": 4,
+            "embedding": "wmask",
+            "linear": "generic",
+            "max_k": 4
+          },
+          "reason": "",
+          "rounds_per_epoch": 0
+        }
+      ],
+      "config": {
+        "dwell_prior": 5.0,
+        "env_change_rel": 0.25,
+        "epoch_corr": 0.0,
+        "hysteresis_s": 1.0,
+        "ignore_install": false,
+        "min_residency": 1,
+        "stationary_survival": false,
+        "use_uncertainty": true,
+        "z": 2.0
+      },
+      "decision": {
+        "chosen": {
+          "argmax_k": 4,
+          "embedding": "generic",
+          "linear": "generic",
+          "max_k": 4
+        },
+        "lower_bound_gain": -8.84629300246204,
+        "q_best": 10.946965268238392,
+        "q_keep": 10.946965268238392,
+        "reason": "INCUMBENT_OPTIMAL",
+        "switched": false,
+        "u_diff": 0.8331947799177712
+      },
+      "epoch": 1,
+      "id": 6,
+      "state": {
+        "contract_hash": "9c357c649b5264717a658c4edd57fcb149ef354c8759809088f8ee20896f4b88",
+        "incumbent": {
+          "argmax_k": 4,
+          "embedding": "generic",
+          "linear": "generic",
+          "max_k": 4
+        },
+        "installed": {},
+        "kv_bucket": 32,
+        "model_version": "gpt2@test",
+        "remaining_epochs": 11,
+        "session_id": "vec6",
+        "stock": {}
+      },
+      "survival": [
+        1.0,
+        0.75,
+        0.5625,
+        0.421875,
+        0.31640625,
+        0.2373046875,
+        0.177978515625,
+        0.13348388671875,
+        0.1001129150390625,
+        0.07508468627929688,
+        0.056313514709472656
+      ],
+      "telemetry": [
+        {
+          "bandwidth_bps": 98798041.17544517,
+          "cpu_load": 0.0,
+          "epoch": 0,
+          "rtt_s": 0.017644780415057033,
+          "seq": 0,
+          "t": 0.0
+        },
+        {
+          "bandwidth_bps": 98798041.17544517,
+          "cpu_load": 0.0,
+          "epoch": 1,
+          "rtt_s": 0.017644780415057033,
+          "seq": 1,
+          "t": 1.0
+        },
+        {
+          "bandwidth_bps": 49399020.587722585,
+          "cpu_load": 0.0,
+          "epoch": 2,
+          "rtt_s": 0.017644780415057033,
+          "seq": 2,
+          "t": 2.0
+        },
+        {
+          "bandwidth_bps": 49399020.587722585,
+          "cpu_load": 0.0,
+          "epoch": 3,
+          "rtt_s": 0.017644780415057033,
+          "seq": 3,
+          "t": 3.0
+        }
+      ]
+    },
+    {
+      "candidates": [
+        {
+          "c_install_s": 0.0,
+          "c_install_sigma": 0.0,
+          "c_wait_s": 0.0,
+          "exec_s_by_epoch": [],
+          "exec_s_per_epoch": 1.7564680468829468,
+          "exec_sigma": 0.37608201944359765,
+          "exec_sigma_by_epoch": [],
+          "feasible": true,
+          "install_cost_by_object": {},
+          "install_objects": [],
+          "material_by_type": {},
+          "material_bytes_per_epoch": 0,
+          "mem_peak_bytes": 0,
+          "online_bytes_per_epoch": 0,
+          "plan": {
+            "argmax_k": 8,
+            "embedding": "generic",
+            "linear": "generic",
+            "max_k": 2
+          },
+          "reason": "",
+          "rounds_per_epoch": 0
+        }
+      ],
+      "config": {
+        "dwell_prior": 5.0,
+        "env_change_rel": 0.25,
+        "epoch_corr": 0.0,
+        "hysteresis_s": 0.5,
+        "ignore_install": true,
+        "min_residency": 1,
+        "stationary_survival": true,
+        "use_uncertainty": true,
+        "z": 1.0
+      },
+      "decision": {
+        "chosen": {
+          "argmax_k": 8,
+          "embedding": "generic",
+          "linear": "generic",
+          "max_k": 2
+        },
+        "lower_bound_gain": 0.0,
+        "q_best": 5.26940414064884,
+        "q_keep": 5.26940414064884,
+        "reason": "INCUMBENT_OPTIMAL",
+        "switched": false,
+        "u_diff": 0.0
+      },
+      "epoch": 4,
+      "id": 7,
+      "state": {
+        "contract_hash": "9c357c649b5264717a658c4edd57fcb149ef354c8759809088f8ee20896f4b88",
+        "incumbent": {
+          "argmax_k": 8,
+          "embedding": "generic",
+          "linear": "generic",
+          "max_k": 2
+        },
+        "installed": {},
+        "kv_bucket": 32,
+        "model_version": "gpt2@test",
+        "remaining_epochs": 3,
+        "session_id": "vec7",
+        "stock": {}
+      },
+      "survival": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "telemetry": [
+        {
+          "bandwidth_bps": 94431680.26970889,
+          "cpu_load": 0.0,
+          "epoch": 0,
+          "rtt_s": 0.039835388725413264,
+          "seq": 0,
+          "t": 0.0
+        },
+        {
+          "bandwidth_bps": 188863360.53941777,
+          "cpu_load": 0.0,
+          "epoch": 1,
+          "rtt_s": 0.039835388725413264,
+          "seq": 1,
+          "t": 1.0
+        },
+        {
+          "bandwidth_bps": 188863360.53941777,
+          "cpu_load": 0.0,
+          "epoch": 2,
+          "rtt_s": 0.039835388725413264,
+          "seq": 2,
+          "t": 2.0
+        },
+        {
+          "bandwidth_bps": 377726721.07883555,
+          "cpu_load": 0.0,
+          "epoch": 3,
+          "rtt_s": 0.039835388725413264,
+          "seq": 3,
+          "t": 3.0
+        },
+        {
+          "bandwidth_bps": 377726721.07883555,
+          "cpu_load": 0.0,
+          "epoch": 4,
+          "rtt_s": 0.039835388725413264,
+          "seq": 4,
+          "t": 4.0
+        },
+        {
+          "bandwidth_bps": 377726721.07883555,
+          "cpu_load": 0.0,
+          "epoch": 5,
+          "rtt_s": 0.039835388725413264,
+          "seq": 5,
+          "t": 5.0
+        }
+      ]
+    },
+    {
+      "candidates": [
+        {
+          "c_install_s": 0.33937805191079473,
+          "c_install_sigma": 0.0,
+          "c_wait_s": 0.0,
+          "exec_s_by_epoch": [],
+          "exec_s_per_epoch": 6.213182054786857,
+          "exec_sigma": 0.22832030153953364,
+          "exec_sigma_by_epoch": [],
+          "feasible": true,
+          "install_cost_by_object": {
+            "lm_head": 0.33937805191079473
+          },
+          "install_objects": [
+            "lm_head"
+          ],
+          "material_by_type": {},
+          "material_bytes_per_epoch": 0,
+          "mem_peak_bytes": 0,
+          "online_bytes_per_epoch": 0,
+          "plan": {
+            "argmax_k": 2,
+            "embedding": "generic",
+            "linear": "wmask",
+            "max_k": 2
+          },
+          "reason": "",
+          "rounds_per_epoch": 0
+        },
+        {
+          "c_install_s": 13.288555909901383,
+          "c_install_sigma": 0.05926325484190356,
+          "c_wait_s": 0.0,
+          "exec_s_by_epoch": [],
+          "exec_s_per_epoch": 4.489457689429225,
+          "exec_sigma": 0.11409003302399418,
+          "exec_sigma_by_epoch": [],
+          "feasible": true,
+          "install_cost_by_object": {
+            "obj0": 13.288555909901383
+          },
+          "install_objects": [
+            "obj0"
+          ],
+          "material_by_type": {},
+          "material_bytes_per_epoch": 0,
+          "mem_peak_bytes": 0,
+          "online_bytes_per_epoch": 0,
+          "plan": {
+            "argmax_k": 2,
+            "embedding": "wmask",
+            "linear": "wmask",
+            "max_k": 2
+          },
+          "reason": "",
+          "rounds_per_epoch": 0
+        },
+        {
+          "c_install_s": 15.791490802224628,
+          "c_install_sigma": 0.02321552123065114,
+          "c_wait_s": 0.31001089102987955,
+          "exec_s_by_epoch": [],
+          "exec_s_per_epoch": 3.8148150911078815,
+          "exec_sigma": 0.039817413078712505,
+          "exec_sigma_by_epoch": [],
+          "feasible": true,
+          "install_cost_by_object": {
+            "obj1": 15.791490802224628
+          },
+          "install_objects": [
+            "obj1"
+          ],
+          "material_by_type": {},
+          "material_bytes_per_epoch": 0,
+          "mem_peak_bytes": 0,
+          "online_bytes_per_epoch": 0,
+          "plan": {
+            "argmax_k": 8,
+            "embedding": "generic",
+            "linear": "wmask",
+            "max_k": 2
+          },
+          "reason": "",
+          "rounds_per_epoch": 0
+        }
+      ],
+      "config": {
+        "dwell_prior": 5.0,
+        "env_change_rel": 0.25,
+        "epoch_corr": 0.0,
+        "hysteresis_s": 0.5,
+        "ignore_install": true,
+        "min_residency": 1,
+        "stationary_survival": true,
+        "use_uncertainty": true,
+        "z": 1.0
+      },
+      "decision": {
+        "chosen": {
+          "argmax_k": 8,
+          "embedding": "generic",
+          "linear": "wmask",
+          "max_k": 2
+        },
+        "lower_bound_gain": 25.303344077504516,
+        "q_best": 42.27297689321658,
+        "q_keep": 68.34500260265543,
+        "reason": "LOWER_BOUND_GAIN_EXCEEDS_HYSTERESIS",
+        "switched": true,
+        "u_diff": 0.7686816319343324
+      },
+      "epoch": 0,
+      "id": 8,
+      "state": {
+        "contract_hash": "9c357c649b5264717a658c4edd57fcb149ef354c8759809088f8ee20896f4b88",
+        "incumbent": {
+          "argmax_k": 2,
+          "embedding": "generic",
+          "linear": "wmask",
+          "max_k": 2
+        },
+        "installed": {},
+        "kv_bucket": 32,
+        "model_version": "gpt2@test",
+        "remaining_epochs": 11,
+        "session_id": "vec8",
+        "stock": {}
+      },
+      "survival": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "telemetry": [
+        {
+          "bandwidth_bps": 161096395.77363417,
+          "cpu_load": 0.0,
+          "epoch": 0,
+          "rtt_s": 0.025959411283033036,
+          "seq": 0,
+          "t": 0.0
+        },
+        {
+          "bandwidth_bps": 161096395.77363417,
+          "cpu_load": 0.0,
+          "epoch": 1,
+          "rtt_s": 0.025959411283033036,
+          "seq": 1,
+          "t": 1.0
+        },
+        {
+          "bandwidth_bps": 161096395.77363417,
+          "cpu_load": 0.0,
+          "epoch": 2,
+          "rtt_s": 0.025959411283033036,
+          "seq": 2,
+          "t": 2.0
+        },
+        {
+          "bandwidth_bps": 161096395.77363417,
+          "cpu_load": 0.0,
+          "epoch": 3,
+          "rtt_s": 0.025959411283033036,
+          "seq": 3,
+          "t": 3.0
+        }
+      ]
+    },
+    {
+      "candidates": [
+        {
+          "c_install_s": 0.0,
+          "c_install_sigma": 0.0,
+          "c_wait_s": 0.0,
+          "exec_s_by_epoch": [],
+          "exec_s_per_epoch": 7.225518446742808,
+          "exec_sigma": 0.47430783428354645,
+          "exec_sigma_by_epoch": [],
+          "feasible": true,
+          "install_cost_by_object": {},
+          "install_objects": [],
+          "material_by_type": {},
+          "material_bytes_per_epoch": 0,
+          "mem_peak_bytes": 0,
+          "online_bytes_per_epoch": 0,
+          "plan": {
+            "argmax_k": 4,
+            "embedding": "wmask",
+            "linear": "generic",
+            "max_k": 2
+          },
+          "reason": "",
+          "rounds_per_epoch": 0
+        },
+        {
+          "c_install_s": 10.069344110341481,
+          "c_install_sigma": 0.11944342123030956,
+          "c_wait_s": 0.0,
+          "exec_s_by_epoch": [],
+          "exec_s_per_epoch": 6.41990395582067,
+          "exec_sigma": 0.4636840077889261,
+          "exec_sigma_by_epoch": [],
+          "feasible": true,
+          "install_cost_by_object": {
+            "obj0": 10.069344110341481
+          },
+          "install_objects": [
+            "obj0"
+          ],
+          "material_by_type": {},
+          "material_bytes_per_epoch": 0,
+          "mem_peak_bytes": 0,
+          "online_bytes_per_epoch": 0,
+          "plan": {
+            "argmax_k": 4,
+            "embedding": "wmask",
+            "linear": "wmask",
+            "max_k": 4
+          },
+          "reason": "",
+          "rounds_per_epoch": 0
+        },
+        {
+          "c_install_s": 6.923056298905418,
+          "c_install_sigma": 0.035557462651328024,
+          "c_wait_s": 0.0,
+          "exec_s_by_epoch": [],
+          "exec_s_per_epoch": 4.146156432930618,
+          "exec_sigma": 0.08818321409351804,
+          "exec_sigma_by_epoch": [],
+          "feasible": true,
+          "install_cost_by_object": {
+            "obj1": 6.923056298905418
+          },
+          "install_objects": [
+            "obj1"
+          ],
+          "material_by_type": {},
+          "material_bytes_per_epoch": 0,
+          "mem_peak_bytes": 0,
+          "online_bytes_per_epoch": 0,
+          "plan": {
+            "argmax_k": 2,
+            "embedding": "generic",
+            "linear": "generic",
+            "max_k": 2
+          },
+          "reason": "",
+          "rounds_per_epoch": 0
+        }
+      ],
+      "config": {
+        "dwell_prior": 5.0,
+        "env_change_rel": 0.25,
+        "epoch_corr": 0.0,
+        "hysteresis_s": 0.0,
+        "ignore_install": false,
+        "min_residency": 0,
+        "stationary_survival": true,
+        "use_uncertainty": false,
+        "z": 1.0
+      },
+      "decision": {
+        "chosen": {
+          "argmax_k": 2,
+          "embedding": "generic",
+          "linear": "generic",
+          "max_k": 2
+        },
+        "lower_bound_gain": 26.94992585302868,
+        "q_best": 52.53077706114221,
+        "q_keep": 79.48070291417089,
+        "reason": "LOWER_BOUND_GAIN_EXCEEDS_HYSTERESIS",
+        "switched": true,
+        "u_diff": 0.0
+      },
+      "epoch": 4,
+      "id": 9,
+      "state": {
+        "contract_hash": "9c357c649b5264717a658c4edd57fcb149ef354c8759809088f8ee20896f4b88",
+        "incumbent": {
+          "argmax_k": 4,
+          "embedding": "wmask",
+          "linear": "generic",
+          "max_k": 2
+        },
+        "installed": {},
+        "kv_bucket": 32,
+        "model_version": "gpt2@test",
+        "remaining_epochs": 11,
+        "session_id": "vec9",
+        "stock": {}
+      },
+      "survival": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "telemetry": [
+        {
+          "bandwidth_bps": 147691585.45860347,
+          "cpu_load": 0.0,
+          "epoch": 0,
+          "rtt_s": 0.010638232363765373,
+          "seq": 0,
+          "t": 0.0
+        }
+      ]
+    },
+    {
+      "candidates": [
+        {
+          "c_install_s": 0.0,
+          "c_install_sigma": 0.0,
+          "c_wait_s": 0.0,
+          "exec_s_by_epoch": [],
+          "exec_s_per_epoch": 7.163280228437172,
+          "exec_sigma": 0.31454064020633354,
+          "exec_sigma_by_epoch": [],
+          "feasible": true,
+          "install_cost_by_object": {},
+          "install_objects": [],
+          "material_by_type": {},
+          "material_bytes_per_epoch": 0,
+          "mem_peak_bytes": 0,
+          "online_bytes_per_epoch": 0,
+          "plan": {
+            "argmax_k": 2,
+            "embedding": "generic",
+            "linear": "generic",
+            "max_k": 2
+          },
+          "reason": "",
+          "rounds_per_epoch": 0
+        },
+        {
+          "c_install_s": 28.560395070610284,
+          "c_install_sigma": 0.00026740558496016756,
+          "c_wait_s": 1.3511412742409454,
+          "exec_s_by_epoch": [],
+          "exec_s_per_epoch": 5.2882802280074825,
+          "exec_sigma": 0.15535222885856365,
+          "exec_sigma_by_epoch": [],
+          "feasible": true,
+          "install_cost_by_object": {
+            "obj1": 28.560395070610284
+          },
+          "install_objects": [
+            "obj1"
+          ],
+          "material_by_type": {},
+          "material_bytes_per_epoch": 0,
+          "mem_peak_bytes": 0,
+          "online_bytes_per_epoch": 0,
+          "plan": {
+            "argmax_k": 8,
+            "embedding": "generic",
+            "linear": "generic",
+            "max_k": 2
+          },
+          "reason": "",
+          "rounds_per_epoch": 0
+        },
+        {
+          "c_install_s": 17.06839989535309,
+          "c_install_sigma": 0.0035174589903988365,
+          "c_wait_s": 0.6811110137984246,
+          "exec_s_by_epoch": [],
+          "exec_s_per_epoch": 8.300532480564495,
+          "exec_sigma": 0.2581778954069241,
+          "exec_sigma_by_epoch": [],
+          "feasible": true,
+          "install_cost_by_object": {
+            "obj2": 17.06839989535309
+          },
+          "install_objects": [
+            "obj2"
+          ],
+          "material_by_type": {},
+          "material_bytes_per_epoch": 0,
+          "mem_peak_bytes": 0,
+          "online_bytes_per_epoch": 0,
+          "plan": {
+            "argmax_k": 2,
+            "embedding": "wmask",
+            "linear": "wmask",
+            "max_k": 2
+          },
+          "reason": "",
+          "rounds_per_epoch": 0
+        }
+      ],
+      "config": {
+        "dwell_prior": 5.0,
+        "env_change_rel": 0.25,
+        "epoch_corr": 0.0,
+        "hysteresis_s": 0.5,
+        "ignore_install": false,
+        "min_residency": 1,
+        "stationary_survival": false,
+        "use_uncertainty": true,
+        "z": 1.0
+      },
+      "decision": {
+        "chosen": {
+          "argmax_k": 2,
+          "embedding": "generic",
+          "linear": "generic",
+          "max_k": 2
+        },
+        "lower_bound_gain": -21.26213676325878,
+        "q_best": 35.53345112520915,
+        "q_keep": 35.53345112520915,
+        "reason": "INCUMBENT_OPTIMAL",
+        "switched": false,
+        "u_diff": 0.6515378032864939
+      },
+      "epoch": 3,
+      "id": 10,
+      "state": {
+        "contract_hash": "9c357c649b5264717a658c4edd57fcb149ef354c8759809088f8ee20896f4b88",
+        "incumbent": {
+          "argmax_k": 2,
+          "embedding": "generic",
+          "linear": "generic",
+          "max_k": 2
+        },
+        "installed": {},
+        "kv_bucket": 32,
+        "model_version": "gpt2@test",
+        "remaining_epochs": 8,
+        "session_id": "vec10",
+        "stock": {}
+      },
+      "survival": [
+        1.0,
+        0.8571428571428572,
+        0.7346938775510206,
+        0.6297376093294462,
+        0.5397750937109539,
+        0.4626643660379605,
+        0.3965694566039662,
+        0.33991667708911394
+      ],
+      "telemetry": [
+        {
+          "bandwidth_bps": 117140588.08184358,
+          "cpu_load": 0.0,
+          "epoch": 0,
+          "rtt_s": 0.005899301453510142,
+          "seq": 0,
+          "t": 0.0
+        },
+        {
+          "bandwidth_bps": 117140588.08184358,
+          "cpu_load": 0.0,
+          "epoch": 1,
+          "rtt_s": 0.005899301453510142,
+          "seq": 1,
+          "t": 1.0
+        },
+        {
+          "bandwidth_bps": 117140588.08184358,
+          "cpu_load": 0.0,
+          "epoch": 2,
+          "rtt_s": 0.005899301453510142,
+          "seq": 2,
+          "t": 2.0
+        }
+      ]
+    },
+    {
+      "candidates": [
+        {
+          "c_install_s": 0.6230538641002342,
+          "c_install_sigma": 0.0,
+          "c_wait_s": 0.0,
+          "exec_s_by_epoch": [],
+          "exec_s_per_epoch": 7.189402521000781,
+          "exec_sigma": 0.2825698759891153,
+          "exec_sigma_by_epoch": [],
+          "feasible": true,
+          "install_cost_by_object": {
+            "lm_head": 0.6230538641002342
+          },
+          "install_objects": [
+            "lm_head"
+          ],
+          "material_by_type": {},
+          "material_bytes_per_epoch": 0,
+          "mem_peak_bytes": 0,
+          "online_bytes_per_epoch": 0,
+          "plan": {
+            "argmax_k": 8,
+            "embedding": "wmask",
+            "linear": "generic",
+            "max_k": 2
+          },
+          "reason": "",
+          "rounds_per_epoch": 0
+        },
+        {
+          "c_install_s": 4.42799107053646,
+          "c_install_sigma": 0.030812460925226184,
+          "c_wait_s": 0.917266436988287,
+          "exec_s_by_epoch": [],
+          "exec_s_per_epoch": 3.4906088883942843,
+          "exec_sigma": 0.4758610962580238,
+          "exec_sigma_by_epoch": [],
+          "feasible": false,
+          "install_cost_by_object": {
+            "obj0": 4.42799107053646
+          },
+          "install_objects": [
+            "obj0"
+          ],
+          "material_by_type": {},
+          "material_bytes_per_epoch": 0,
+          "mem_peak_bytes": 0,
+          "online_bytes_per_epoch": 0,
+          "plan": {
+            "argmax_k": 8,
+            "embedding": "wmask",
+            "linear": "wmask",
+            "max_k": 4
+          },
+          "reason": "INSUFFICIENT_MATERIAL",
+          "rounds_per_epoch": 0
+        },
+        {
+          "c_install_s": 23.662370529015377,
+          "c_install_sigma": 0.046508356250519925,
+          "c_wait_s": 0.0,
+          "exec_s_by_epoch": [],
+          "exec_s_per_epoch": 5.399730085233975,
+          "exec_sigma": 0.451464060293479,
+          "exec_sigma_by_epoch": [],
+          "feasible": true,
+          "install_cost_by_object": {
+            "obj1": 23.662370529015377
+          },
+          "install_objects": [
+            "obj1"
+          ],
+          "material_by_type": {},
+          "material_bytes_per_epoch": 0,
+          "mem_peak_bytes": 0,
+          "online_bytes_per_epoch": 0,
+          "plan": {
+            "argmax_k": 2,
+            "embedding": "generic",
+            "linear": "wmask",
+            "max_k": 2
+          },
+          "reason": "",
+          "rounds_per_epoch": 0
+        },
+        {
+          "c_install_s": 16.270149230920055,
+          "c_install_sigma": 0.17326878005511576,
+          "c_wait_s": 0.0,
+          "exec_s_by_epoch": [],
+          "exec_s_per_epoch": 8.806728310347953,
+          "exec_sigma": 0.15065592687400509,
+          "exec_sigma_by_epoch": [],
+          "feasible": true,
+          "install_cost_by_object": {
+            "obj2": 16.270149230920055
+          },
+          "install_objects": [
+            "obj2"
+          ],
+          "material_by_type": {},
+          "material_bytes_per_epoch": 0,
+          "mem_peak_bytes": 0,
+          "online_bytes_per_epoch": 0,
+          "plan": {
+            "argmax_k": 4,
+            "embedding": "generic",
+            "linear": "wmask",
+            "max_k": 2
+          },
+          "reason": "",
+          "rounds_per_epoch": 0
+        }
+      ],
+      "config": {
+        "dwell_prior": 5.0,
+        "env_change_rel": 0.25,
+        "epoch_corr": 0.0,
+        "hysteresis_s": 0.0,
+        "ignore_install": false,
+        "min_residency": 0,
+        "stationary_survival": true,
+        "use_uncertainty": false,
+        "z": 1.0
+      },
+      "decision": {
+        "chosen": {
+          "argmax_k": 8,
+          "embedding": "wmask",
+          "linear": "generic",
+          "max_k": 2
+        },
+        "lower_bound_gain": -1.5632474357134782,
+        "q_best": 86.8958841161096,
+        "q_keep": 86.8958841161096,
+        "reason": "INCUMBENT_OPTIMAL",
+        "switched": false,
+        "u_diff": 0.0
+      },
+      "epoch": 2,
+      "id": 11,
+      "state": {
+        "contract_hash": "9c357c649b5264717a658c4edd57fcb149ef354c8759809088f8ee20896f4b88",
+        "incumbent": {
+          "argmax_k": 8,
+          "embedding": "wmask",
+          "linear": "generic",
+          "max_k": 2
+        },
+        "installed": {},
+        "kv_bucket": 32,
+        "model_version": "gpt2@test",
+        "remaining_epochs": 12,
+        "session_id": "vec11",
+        "stock": {}
+      },
+      "survival": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "telemetry": [
+        {
+          "bandwidth_bps": 126900682.08186516,
+          "cpu_load": 0.0,
+          "epoch": 0,
+          "rtt_s": 0.023986244352893742,
+          "seq": 0,
+          "t": 0.0
+        },
+        {
+          "bandwidth_bps": 126900682.08186516,
+          "cpu_load": 0.0,
+          "epoch": 1,
+          "rtt_s": 0.023986244352893742,
+          "seq": 1,
+          "t": 1.0
+        }
+      ]
+    },
+    {
+      "candidates": [
+        {
+          "c_install_s": 2.721064409011116,
+          "c_install_sigma": 0.0,
+          "c_wait_s": 0.0,
+          "exec_s_by_epoch": [],
+          "exec_s_per_epoch": 6.356723768493563,
+          "exec_sigma": 0.0682110470912462,
+          "exec_sigma_by_epoch": [],
+          "feasible": true,
+          "install_cost_by_object": {
+            "lm_head": 2.721064409011116
+          },
+          "install_objects": [
+            "lm_head"
+          ],
+          "material_by_type": {},
+          "material_bytes_per_epoch": 0,
+          "mem_peak_bytes": 0,
+          "online_bytes_per_epoch": 0,
+          "plan": {
+            "argmax_k": 2,
+            "embedding": "wmask",
+            "linear": "generic",
+            "max_k": 2
+          },
+          "reason": "",
+          "rounds_per_epoch": 0
+        },
+        {
+          "c_install_s": 10.769028085935387,
+          "c_install_sigma": 0.16855071278638722,
+          "c_wait_s": 0.0,
+          "exec_s_by_epoch": [],
+          "exec_s_per_epoch": 6.317698191047934,
+          "exec_sigma": 0.03583184381067972,
+          "exec_sigma_by_epoch": [],
+          "feasible": true,
+          "install_cost_by_object": {
+            "obj0": 10.769028085935387
+          },
+          "install_objects": [
+            "obj0"
+          ],
+          "material_by_type": {},
+          "material_bytes_per_epoch": 0,
+          "mem_peak_bytes": 0,
+          "online_bytes_per_epoch": 0,
+          "plan": {
+            "argmax_k": 4,
+            "embedding": "wmask",
+            "linear": "generic",
+            "max_k": 4
+          },
+          "reason": "",
+          "rounds_per_epoch": 0
+        }
+      ],
+      "config": {
+        "dwell_prior": 5.0,
+        "env_change_rel": 0.25,
+        "epoch_corr": 0.0,
+        "hysteresis_s": 0.0,
+        "ignore_install": false,
+        "min_residency": 0,
+        "stationary_survival": true,
+        "use_uncertainty": false,
+        "z": 1.0
+      },
+      "decision": {
+        "chosen": {
+          "argmax_k": 2,
+          "embedding": "wmask",
+          "linear": "generic",
+          "max_k": 2
+        },
+        "lower_bound_gain": -7.891861367141754,
+        "q_best": 28.147959482985367,
+        "q_keep": 28.147959482985367,
+        "reason": "INCUMBENT_OPTIMAL",
+        "switched": false,
+        "u_diff": 0.0
+      },
+      "epoch": 0,
+      "id": 12,
+      "state": {
+        "contract_hash": "9c357c649b5264717a658c4edd57fcb149ef354c8759809088f8ee20896f4b88",
+        "incumbent": {
+          "argmax_k": 2,
+          "embedding": "wmask",
+          "linear": "generic",
+          "max_k": 2
+        },
+        "installed": {},
+        "kv_bucket": 32,
+        "model_version": "gpt2@test",
+        "remaining_epochs": 4,
+        "session_id": "vec12",
+        "stock": {}
+      },
+      "survival": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "telemetry": [
+        {
+          "bandwidth_bps": 30670414.392448474,
+          "cpu_load": 0.0,
+          "epoch": 0,
+          "rtt_s": 0.015710129044829872,
+          "seq": 0,
+          "t": 0.0
+        }
+      ]
+    },
+    {
+      "candidates": [
+        {
+          "c_install_s": 0.0,
+          "c_install_sigma": 0.0,
+          "c_wait_s": 0.0,
+          "exec_s_by_epoch": [],
+          "exec_s_per_epoch": 1.1774205122062278,
+          "exec_sigma": 0.026161229663900054,
+          "exec_sigma_by_epoch": [],
+          "feasible": true,
+          "install_cost_by_object": {},
+          "install_objects": [],
+          "material_by_type": {},
+          "material_bytes_per_epoch": 0,
+          "mem_peak_bytes": 0,
+          "online_bytes_per_epoch": 0,
+          "plan": {
+            "argmax_k": 2,
+            "embedding": "generic",
+            "linear": "wmask",
+            "max_k": 4
+          },
+          "reason": "",
+          "rounds_per_epoch": 0
+        },
+        {
+          "c_install_s": 6.035694805279372,
+          "c_install_sigma": 0.036305610941728815,
+          "c_wait_s": 0.0,
+          "exec_s_by_epoch": [],
+          "exec_s_per_epoch": 2.9817978469649473,
+          "exec_sigma": 0.3527732393576753,
+          "exec_sigma_by_epoch": [],
+          "feasible": true,
+          "install_cost_by_object": {
+            "obj0": 6.035694805279372
+          },
+          "install_objects": [
+            "obj0"
+          ],
+          "material_by_type": {},
+          "material_bytes_per_epoch": 0,
+          "mem_peak_bytes": 0,
+          "online_bytes_per_epoch": 0,
+          "plan": {
+            "argmax_k": 8,
+            "embedding": "wmask",
+            "linear": "generic",
+            "max_k": 2
+          },
+          "reason": "",
+          "rounds_per_epoch": 0
+        },
+        {
+          "c_install_s": 11.222668929091542,
+          "c_install_sigma": 0.06153064627075777,
+          "c_wait_s": 0.0,
+          "exec_s_by_epoch": [],
+          "exec_s_per_epoch": 4.659429172059761,
+          "exec_sigma": 0.3675381807413734,
+          "exec_sigma_by_epoch": [],
+          "feasible": true,
+          "install_cost_by_object": {
+            "obj2": 11.222668929091542
+          },
+          "install_objects": [
+            "obj2"
+          ],
+          "material_by_type": {},
+          "material_bytes_per_epoch": 0,
+          "mem_peak_bytes": 0,
+          "online_bytes_per_epoch": 0,
+          "plan": {
+            "argmax_k": 8,
+            "embedding": "generic",
+            "linear": "wmask",
+            "max_k": 4
+          },
+          "reason": "",
+          "rounds_per_epoch": 0
+        },
+        {
+          "c_install_s": 12.875062112583567,
+          "c_install_sigma": 0.08339683541232934,
+          "c_wait_s": 0.2710421396520253,
+          "exec_s_by_epoch": [],
+          "exec_s_per_epoch": 8.801272814865676,
+          "exec_sigma": 0.2618934827083097,
+          "exec_sigma_by_epoch": [],
+          "feasible": false,
+          "install_cost_by_object": {
+            "obj3": 12.875062112583567
+          },
+          "install_objects": [
+            "obj3"
+          ],
+          "material_by_type": {},
+          "material_bytes_per_epoch": 0,
+          "mem_peak_bytes": 0,
+          "online_bytes_per_epoch": 0,
+          "plan": {
+            "argmax_k": 4,
+            "embedding": "generic",
+            "linear": "generic",
+            "max_k": 4
+          },
+          "reason": "INSUFFICIENT_MATERIAL",
+          "rounds_per_epoch": 0
+        }
+      ],
+      "config": {
+        "dwell_prior": 5.0,
+        "env_change_rel": 0.25,
+        "epoch_corr": 0.0,
+        "hysteresis_s": 0.5,
+        "ignore_install": true,
+        "min_residency": 1,
+        "stationary_survival": true,
+        "use_uncertainty": true,
+        "z": 1.0
+      },
+      "decision": {
+        "chosen": {
+          "argmax_k": 2,
+          "embedding": "generic",
+          "linear": "wmask",
+          "max_k": 4
+        },
+        "lower_bound_gain": -6.0258310372713995,
+        "q_best": 3.5322615366186834,
+        "q_keep": 3.5322615366186834,
+        "reason": "INCUMBENT_OPTIMAL",
+        "switched": false,
+        "u_diff": 0.6126990329952422
+      },
+      "epoch": 2,
+      "id": 13,
+      "state": {
+        "contract_hash": "9c357c649b5264717a658c4edd57fcb149ef354c8759809088f8ee20896f4b88",
+        "incumbent": {
+          "argmax_k": 2,
+          "embedding": "generic",
+          "linear": "wmask",
+          "max_k": 4
+        },
+        "installed": {},
+        "kv_bucket": 32,
+        "model_version": "gpt2@test",
+        "remaining_epochs": 3,
+        "session_id": "vec13",
+        "stock": {}
+      },
+      "survival": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "telemetry": [
+        {
+          "bandwidth_bps": 71897392.32619272,
+          "cpu_load": 0.0,
+          "epoch": 0,
+          "rtt_s": 0.031623541180041036,
+          "seq": 0,
+          "t": 0.0
+        },
+        {
+          "bandwidth_bps": 71897392.32619272,
+          "cpu_load": 0.0,
+          "epoch": 1,
+          "rtt_s": 0.031623541180041036,
+          "seq": 1,
+          "t": 1.0
+        },
+        {
+          "bandwidth_bps": 71897392.32619272,
+          "cpu_load": 0.0,
+          "epoch": 2,
+          "rtt_s": 0.031623541180041036,
+          "seq": 2,
+          "t": 2.0
+        },
+        {
+          "bandwidth_bps": 71897392.32619272,
+          "cpu_load": 0.0,
+          "epoch": 3,
+          "rtt_s": 0.031623541180041036,
+          "seq": 3,
+          "t": 3.0
+        },
+        {
+          "bandwidth_bps": 71897392.32619272,
+          "cpu_load": 0.0,
+          "epoch": 4,
+          "rtt_s": 0.031623541180041036,
+          "seq": 4,
+          "t": 4.0
+        },
+        {
+          "bandwidth_bps": 71897392.32619272,
+          "cpu_load": 0.0,
+          "epoch": 5,
+          "rtt_s": 0.031623541180041036,
+          "seq": 5,
+          "t": 5.0
+        }
+      ]
+    },
+    {
+      "candidates": [
+        {
+          "c_install_s": 2.643031744424371,
+          "c_install_sigma": 0.0,
+          "c_wait_s": 0.0,
+          "exec_s_by_epoch": [],
+          "exec_s_per_epoch": 4.939438804970557,
+          "exec_sigma": 0.15798033191915012,
+          "exec_sigma_by_epoch": [],
+          "feasible": true,
+          "install_cost_by_object": {
+            "lm_head": 2.643031744424371
+          },
+          "install_objects": [
+            "lm_head"
+          ],
+          "material_by_type": {},
+          "material_bytes_per_epoch": 0,
+          "mem_peak_bytes": 0,
+          "online_bytes_per_epoch": 0,
+          "plan": {
+            "argmax_k": 4,
+            "embedding": "generic",
+            "linear": "generic",
+            "max_k": 4
+          },
+          "reason": "",
+          "rounds_per_epoch": 0
+        },
+        {
+          "c_install_s": 24.360714797311385,
+          "c_install_sigma": 0.09127852742024037,
+          "c_wait_s": 0.0,
+          "exec_s_by_epoch": [],
+          "exec_s_per_epoch": 2.459542131853521,
+          "exec_sigma": 0.4017965832314121,
+          "exec_sigma_by_epoch": [],
+          "feasible": false,
+          "install_cost_by_object": {
+            "obj1": 24.360714797311385
+          },
+          "install_objects": [
+            "obj1"
+          ],
+          "material_by_type": {},
+          "material_bytes_per_epoch": 0,
+          "mem_peak_bytes": 0,
+          "online_bytes_per_epoch": 0,
+          "plan": {
+            "argmax_k": 4,
+            "embedding": "wmask",
+            "linear": "wmask",
+            "max_k": 2
+          },
+          "reason": "INSUFFICIENT_MATERIAL",
+          "rounds_per_epoch": 0
+        }
+      ],
+      "config": {
+        "dwell_prior": 5.0,
+        "env_change_rel": 0.25,
+        "epoch_corr": 0.0,
+        "hysteresis_s": 0.5,
+        "ignore_install": false,
+        "min_residency": 1,
+        "stationary_survival": false,
+        "use_uncertainty": true,
+        "z": 1.0
+      },
+      "decision": {
+        "chosen": {
+          "argmax_k": 4,
+          "embedding": "generic",
+          "linear": "generic",
+          "max_k": 4
+        },
+        "lower_bound_gain": 0.0,
+        "q_best": 19.2474492312134,
+        "q_keep": 19.2474492312134,
+        "reason": "INCUMBENT_OPTIMAL",
+        "switched": false,
+        "u_diff": 0.0
+      },
+      "epoch": 4,
+      "id": 14,
+      "state": {
+        "contract_hash": "9c357c649b5264717a658c4edd57fcb149ef354c8759809088f8ee20896f4b88",
+        "incumbent": {
+          "argmax_k": 4,
+          "embedding": "generic",
+          "linear": "generic",
+          "max_k": 4
+        },
+        "installed": {},
+        "kv_bucket": 32,
+        "model_version": "gpt2@test",
+        "remaining_epochs": 5,
+        "session_id": "vec14",
+        "stock": {}
+      },
+      "survival": [
+        1.0,
+        0.8,
+        0.6400000000000001,
+        0.5120000000000001,
+        0.4096000000000001
+      ],
+      "telemetry": [
+        {
+          "bandwidth_bps": 93712344.63379556,
+          "cpu_load": 0.0,
+          "epoch": 0,
+          "rtt_s": 0.011194845387402709,
+          "seq": 0,
+          "t": 0.0
+        }
+      ]
+    },
+    {
+      "candidates": [
+        {
+          "c_install_s": 0.0,
+          "c_install_sigma": 0.0,
+          "c_wait_s": 0.0,
+          "exec_s_by_epoch": [],
+          "exec_s_per_epoch": 2.498783857041524,
+          "exec_sigma": 0.07815552103526474,
+          "exec_sigma_by_epoch": [],
+          "feasible": true,
+          "install_cost_by_object": {},
+          "install_objects": [],
+          "material_by_type": {},
+          "material_bytes_per_epoch": 0,
+          "mem_peak_bytes": 0,
+          "online_bytes_per_epoch": 0,
+          "plan": {
+            "argmax_k": 4,
+            "embedding": "generic",
+            "linear": "wmask",
+            "max_k": 2
+          },
+          "reason": "",
+          "rounds_per_epoch": 0
+        },
+        {
+          "c_install_s": 20.044850297867324,
+          "c_install_sigma": 0.11285661190435502,
+          "c_wait_s": 1.8415467155153717,
+          "exec_s_by_epoch": [],
+          "exec_s_per_epoch": 5.739407769340006,
+          "exec_sigma": 0.3768143183013108,
+          "exec_sigma_by_epoch": [],
+          "feasible": true,
+          "install_cost_by_object": {
+            "obj0": 20.044850297867324
+          },
+          "install_objects": [
+            "obj0"
+          ],
+          "material_by_type": {},
+          "material_bytes_per_epoch": 0,
+          "mem_peak_bytes": 0,
+          "online_bytes_per_epoch": 0,
+          "plan": {
+            "argmax_k": 8,
+            "embedding": "generic",
+            "linear": "generic",
+            "max_k": 2
+          },
+          "reason": "",
+          "rounds_per_epoch": 0
+        },
+        {
+          "c_install_s": 8.415404865969553,
+          "c_install_sigma": 0.022191777065752063,
+          "c_wait_s": 1.3876156206007184,
+          "exec_s_by_epoch": [],
+          "exec_s_per_epoch": 9.185633677722297,
+          "exec_sigma": 0.2713430999191587,
+          "exec_sigma_by_epoch": [],
+          "feasible": true,
+          "install_cost_by_object": {
+            "obj1": 8.415404865969553
+          },
+          "install_objects": [
+            "obj1"
+          ],
+          "material_by_type": {},
+          "material_bytes_per_epoch": 0,
+          "mem_peak_bytes": 0,
+          "online_bytes_per_epoch": 0,
+          "plan": {
+            "argmax_k": 2,
+            "embedding": "generic",
+            "linear": "wmask",
+            "max_k": 2
+          },
+          "reason": "",
+          "rounds_per_epoch": 0
+        },
+        {
+          "c_install_s": 14.690820451568458,
+          "c_install_sigma": 0.1055935950292944,
+          "c_wait_s": 0.0,
+          "exec_s_by_epoch": [],
+          "exec_s_per_epoch": 9.02035255784355,
+          "exec_sigma": 0.30127641708767205,
+          "exec_sigma_by_epoch": [],
+          "feasible": true,
+          "install_cost_by_object": {
+            "obj2": 14.690820451568458
+          },
+          "install_objects": [
+            "obj2"
+          ],
+          "material_by_type": {},
+          "material_bytes_per_epoch": 0,
+          "mem_peak_bytes": 0,
+          "online_bytes_per_epoch": 0,
+          "plan": {
+            "argmax_k": 4,
+            "embedding": "generic",
+            "linear": "generic",
+            "max_k": 2
+          },
+          "reason": "",
+          "rounds_per_epoch": 0
+        }
+      ],
+      "config": {
+        "dwell_prior": 5.0,
+        "env_change_rel": 0.25,
+        "epoch_corr": 0.0,
+        "hysteresis_s": 1.0,
+        "ignore_install": false,
+        "min_residency": 1,
+        "stationary_survival": false,
+        "use_uncertainty": true,
+        "z": 2.0
+      },
+      "decision": {
+        "chosen": {
+          "argmax_k": 4,
+          "embedding": "generic",
+          "linear": "wmask",
+          "max_k": 2
+        },
+        "lower_bound_gain": -31.03375430819181,
+        "q_best": 7.623242938864962,
+        "q_keep": 7.623242938864962,
+        "reason": "INCUMBENT_OPTIMAL",
+        "switched": false,
+        "u_diff": 0.4153088835613873
+      },
+      "epoch": 1,
+      "id": 15,
+      "state": {
+        "contract_hash": "9c357c649b5264717a658c4edd57fcb149ef354c8759809088f8ee20896f4b88",
+        "incumbent": {
+          "argmax_k": 4,
+          "embedding": "generic",
+          "linear": "wmask",
+          "max_k": 2
+        },
+        "installed": {},
+        "kv_bucket": 32,
+        "model_version": "gpt2@test",
+        "remaining_epochs": 5,
+        "session_id": "vec15",
+        "stock": {}
+      },
+      "survival": [
+        1.0,
+        0.75,
+        0.5625,
+        0.421875,
+        0.31640625
+      ],
+      "telemetry": [
+        {
+          "bandwidth_bps": 61072051.79138232,
+          "cpu_load": 0.0,
+          "epoch": 0,
+          "rtt_s": 0.04471696653433188,
+          "seq": 0,
+          "t": 0.0
+        },
+        {
+          "bandwidth_bps": 61072051.79138232,
+          "cpu_load": 0.0,
+          "epoch": 1,
+          "rtt_s": 0.04471696653433188,
+          "seq": 1,
+          "t": 1.0
+        },
+        {
+          "bandwidth_bps": 61072051.79138232,
+          "cpu_load": 0.0,
+          "epoch": 2,
+          "rtt_s": 0.04471696653433188,
+          "seq": 2,
+          "t": 2.0
+        },
+        {
+          "bandwidth_bps": 122144103.58276464,
+          "cpu_load": 0.0,
+          "epoch": 3,
+          "rtt_s": 0.04471696653433188,
+          "seq": 3,
+          "t": 3.0
+        }
+      ]
+    },
+    {
+      "candidates": [
+        {
+          "c_install_s": 0.0,
+          "c_install_sigma": 0.0,
+          "c_wait_s": 0.0,
+          "exec_s_by_epoch": [],
+          "exec_s_per_epoch": 3.149801623863176,
+          "exec_sigma": 0.3691442418826004,
+          "exec_sigma_by_epoch": [],
+          "feasible": true,
+          "install_cost_by_object": {},
+          "install_objects": [],
+          "material_by_type": {},
+          "material_bytes_per_epoch": 0,
+          "mem_peak_bytes": 0,
+          "online_bytes_per_epoch": 0,
+          "plan": {
+            "argmax_k": 8,
+            "embedding": "wmask",
+            "linear": "generic",
+            "max_k": 4
+          },
+          "reason": "",
+          "rounds_per_epoch": 0
+        },
+        {
+          "c_install_s": 10.982967951551391,
+          "c_install_sigma": 0.05644582119817063,
+          "c_wait_s": 0.0,
+          "exec_s_by_epoch": [],
+          "exec_s_per_epoch": 8.919291704361592,
+          "exec_sigma": 0.04232266632308396,
+          "exec_sigma_by_epoch": [],
+          "feasible": true,
+          "install_cost_by_object": {
+            "obj0": 10.982967951551391
+          },
+          "install_objects": [
+            "obj0"
+          ],
+          "material_by_type": {},
+          "material_bytes_per_epoch": 0,
+          "mem_peak_bytes": 0,
+          "online_bytes_per_epoch": 0,
+          "plan": {
+            "argmax_k": 8,
+            "embedding": "generic",
+            "linear": "wmask",
+            "max_k": 2
+          },
+          "reason": "",
+          "rounds_per_epoch": 0
+        },
+        {
+          "c_install_s": 21.974672758798082,
+          "c_install_sigma": 0.0786626985585828,
+          "c_wait_s": 0.0,
+          "exec_s_by_epoch": [],
+          "exec_s_per_epoch": 5.870710233742597,
+          "exec_sigma": 0.2750302274411014,
+          "exec_sigma_by_epoch": [],
+          "feasible": true,
+          "install_cost_by_object": {
+            "obj1": 21.974672758798082
+          },
+          "install_objects": [
+            "obj1"
+          ],
+          "material_by_type": {},
+          "material_bytes_per_epoch": 0,
+          "mem_peak_bytes": 0,
+          "online_bytes_per_epoch": 0,
+          "plan": {
+            "argmax_k": 4,
+            "embedding": "wmask",
+            "linear": "wmask",
+            "max_k": 4
+          },
+          "reason": "",
+          "rounds_per_epoch": 0
+        },
+        {
+          "c_install_s": 26.806247211233437,
+          "c_install_sigma": 0.058321352468255386,
+          "c_wait_s": 0.0,
+          "exec_s_by_epoch": [],
+          "exec_s_per_epoch": 4.8226888918155275,
+          "exec_sigma": 0.01521204178504304,
+          "exec_sigma_by_epoch": [],
+          "feasible": true,
+          "install_cost_by_object": {
+            "obj2": 26.806247211233437
+          },
+          "install_objects": [
+            "obj2"
+          ],
+          "material_by_type": {},
+          "material_bytes_per_epoch": 0,
+          "mem_peak_bytes": 0,
+          "online_bytes_per_epoch": 0,
+          "plan": {
+            "argmax_k": 4,
+            "embedding": "generic",
+            "linear": "wmask",
+            "max_k": 2
+          },
+          "reason": "",
+          "rounds_per_epoch": 0
+        },
+        {
+          "c_install_s": 25.00702074174204,
+          "c_install_sigma": 0.11267072271634689,
+          "c_wait_s": 0.0,
+          "exec_s_by_epoch": [],
+          "exec_s_per_epoch": 9.421899026146887,
+          "exec_sigma": 0.16556908412147664,
+          "exec_sigma_by_epoch": [],
+          "feasible": true,
+          "install_cost_by_object": {
+            "obj3": 25.00702074174204
+          },
+          "install_objects": [
+            "obj3"
+          ],
+          "material_by_type": {},
+          "material_bytes_per_epoch": 0,
+          "mem_peak_bytes": 0,
+          "online_bytes_per_epoch": 0,
+          "plan": {
+            "argmax_k": 2,
+            "embedding": "wmask",
+            "linear": "generic",
+            "max_k": 4
+          },
+          "reason": "",
+          "rounds_per_epoch": 0
+        }
+      ],
+      "config": {
+        "dwell_prior": 5.0,
+        "env_change_rel": 0.25,
+        "epoch_corr": 0.0,
+        "hysteresis_s": 1.0,
+        "ignore_install": false,
+        "min_residency": 1,
+        "stationary_survival": false,
+        "use_uncertainty": true,
+        "z": 2.0
+      },
+      "decision": {
+        "chosen": {
+          "argmax_k": 8,
+          "embedding": "wmask",
+          "linear": "generic",
+          "max_k": 4
+        },
+        "lower_bound_gain": -35.552003296520326,
+        "q_best": 13.889483204349048,
+        "q_keep": 13.889483204349048,
+        "reason": "INCUMBENT_OPTIMAL",
+        "switched": false,
+        "u_diff": 0.684464868467801
+      },
+      "epoch": 4,
+      "id": 16,
+      "state": {
+        "contract_hash": "9c357c649b5264717a658c4edd57fcb149ef354c8759809088f8ee20896f4b88",
+        "incumbent": {
+          "argmax_k": 8,
+          "embedding": "wmask",
+          "linear": "generic",
+          "max_k": 4
+        },
+        "installed": {},
+        "kv_bucket": 32,
+        "model_version": "gpt2@test",
+        "remaining_epochs": 6,
+        "session_id": "vec16",
+        "stock": {}
+      },
+      "survival": [
+        1.0,
+        0.875,
+        0.765625,
+        0.669921875,
+        0.586181640625,
+        0.512908935546875
+      ],
+      "telemetry": [
+        {
+          "bandwidth_bps": 61336752.32802814,
+          "cpu_load": 0.0,
+          "epoch": 0,
+          "rtt_s": 0.030796800405791372,
+          "seq": 0,
+          "t": 0.0
+        },
+        {
+          "bandwidth_bps": 61336752.32802814,
+          "cpu_load": 0.0,
+          "epoch": 1,
+          "rtt_s": 0.030796800405791372,
+          "seq": 1,
+          "t": 1.0
+        },
+        {
+          "bandwidth_bps": 61336752.32802814,
+          "cpu_load": 0.0,
+          "epoch": 2,
+          "rtt_s": 0.030796800405791372,
+          "seq": 2,
+          "t": 2.0
+        },
+        {
+          "bandwidth_bps": 61336752.32802814,
+          "cpu_load": 0.0,
+          "epoch": 3,
+          "rtt_s": 0.030796800405791372,
+          "seq": 3,
+          "t": 3.0
+        }
+      ]
+    },
+    {
+      "candidates": [
+        {
+          "c_install_s": 0.3265684171748029,
+          "c_install_sigma": 0.0,
+          "c_wait_s": 0.0,
+          "exec_s_by_epoch": [],
+          "exec_s_per_epoch": 4.244083855585176,
+          "exec_sigma": 0.15688490179932058,
+          "exec_sigma_by_epoch": [],
+          "feasible": true,
+          "install_cost_by_object": {
+            "lm_head": 0.3265684171748029
+          },
+          "install_objects": [
+            "lm_head"
+          ],
+          "material_by_type": {},
+          "material_bytes_per_epoch": 0,
+          "mem_peak_bytes": 0,
+          "online_bytes_per_epoch": 0,
+          "plan": {
+            "argmax_k": 8,
+            "embedding": "wmask",
+            "linear": "generic",
+            "max_k": 4
+          },
+          "reason": "",
+          "rounds_per_epoch": 0
+        },
+        {
+          "c_install_s": 13.690587373892281,
+          "c_install_sigma": 0.07779685758131989,
+          "c_wait_s": 0.5695158666852163,
+          "exec_s_by_epoch": [],
+          "exec_s_per_epoch": 9.249074662754186,
+          "exec_sigma": 0.18991576309302854,
+          "exec_sigma_by_epoch": [],
+          "feasible": true,
+          "install_cost_by_object": {
+            "obj0": 13.690587373892281
+          },
+          "install_objects": [
+            "obj0"
+          ],
+          "material_by_type": {},
+          "material_bytes_per_epoch": 0,
+          "mem_peak_bytes": 0,
+          "online_bytes_per_epoch": 0,
+          "plan": {
+            "argmax_k": 8,
+            "embedding": "generic",
+            "linear": "generic",
+            "max_k": 2
+          },
+          "reason": "",
+          "rounds_per_epoch": 0
+        },
+        {
+          "c_install_s": 11.824856101361508,
+          "c_install_sigma": 0.08661911471419233,
+          "c_wait_s": 0.0,
+          "exec_s_by_epoch": [],
+          "exec_s_per_epoch": 7.170698326502702,
+          "exec_sigma": 0.1480627636986538,
+          "exec_sigma_by_epoch": [],
+          "feasible": true,
+          "install_cost_by_object": {
+            "obj1": 11.824856101361508
+          },
+          "install_objects": [
+            "obj1"
+          ],
+          "material_by_type": {},
+          "material_bytes_per_epoch": 0,
+          "mem_peak_bytes": 0,
+          "online_bytes_per_epoch": 0,
+          "plan": {
+            "argmax_k": 4,
+            "embedding": "wmask",
+            "linear": "generic",
+            "max_k": 4
+          },
+          "reason": "",
+          "rounds_per_epoch": 0
+        },
+        {
+          "c_install_s": 29.684339724230036,
+          "c_install_sigma": 0.0613075074036481,
+          "c_wait_s": 1.6083582259470641,
+          "exec_s_by_epoch": [],
+          "exec_s_per_epoch": 3.280086016729221,
+          "exec_sigma": 0.04379942234918327,
+          "exec_sigma_by_epoch": [],
+          "feasible": true,
+          "install_cost_by_object": {
+            "obj2": 29.684339724230036
+          },
+          "install_objects": [
+            "obj2"
+          ],
+          "material_by_type": {},
+          "material_bytes_per_epoch": 0,
+          "mem_peak_bytes": 0,
+          "online_bytes_per_epoch": 0,
+          "plan": {
+            "argmax_k": 8,
+            "embedding": "generic",
+            "linear": "wmask",
+            "max_k": 2
+          },
+          "reason": "",
+          "rounds_per_epoch": 0
+        }
+      ],
+      "config": {
+        "dwell_prior": 5.0,
+        "env_change_rel": 0.25,
+        "epoch_corr": 0.0,
+        "hysteresis_s": 0.5,
+        "ignore_install": true,
+        "min_residency": 1,
+        "stationary_survival": true,
+        "use_uncertainty": true,
+        "z": 1.0
+      },
+      "decision": {
+        "chosen": {
+          "argmax_k": 8,
+          "embedding": "generic",
+          "linear": "wmask",
+          "max_k": 2
+        },
+        "lower_bound_gain": 6.57896973111392,
+        "q_best": 31.129132376510054,
+        "q_keep": 38.19675470026658,
+        "reason": "LOWER_BOUND_GAIN_EXCEEDS_HYSTERESIS",
+        "switched": true,
+        "u_diff": 0.48865259264260674
+      },
+      "epoch": 1,
+      "id": 17,
+      "state": {
+        "contract_hash": "9c357c649b5264717a658c4edd57fcb149ef354c8759809088f8ee20896f4b88",
+        "incumbent": {
+          "argmax_k": 8,
+          "embedding": "wmask",
+          "linear": "generic",
+          "max_k": 4
+        },
+        "installed": {},
+        "kv_bucket": 32,
+        "model_version": "gpt2@test",
+        "remaining_epochs": 9,
+        "session_id": "vec17",
+        "stock": {}
+      },
+      "survival": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "telemetry": [
+        {
+          "bandwidth_bps": 81483572.35585144,
+          "cpu_load": 0.0,
+          "epoch": 0,
+          "rtt_s": 0.018123000541652407,
+          "seq": 0,
+          "t": 0.0
+        },
+        {
+          "bandwidth_bps": 81483572.35585144,
+          "cpu_load": 0.0,
+          "epoch": 1,
+          "rtt_s": 0.018123000541652407,
+          "seq": 1,
+          "t": 1.0
+        },
+        {
+          "bandwidth_bps": 40741786.17792572,
+          "cpu_load": 0.0,
+          "epoch": 2,
+          "rtt_s": 0.018123000541652407,
+          "seq": 2,
+          "t": 2.0
+        },
+        {
+          "bandwidth_bps": 40741786.17792572,
+          "cpu_load": 0.0,
+          "epoch": 3,
+          "rtt_s": 0.018123000541652407,
+          "seq": 3,
+          "t": 3.0
+        },
+        {
+          "bandwidth_bps": 40741786.17792572,
+          "cpu_load": 0.0,
+          "epoch": 4,
+          "rtt_s": 0.018123000541652407,
+          "seq": 4,
+          "t": 4.0
+        },
+        {
+          "bandwidth_bps": 40741786.17792572,
+          "cpu_load": 0.0,
+          "epoch": 5,
+          "rtt_s": 0.018123000541652407,
+          "seq": 5,
+          "t": 5.0
+        }
+      ]
+    },
+    {
+      "candidates": [
+        {
+          "c_install_s": 0.0,
+          "c_install_sigma": 0.0,
+          "c_wait_s": 0.0,
+          "exec_s_by_epoch": [],
+          "exec_s_per_epoch": 6.380841749907317,
+          "exec_sigma": 0.48464231955126086,
+          "exec_sigma_by_epoch": [],
+          "feasible": true,
+          "install_cost_by_object": {},
+          "install_objects": [],
+          "material_by_type": {},
+          "material_bytes_per_epoch": 0,
+          "mem_peak_bytes": 0,
+          "online_bytes_per_epoch": 0,
+          "plan": {
+            "argmax_k": 8,
+            "embedding": "generic",
+            "linear": "generic",
+            "max_k": 4
+          },
+          "reason": "",
+          "rounds_per_epoch": 0
+        },
+        {
+          "c_install_s": 19.210045639713776,
+          "c_install_sigma": 0.19634586139157953,
+          "c_wait_s": 0.0,
+          "exec_s_by_epoch": [],
+          "exec_s_per_epoch": 8.092250203653636,
+          "exec_sigma": 0.13287268454806656,
+          "exec_sigma_by_epoch": [],
+          "feasible": true,
+          "install_cost_by_object": {
+            "obj0": 19.210045639713776
+          },
+          "install_objects": [
+            "obj0"
+          ],
+          "material_by_type": {},
+          "material_bytes_per_epoch": 0,
+          "mem_peak_bytes": 0,
+          "online_bytes_per_epoch": 0,
+          "plan": {
+            "argmax_k": 8,
+            "embedding": "generic",
+            "linear": "wmask",
+            "max_k": 2
+          },
+          "reason": "",
+          "rounds_per_epoch": 0
+        },
+        {
+          "c_install_s": 17.002895133009325,
+          "c_install_sigma": 0.04913490476369367,
+          "c_wait_s": 0.0,
+          "exec_s_by_epoch": [],
+          "exec_s_per_epoch": 9.262879117337086,
+          "exec_sigma": 0.06636351075268332,
+          "exec_sigma_by_epoch": [],
+          "feasible": true,
+          "install_cost_by_object": {
+            "obj1": 17.002895133009325
+          },
+          "install_objects": [
+            "obj1"
+          ],
+          "material_by_type": {},
+          "material_bytes_per_epoch": 0,
+          "mem_peak_bytes": 0,
+          "online_bytes_per_epoch": 0,
+          "plan": {
+            "argmax_k": 2,
+            "embedding": "wmask",
+            "linear": "generic",
+            "max_k": 4
+          },
+          "reason": "",
+          "rounds_per_epoch": 0
+        },
+        {
+          "c_install_s": 7.072952409982333,
+          "c_install_sigma": 0.1591786331996756,
+          "c_wait_s": 0.0,
+          "exec_s_by_epoch": [],
+          "exec_s_per_epoch": 6.793076311127897,
+          "exec_sigma": 0.34985705027260583,
+          "exec_sigma_by_epoch": [],
+          "feasible": true,
+          "install_cost_by_object": {
+            "obj2": 7.072952409982333
+          },
+          "install_objects": [
+            "obj2"
+          ],
+          "material_by_type": {},
+          "material_bytes_per_epoch": 0,
+          "mem_peak_bytes": 0,
+          "online_bytes_per_epoch": 0,
+          "plan": {
+            "argmax_k": 2,
+            "embedding": "generic",
+            "linear": "wmask",
+            "max_k": 2
+          },
+          "reason": "",
+          "rounds_per_epoch": 0
+        }
+      ],
+      "config": {
+        "dwell_prior": 5.0,
+        "env_change_rel": 0.25,
+        "epoch_corr": 0.0,
+        "hysteresis_s": 0.5,
+        "ignore_install": true,
+        "min_residency": 1,
+        "stationary_survival": true,
+        "use_uncertainty": true,
+        "z": 1.0
+      },
+      "decision": {
+        "chosen": {
+          "argmax_k": 8,
+          "embedding": "generic",
+          "linear": "generic",
+          "max_k": 4
+        },
+        "lower_bound_gain": -5.503293473866192,
+        "q_best": 57.427575749165854,
+        "q_keep": 57.427575749165854,
+        "reason": "INCUMBENT_OPTIMAL",
+        "switched": false,
+        "u_diff": 1.7931824228809727
+      },
+      "epoch": 3,
+      "id": 18,
+      "state": {
+        "contract_hash": "9c357c649b5264717a658c4edd57fcb149ef354c8759809088f8ee20896f4b88",
+        "incumbent": {
+          "argmax_k": 8,
+          "embedding": "generic",
+          "linear": "generic",
+          "max_k": 4
+        },
+        "installed": {},
+        "kv_bucket": 32,
+        "model_version": "gpt2@test",
+        "remaining_epochs": 9,
+        "session_id": "vec18",
+        "stock": {}
+      },
+      "survival": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "telemetry": [
+        {
+          "bandwidth_bps": 60386291.28602368,
+          "cpu_load": 0.0,
+          "epoch": 0,
+          "rtt_s": 0.016462212150030867,
+          "seq": 0,
+          "t": 0.0
+        },
+        {
+          "bandwidth_bps": 120772582.57204735,
+          "cpu_load": 0.0,
+          "epoch": 1,
+          "rtt_s": 0.016462212150030867,
+          "seq": 1,
+          "t": 1.0
+        }
+      ]
+    },
+    {
+      "candidates": [
+        {
+          "c_install_s": 0.0,
+          "c_install_sigma": 0.0,
+          "c_wait_s": 0.0,
+          "exec_s_by_epoch": [],
+          "exec_s_per_epoch": 1.1156057558630912,
+          "exec_sigma": 0.25466050028121967,
+          "exec_sigma_by_epoch": [],
+          "feasible": true,
+          "install_cost_by_object": {},
+          "install_objects": [],
+          "material_by_type": {},
+          "material_bytes_per_epoch": 0,
+          "mem_peak_bytes": 0,
+          "online_bytes_per_epoch": 0,
+          "plan": {
+            "argmax_k": 8,
+            "embedding": "wmask",
+            "linear": "generic",
+            "max_k": 2
+          },
+          "reason": "",
+          "rounds_per_epoch": 0
+        },
+        {
+          "c_install_s": 2.640432040316678,
+          "c_install_sigma": 0.07342240265561024,
+          "c_wait_s": 0.0,
+          "exec_s_by_epoch": [],
+          "exec_s_per_epoch": 7.441796296126501,
+          "exec_sigma": 0.27224117777336415,
+          "exec_sigma_by_epoch": [],
+          "feasible": false,
+          "install_cost_by_object": {
+            "obj0": 2.640432040316678
+          },
+          "install_objects": [
+            "obj0"
+          ],
+          "material_by_type": {},
+          "material_bytes_per_epoch": 0,
+          "mem_peak_bytes": 0,
+          "online_bytes_per_epoch": 0,
+          "plan": {
+            "argmax_k": 2,
+            "embedding": "generic",
+            "linear": "generic",
+            "max_k": 4
+          },
+          "reason": "INSUFFICIENT_MATERIAL",
+          "rounds_per_epoch": 0
+        },
+        {
+          "c_install_s": 28.10217937729,
+          "c_install_sigma": 0.04392863892405283,
+          "c_wait_s": 0.0,
+          "exec_s_by_epoch": [],
+          "exec_s_per_epoch": 5.7721926093218165,
+          "exec_sigma": 0.031125369514328816,
+          "exec_sigma_by_epoch": [],
+          "feasible": true,
+          "install_cost_by_object": {
+            "obj2": 28.10217937729
+          },
+          "install_objects": [
+            "obj2"
+          ],
+          "material_by_type": {},
+          "material_bytes_per_epoch": 0,
+          "mem_peak_bytes": 0,
+          "online_bytes_per_epoch": 0,
+          "plan": {
+            "argmax_k": 4,
+            "embedding": "generic",
+            "linear": "wmask",
+            "max_k": 2
+          },
+          "reason": "",
+          "rounds_per_epoch": 0
+        }
+      ],
+      "config": {
+        "dwell_prior": 5.0,
+        "env_change_rel": 0.25,
+        "epoch_corr": 0.0,
+        "hysteresis_s": 0.5,
+        "ignore_install": false,
+        "min_residency": 1,
+        "stationary_survival": false,
+        "use_uncertainty": true,
+        "z": 1.0
+      },
+      "decision": {
+        "chosen": {
+          "argmax_k": 8,
+          "embedding": "wmask",
+          "linear": "generic",
+          "max_k": 2
+        },
+        "lower_bound_gain": -42.97673600648604,
+        "q_best": 3.465608621222844,
+        "q_keep": 3.465608621222844,
+        "reason": "INCUMBENT_OPTIMAL",
+        "switched": false,
+        "u_diff": 0.4089558020163842
+      },
+      "epoch": 3,
+      "id": 19,
+      "state": {
+        "contract_hash": "9c357c649b5264717a658c4edd57fcb149ef354c8759809088f8ee20896f4b88",
+        "incumbent": {
+          "argmax_k": 8,
+          "embedding": "wmask",
+          "linear": "generic",
+          "max_k": 2
+        },
+        "installed": {},
+        "kv_bucket": 32,
+        "model_version": "gpt2@test",
+        "remaining_epochs": 4,
+        "session_id": "vec19",
+        "stock": {}
+      },
+      "survival": [
+        1.0,
+        0.8333333333333334,
+        0.6944444444444445,
+        0.5787037037037038
+      ],
+      "telemetry": [
+        {
+          "bandwidth_bps": 117888793.11876203,
+          "cpu_load": 0.0,
+          "epoch": 0,
+          "rtt_s": 0.044399426637924004,
+          "seq": 0,
+          "t": 0.0
+        },
+        {
+          "bandwidth_bps": 117888793.11876203,
+          "cpu_load": 0.0,
+          "epoch": 1,
+          "rtt_s": 0.044399426637924004,
+          "seq": 1,
+          "t": 1.0
+        }
+      ]
+    },
+    {
+      "candidates": [
+        {
+          "c_install_s": 4.473867625109092,
+          "c_install_sigma": 0.0,
+          "c_wait_s": 0.0,
+          "exec_s_by_epoch": [
+            13.367933036650168,
+            2.7915459419593507,
+            2.7915459419593507,
+            2.7915459419593507,
+            3.289167249450309,
+            3.289167249450309
+          ],
+          "exec_s_per_epoch": 13.367933036650168,
+          "exec_sigma": 0.2757226384395297,
+          "exec_sigma_by_epoch": [
+            0.2757226384395297,
+            0.005133649701336618,
+            0.005133649701336618,
+            0.005133649701336618,
+            0.005133649701336618,
+            0.005133649701336618
+          ],
+          "feasible": true,
+          "install_cost_by_object": {
+            "lm_head": 4.473867625109092
+          },
+          "install_objects": [
+            "lm_head"
+          ],
+          "material_by_type": {},
+          "material_bytes_per_epoch": 0,
+          "mem_peak_bytes": 0,
+          "online_bytes_per_epoch": 0,
+          "plan": {
+            "argmax_k": 2,
+            "embedding": "wmask",
+            "linear": "generic",
+            "max_k": 2
+          },
+          "reason": "",
+          "rounds_per_epoch": 0
+        },
+        {
+          "c_install_s": 2.5714145309058267,
+          "c_install_sigma": 0.013980005836214749,
+          "c_wait_s": 0.0,
+          "exec_s_by_epoch": [
+            12.554527751019855,
+            3.183213548276204,
+            3.183213548276204,
+            3.183213548276204,
+            3.802240036962856,
+            3.802240036962856
+          ],
+          "exec_s_per_epoch": 12.554527751019855,
+          "exec_sigma": 0.4368198093532964,
+          "exec_sigma_by_epoch": [
+            0.4368198093532964,
+            0.28090867551432,
+            0.28090867551432,
+            0.28090867551432,
+            0.28090867551432,
+            0.28090867551432
+          ],
+          "feasible": true,
+          "install_cost_by_object": {
+            "obj0": 2.5714145309058267
+          },
+          "install_objects": [
+            "obj0"
+          ],
+          "material_by_type": {},
+          "material_bytes_per_epoch": 0,
+          "mem_peak_bytes": 0,
+          "online_bytes_per_epoch": 0,
+          "plan": {
+            "argmax_k": 4,
+            "embedding": "generic",
+            "linear": "wmask",
+            "max_k": 4
+          },
+          "reason": "",
+          "rounds_per_epoch": 0
+        },
+        {
+          "c_install_s": 10.420288314118828,
+          "c_install_sigma": 0.023528536580438054,
+          "c_wait_s": 0.3337792042643435,
+          "exec_s_by_epoch": [
+            12.072079598796533,
+            5.940710911238347,
+            5.940710911238347,
+            5.940710911238347,
+            6.044687638442587,
+            6.044687638442587
+          ],
+          "exec_s_per_epoch": 12.072079598796533,
+          "exec_sigma": 0.07624929728004677,
+          "exec_sigma_by_epoch": [
+            0.07624929728004677,
+            0.09162244101601955,
+            0.09162244101601955,
+            0.09162244101601955,
+            0.09162244101601955,
+            0.09162244101601955
+          ],
+          "feasible": true,
+          "install_cost_by_object": {
+            "obj1": 10.420288314118828
+          },
+          "install_objects": [
+            "obj1"
+          ],
+          "material_by_type": {},
+          "material_bytes_per_epoch": 0,
+          "mem_peak_bytes": 0,
+          "online_bytes_per_epoch": 0,
+          "plan": {
+            "argmax_k": 8,
+            "embedding": "wmask",
+            "linear": "generic",
+            "max_k": 2
+          },
+          "reason": "",
+          "rounds_per_epoch": 0
+        },
+        {
+          "c_install_s": 13.05079851697344,
+          "c_install_sigma": 0.12276420875941454,
+          "c_wait_s": 0.0,
+          "exec_s_by_epoch": [
+            4.386844414681418,
+            9.062963902670969,
+            9.062963902670969,
+            9.062963902670969,
+            10.686987152384736,
+            10.686987152384736
+          ],
+          "exec_s_per_epoch": 4.386844414681418,
+          "exec_sigma": 0.10279814156553808,
+          "exec_sigma_by_epoch": [
+            0.10279814156553808,
+            0.2298129782745843,
+            0.2298129782745843,
+            0.2298129782745843,
+            0.2298129782745843,
+            0.2298129782745843
+          ],
+          "feasible": true,
+          "install_cost_by_object": {
+            "obj2": 13.05079851697344
+          },
+          "install_objects": [
+            "obj2"
+          ],
+          "material_by_type": {},
+          "material_bytes_per_epoch": 0,
+          "mem_peak_bytes": 0,
+          "online_bytes_per_epoch": 0,
+          "plan": {
+            "argmax_k": 2,
+            "embedding": "generic",
+            "linear": "generic",
+            "max_k": 4
+          },
+          "reason": "",
+          "rounds_per_epoch": 0
+        }
+      ],
+      "config": {
+        "dwell_prior": 5.0,
+        "env_change_rel": 0.25,
+        "epoch_corr": 0.0,
+        "hysteresis_s": 0.5,
+        "ignore_install": false,
+        "min_residency": 1,
+        "stationary_survival": false,
+        "use_uncertainty": true,
+        "z": 1.0
+      },
+      "decision": {
+        "chosen": {
+          "argmax_k": 4,
+          "embedding": "generic",
+          "linear": "wmask",
+          "max_k": 4
+        },
+        "lower_bound_gain": 0.6689723571869665,
+        "q_best": 26.009203280812287,
+        "q_keep": 27.340618547141368,
+        "reason": "LOWER_BOUND_GAIN_EXCEEDS_HYSTERESIS",
+        "switched": true,
+        "u_diff": 0.6624429091421148
+      },
+      "epoch": 0,
+      "id": 20,
+      "single_shape": {
+        "chosen": {
+          "argmax_k": 2,
+          "embedding": "generic",
+          "linear": "generic",
+          "max_k": 4
+        },
+        "differs": true,
+        "q_keep": 60.94020129982234,
+        "switched": true
+      },
+      "state": {
+        "contract_hash": "9c357c649b5264717a658c4edd57fcb149ef354c8759809088f8ee20896f4b88",
+        "incumbent": {
+          "argmax_k": 2,
+          "embedding": "wmask",
+          "linear": "generic",
+          "max_k": 2
+        },
+        "installed": {},
+        "kv_bucket": 32,
+        "model_version": "gpt2@test",
+        "remaining_epochs": 6,
+        "session_id": "vec20",
+        "stock": {}
+      },
+      "survival": [
+        1.0,
+        0.8571428571428572,
+        0.7346938775510206,
+        0.6297376093294462,
+        0.5397750937109539,
+        0.4626643660379605
+      ],
+      "telemetry": [
+        {
+          "bandwidth_bps": 885360840.2467755,
+          "cpu_load": 0.0,
+          "epoch": 0,
+          "rtt_s": 0.009623957475668103,
+          "seq": 0,
+          "t": 0.0
+        },
+        {
+          "bandwidth_bps": 885360840.2467755,
+          "cpu_load": 0.0,
+          "epoch": 1,
+          "rtt_s": 0.009623957475668103,
+          "seq": 1,
+          "t": 1.0
+        },
+        {
+          "bandwidth_bps": 885360840.2467755,
+          "cpu_load": 0.0,
+          "epoch": 2,
+          "rtt_s": 0.009623957475668103,
+          "seq": 2,
+          "t": 2.0
+        }
+      ]
+    },
+    {
+      "candidates": [
+        {
+          "c_install_s": 0.0,
+          "c_install_sigma": 0.0,
+          "c_wait_s": 0.0,
+          "exec_s_by_epoch": [
+            12.193755614467719,
+            3.486624062640759,
+            3.486624062640759,
+            3.486624062640759,
+            3.486624062640759,
+            3.486624062640759,
+            4.102065140323985,
+            4.102065140323985
+          ],
+          "exec_s_per_epoch": 12.193755614467719,
+          "exec_sigma": 0.07919804267693657,
+          "exec_sigma_by_epoch": [
+            0.07919804267693657,
+            0.10266114931833109,
+            0.10266114931833109,
+            0.10266114931833109,
+            0.10266114931833109,
+            0.10266114931833109,
+            0.10266114931833109,
+            0.10266114931833109
+          ],
+          "feasible": true,
+          "install_cost_by_object": {},
+          "install_objects": [],
+          "material_by_type": {},
+          "material_bytes_per_epoch": 0,
+          "mem_peak_bytes": 0,
+          "online_bytes_per_epoch": 0,
+          "plan": {
+            "argmax_k": 2,
+            "embedding": "wmask",
+            "linear": "generic",
+            "max_k": 2
+          },
+          "reason": "",
+          "rounds_per_epoch": 0
+        },
+        {
+          "c_install_s": 2.2039303399725796,
+          "c_install_sigma": 0.08170062105928794,
+          "c_wait_s": 0.0,
+          "exec_s_by_epoch": [
+            16.663095473297872,
+            4.338097743587661,
+            4.338097743587661,
+            4.338097743587661,
+            4.338097743587661,
+            4.338097743587661,
+            4.661001865716997,
+            4.661001865716997
+          ],
+          "exec_s_per_epoch": 16.663095473297872,
+          "exec_sigma": 0.12872712880465945,
+          "exec_sigma_by_epoch": [
+            0.12872712880465945,
+            0.2584427001160558,
+            0.2584427001160558,
+            0.2584427001160558,
+            0.2584427001160558,
+            0.2584427001160558,
+            0.2584427001160558,
+            0.2584427001160558
+          ],
+          "feasible": true,
+          "install_cost_by_object": {
+            "obj0": 2.2039303399725796
+          },
+          "install_objects": [
+            "obj0"
+          ],
+          "material_by_type": {},
+          "material_bytes_per_epoch": 0,
+          "mem_peak_bytes": 0,
+          "online_bytes_per_epoch": 0,
+          "plan": {
+            "argmax_k": 8,
+            "embedding": "wmask",
+            "linear": "wmask",
+            "max_k": 2
+          },
+          "reason": "",
+          "rounds_per_epoch": 0
+        },
+        {
+          "c_install_s": 10.013212178284395,
+          "c_install_sigma": 0.07130834245531507,
+          "c_wait_s": 0.0,
+          "exec_s_by_epoch": [
+            12.57700655435366,
+            8.617637370761946,
+            8.617637370761946,
+            8.617637370761946,
+            8.617637370761946,
+            8.617637370761946,
+            8.693284411091064,
+            8.693284411091064
+          ],
+          "exec_s_per_epoch": 12.57700655435366,
+          "exec_sigma": 0.11846488905541391,
+          "exec_sigma_by_epoch": [
+            0.11846488905541391,
+            0.11562397563105564,
+            0.11562397563105564,
+            0.11562397563105564,
+            0.11562397563105564,
+            0.11562397563105564,
+            0.11562397563105564,
+            0.11562397563105564
+          ],
+          "feasible": true,
+          "install_cost_by_object": {
+            "obj1": 10.013212178284395
+          },
+          "install_objects": [
+            "obj1"
+          ],
+          "material_by_type": {},
+          "material_bytes_per_epoch": 0,
+          "mem_peak_bytes": 0,
+          "online_bytes_per_epoch": 0,
+          "plan": {
+            "argmax_k": 8,
+            "embedding": "generic",
+            "linear": "generic",
+            "max_k": 4
+          },
+          "reason": "",
+          "rounds_per_epoch": 0
+        },
+        {
+          "c_install_s": 4.528781902025187,
+          "c_install_sigma": 0.12604047812111732,
+          "c_wait_s": 0.0,
+          "exec_s_by_epoch": [
+            15.094577962494734,
+            3.1926435146232355,
+            3.1926435146232355,
+            3.1926435146232355,
+            3.1926435146232355,
+            3.1926435146232355,
+            3.438464792052213,
+            3.438464792052213
+          ],
+          "exec_s_per_epoch": 15.094577962494734,
+          "exec_sigma": 0.3920626531188403,
+          "exec_sigma_by_epoch": [
+            0.3920626531188403,
+            0.16029981901744597,
+            0.16029981901744597,
+            0.16029981901744597,
+            0.16029981901744597,
+            0.16029981901744597,
+            0.16029981901744597,
+            0.16029981901744597
+          ],
+          "feasible": true,
+          "install_cost_by_object": {
+            "obj2": 4.528781902025187
+          },
+          "install_objects": [
+            "obj2"
+          ],
+          "material_by_type": {},
+          "material_bytes_per_epoch": 0,
+          "mem_peak_bytes": 0,
+          "online_bytes_per_epoch": 0,
+          "plan": {
+            "argmax_k": 4,
+            "embedding": "generic",
+            "linear": "generic",
+            "max_k": 4
+          },
+          "reason": "",
+          "rounds_per_epoch": 0
+        },
+        {
+          "c_install_s": 10.682874853479197,
+          "c_install_sigma": 0.0968512872861431,
+          "c_wait_s": 0.0,
+          "exec_s_by_epoch": [
+            6.762527860971296,
+            8.407809623523306,
+            8.407809623523306,
+            8.407809623523306,
+            8.407809623523306,
+            8.407809623523306,
+            8.990387974434238,
+            8.990387974434238
+          ],
+          "exec_s_per_epoch": 6.762527860971296,
+          "exec_sigma": 0.024620515126554565,
+          "exec_sigma_by_epoch": [
+            0.024620515126554565,
+            0.18955778997291958,
+            0.18955778997291958,
+            0.18955778997291958,
+            0.18955778997291958,
+            0.18955778997291958,
+            0.18955778997291958,
+            0.18955778997291958
+          ],
+          "feasible": false,
+          "install_cost_by_object": {
+            "obj3": 10.682874853479197
+          },
+          "install_objects": [
+            "obj3"
+          ],
+          "material_by_type": {},
+          "material_bytes_per_epoch": 0,
+          "mem_peak_bytes": 0,
+          "online_bytes_per_epoch": 0,
+          "plan": {
+            "argmax_k": 4,
+            "embedding": "wmask",
+            "linear": "generic",
+            "max_k": 4
+          },
+          "reason": "INSUFFICIENT_MATERIAL",
+          "rounds_per_epoch": 0
+        }
+      ],
+      "config": {
+        "dwell_prior": 5.0,
+        "env_change_rel": 0.25,
+        "epoch_corr": 0.0,
+        "hysteresis_s": 0.5,
+        "ignore_install": false,
+        "min_residency": 1,
+        "stationary_survival": false,
+        "use_uncertainty": true,
+        "z": 1.0
+      },
+      "decision": {
+        "chosen": {
+          "argmax_k": 2,
+          "embedding": "wmask",
+          "linear": "generic",
+          "max_k": 2
+        },
+        "lower_bound_gain": -6.813177801747074,
+        "q_best": 23.505861149107428,
+        "q_keep": 23.505861149107428,
+        "reason": "INCUMBENT_OPTIMAL",
+        "switched": false,
+        "u_diff": 0.48729548932267996
+      },
+      "epoch": 1,
+      "id": 21,
+      "single_shape": {
+        "chosen": {
+          "argmax_k": 2,
+          "embedding": "wmask",
+          "linear": "generic",
+          "max_k": 2
+        },
+        "differs": false,
+        "q_keep": 50.739914482581725,
+        "switched": false
+      },
+      "state": {
+        "contract_hash": "9c357c649b5264717a658c4edd57fcb149ef354c8759809088f8ee20896f4b88",
+        "incumbent": {
+          "argmax_k": 2,
+          "embedding": "wmask",
+          "linear": "generic",
+          "max_k": 2
+        },
+        "installed": {},
+        "kv_bucket": 32,
+        "model_version": "gpt2@test",
+        "remaining_epochs": 8,
+        "session_id": "vec21",
+        "stock": {}
+      },
+      "survival": [
+        1.0,
+        0.8,
+        0.6400000000000001,
+        0.5120000000000001,
+        0.4096000000000001,
+        0.3276800000000001,
+        0.2621440000000001,
+        0.20971520000000007
+      ],
+      "telemetry": []
+    },
+    {
+      "candidates": [
+        {
+          "c_install_s": 4.208176496203192,
+          "c_install_sigma": 0.0,
+          "c_wait_s": 0.0,
+          "exec_s_by_epoch": [
+            6.881073247641343,
+            6.316994176519852,
+            6.316994176519852,
+            6.316994176519852,
+            6.316994176519852,
+            6.316994176519852,
+            6.316994176519852
+          ],
+          "exec_s_per_epoch": 6.881073247641343,
+          "exec_sigma": 0.28874110853917007,
+          "exec_sigma_by_epoch": [
+            0.28874110853917007,
+            0.1496204211274899,
+            0.1496204211274899,
+            0.1496204211274899,
+            0.1496204211274899,
+            0.1496204211274899,
+            0.1496204211274899
+          ],
+          "feasible": true,
+          "install_cost_by_object": {
+            "lm_head": 4.208176496203192
+          },
+          "install_objects": [
+            "lm_head"
+          ],
+          "material_by_type": {},
+          "material_bytes_per_epoch": 0,
+          "mem_peak_bytes": 0,
+          "online_bytes_per_epoch": 0,
+          "plan": {
+            "argmax_k": 8,
+            "embedding": "generic",
+            "linear": "generic",
+            "max_k": 2
+          },
+          "reason": "",
+          "rounds_per_epoch": 0
+        },
+        {
+          "c_install_s": 17.451471989928507,
+          "c_install_sigma": 0.06243737484759864,
+          "c_wait_s": 0.0,
+          "exec_s_by_epoch": [
+            7.915902892130756,
+            4.3842422940252135,
+            4.3842422940252135,
+            4.3842422940252135,
+            4.3842422940252135,
+            4.3842422940252135,
+            4.3842422940252135
+          ],
+          "exec_s_per_epoch": 7.915902892130756,
+          "exec_sigma": 0.08534934204097507,
+          "exec_sigma_by_epoch": [
+            0.08534934204097507,
+            0.0960627246868629,
+            0.0960627246868629,
+            0.0960627246868629,
+            0.0960627246868629,
+            0.0960627246868629,
+            0.0960627246868629
+          ],
+          "feasible": true,
+          "install_cost_by_object": {
+            "obj0": 17.451471989928507
+          },
+          "install_objects": [
+            "obj0"
+          ],
+          "material_by_type": {},
+          "material_bytes_per_epoch": 0,
+          "mem_peak_bytes": 0,
+          "online_bytes_per_epoch": 0,
+          "plan": {
+            "argmax_k": 4,
+            "embedding": "generic",
+            "linear": "wmask",
+            "max_k": 2
+          },
+          "reason": "",
+          "rounds_per_epoch": 0
+        },
+        {
+          "c_install_s": 18.49681602838284,
+          "c_install_sigma": 0.152569706515468,
+          "c_wait_s": 1.8658351644242046,
+          "exec_s_by_epoch": [
+            14.705926508164408,
+            3.45490087230687,
+            3.45490087230687,
+            3.45490087230687,
+            3.45490087230687,
+            3.45490087230687,
+            3.45490087230687
+          ],
+          "exec_s_per_epoch": 14.705926508164408,
+          "exec_sigma": 0.3585077112574597,
+          "exec_sigma_by_epoch": [
+            0.3585077112574597,
+            0.10194849477054335,
+            0.10194849477054335,
+            0.10194849477054335,
+            0.10194849477054335,
+            0.10194849477054335,
+            0.10194849477054335
+          ],
+          "feasible": true,
+          "install_cost_by_object": {
+            "obj1": 18.49681602838284
+          },
+          "install_objects": [
+            "obj1"
+          ],
+          "material_by_type": {},
+          "material_bytes_per_epoch": 0,
+          "mem_peak_bytes": 0,
+          "online_bytes_per_epoch": 0,
+          "plan": {
+            "argmax_k": 4,
+            "embedding": "generic",
+            "linear": "generic",
+            "max_k": 2
+          },
+          "reason": "",
+          "rounds_per_epoch": 0
+        }
+      ],
+      "config": {
+        "dwell_prior": 5.0,
+        "env_change_rel": 0.25,
+        "epoch_corr": 1.0,
+        "hysteresis_s": 0.5,
+        "ignore_install": true,
+        "min_residency": 1,
+        "stationary_survival": false,
+        "use_uncertainty": true,
+        "z": 1.0
+      },
+      "decision": {
+        "chosen": {
+          "argmax_k": 4,
+          "embedding": "generic",
+          "linear": "wmask",
+          "max_k": 2
+        },
+        "lower_bound_gain": 4.514138587812936,
+        "q_best": 22.51065686970375,
+        "q_keep": 27.909786922912126,
+        "reason": "LOWER_BOUND_GAIN_EXCEEDS_HYSTERESIS",
+        "switched": true,
+        "u_diff": 0.8849914653954382
+      },
+      "epoch": 3,
+      "id": 22,
+      "single_shape": {
+        "chosen": {
+          "argmax_k": 8,
+          "embedding": "generic",
+          "linear": "generic",
+          "max_k": 2
+        },
+        "differs": true,
+        "q_keep": 29.78755615070671,
+        "switched": false
+      },
+      "state": {
+        "contract_hash": "9c357c649b5264717a658c4edd57fcb149ef354c8759809088f8ee20896f4b88",
+        "incumbent": {
+          "argmax_k": 8,
+          "embedding": "generic",
+          "linear": "generic",
+          "max_k": 2
+        },
+        "installed": {},
+        "kv_bucket": 32,
+        "model_version": "gpt2@test",
+        "remaining_epochs": 9,
+        "session_id": "vec22",
+        "stock": {}
+      },
+      "survival": [
+        1.0,
+        0.8,
+        0.6400000000000001,
+        0.5120000000000001,
+        0.4096000000000001,
+        0.3276800000000001,
+        0.2621440000000001,
+        0.20971520000000007,
+        0.1677721600000001
+      ],
+      "telemetry": [
+        {
+          "bandwidth_bps": 436608215.65931296,
+          "cpu_load": 0.0,
+          "epoch": 0,
+          "rtt_s": 0.015315356279852699,
+          "seq": 0,
+          "t": 0.0
+        }
+      ]
+    },
+    {
+      "candidates": [
+        {
+          "c_install_s": 1.8653633243559553,
+          "c_install_sigma": 0.0,
+          "c_wait_s": 0.0,
+          "exec_s_by_epoch": [
+            11.349988821329404,
+            7.625154188110145,
+            7.625154188110145,
+            7.625154188110145
+          ],
+          "exec_s_per_epoch": 11.349988821329404,
+          "exec_sigma": 0.1537230533816802,
+          "exec_sigma_by_epoch": [
+            0.1537230533816802,
+            0.15818274082018954,
+            0.15818274082018954,
+            0.15818274082018954
+          ],
+          "feasible": true,
+          "install_cost_by_object": {
+            "lm_head": 1.8653633243559553
+          },
+          "install_objects": [
+            "lm_head"
+          ],
+          "material_by_type": {},
+          "material_bytes_per_epoch": 0,
+          "mem_peak_bytes": 0,
+          "online_bytes_per_epoch": 0,
+          "plan": {
+            "argmax_k": 2,
+            "embedding": "wmask",
+            "linear": "wmask",
+            "max_k": 4
+          },
+          "reason": "",
+          "rounds_per_epoch": 0
+        },
+        {
+          "c_install_s": 18.769313692561585,
+          "c_install_sigma": 0.16610576689207202,
+          "c_wait_s": 0.0,
+          "exec_s_by_epoch": [
+            8.994434130960547,
+            9.943746090804728,
+            9.943746090804728,
+            9.943746090804728
+          ],
+          "exec_s_per_epoch": 8.994434130960547,
+          "exec_sigma": 0.4249691319396873,
+          "exec_sigma_by_epoch": [
+            0.4249691319396873,
+            0.18352550578559054,
+            0.18352550578559054,
+            0.18352550578559054
+          ],
+          "feasible": true,
+          "install_cost_by_object": {
+            "obj0": 18.769313692561585
+          },
+          "install_objects": [
+            "obj0"
+          ],
+          "material_by_type": {},
+          "material_bytes_per_epoch": 0,
+          "mem_peak_bytes": 0,
+          "online_bytes_per_epoch": 0,
+          "plan": {
+            "argmax_k": 8,
+            "embedding": "generic",
+            "linear": "generic",
+            "max_k": 4
+          },
+          "reason": "",
+          "rounds_per_epoch": 0
+        },
+        {
+          "c_install_s": 10.845807068617255,
+          "c_install_sigma": 0.15533381023189685,
+          "c_wait_s": 0.0,
+          "exec_s_by_epoch": [
+            17.91044717665682,
+            5.6602807050919735,
+            5.6602807050919735,
+            5.6602807050919735
+          ],
+          "exec_s_per_epoch": 17.91044717665682,
+          "exec_sigma": 0.40594708960063686,
+          "exec_sigma_by_epoch": [
+            0.40594708960063686,
+            0.053791657312762295,
+            0.053791657312762295,
+            0.053791657312762295
+          ],
+          "feasible": true,
+          "install_cost_by_object": {
+            "obj1": 10.845807068617255
+          },
+          "install_objects": [
+            "obj1"
+          ],
+          "material_by_type": {},
+          "material_bytes_per_epoch": 0,
+          "mem_peak_bytes": 0,
+          "online_bytes_per_epoch": 0,
+          "plan": {
+            "argmax_k": 4,
+            "embedding": "generic",
+            "linear": "wmask",
+            "max_k": 2
+          },
+          "reason": "",
+          "rounds_per_epoch": 0
+        }
+      ],
+      "config": {
+        "dwell_prior": 5.0,
+        "env_change_rel": 0.25,
+        "epoch_corr": 0.0,
+        "hysteresis_s": 0.0,
+        "ignore_install": false,
+        "min_residency": 0,
+        "stationary_survival": true,
+        "use_uncertainty": false,
+        "z": 1.0
+      },
+      "decision": {
+        "chosen": {
+          "argmax_k": 2,
+          "embedding": "wmask",
+          "linear": "wmask",
+          "max_k": 4
+        },
+        "lower_bound_gain": -13.576028616570547,
+        "q_best": 20.840506333795503,
+        "q_keep": 20.840506333795503,
+        "reason": "INCUMBENT_OPTIMAL",
+        "switched": false,
+        "u_diff": 0.0
+      },
+      "epoch": 2,
+      "id": 23,
+      "single_shape": {
+        "chosen": {
+          "argmax_k": 2,
+          "embedding": "wmask",
+          "linear": "wmask",
+          "max_k": 4
+        },
+        "differs": false,
+        "q_keep": 24.565340967014762,
+        "switched": false
+      },
+      "state": {
+        "contract_hash": "9c357c649b5264717a658c4edd57fcb149ef354c8759809088f8ee20896f4b88",
+        "incumbent": {
+          "argmax_k": 2,
+          "embedding": "wmask",
+          "linear": "wmask",
+          "max_k": 4
+        },
+        "installed": {},
+        "kv_bucket": 32,
+        "model_version": "gpt2@test",
+        "remaining_epochs": 2,
+        "session_id": "vec23",
+        "stock": {}
+      },
+      "survival": [
+        1.0,
+        1.0
+      ],
+      "telemetry": []
+    },
+    {
+      "candidates": [
+        {
+          "c_install_s": 0.0,
+          "c_install_sigma": 0.0,
+          "c_wait_s": 0.0,
+          "exec_s_by_epoch": [
+            19.38944377417623,
+            5.9269121666239135,
+            5.9269121666239135,
+            5.9269121666239135,
+            5.9269121666239135,
+            5.9269121666239135,
+            6.531023530220825,
+            6.531023530220825
+          ],
+          "exec_s_per_epoch": 19.38944377417623,
+          "exec_sigma": 0.49073046374930085,
+          "exec_sigma_by_epoch": [
+            0.49073046374930085,
+            0.10884510672984983,
+            0.10884510672984983,
+            0.10884510672984983,
+            0.10884510672984983,
+            0.10884510672984983,
+            0.10884510672984983,
+            0.10884510672984983
+          ],
+          "feasible": true,
+          "install_cost_by_object": {},
+          "install_objects": [],
+          "material_by_type": {},
+          "material_bytes_per_epoch": 0,
+          "mem_peak_bytes": 0,
+          "online_bytes_per_epoch": 0,
+          "plan": {
+            "argmax_k": 4,
+            "embedding": "wmask",
+            "linear": "generic",
+            "max_k": 4
+          },
+          "reason": "",
+          "rounds_per_epoch": 0
+        },
+        {
+          "c_install_s": 15.936570742523603,
+          "c_install_sigma": 0.17851981706602352,
+          "c_wait_s": 0.0,
+          "exec_s_by_epoch": [
+            10.290966455515832,
+            3.4522349985190326,
+            3.4522349985190326,
+            3.4522349985190326,
+            3.4522349985190326,
+            3.4522349985190326,
+            3.5080445475443973,
+            3.5080445475443973
+          ],
+          "exec_s_per_epoch": 10.290966455515832,
+          "exec_sigma": 0.5802710088716311,
+          "exec_sigma_by_epoch": [
+            0.5802710088716311,
+            0.24986813304540026,
+            0.24986813304540026,
+            0.24986813304540026,
+            0.24986813304540026,
+            0.24986813304540026,
+            0.24986813304540026,
+            0.24986813304540026
+          ],
+          "feasible": true,
+          "install_cost_by_object": {
+            "obj0": 15.936570742523603
+          },
+          "install_objects": [
+            "obj0"
+          ],
+          "material_by_type": {},
+          "material_bytes_per_epoch": 0,
+          "mem_peak_bytes": 0,
+          "online_bytes_per_epoch": 0,
+          "plan": {
+            "argmax_k": 8,
+            "embedding": "generic",
+            "linear": "generic",
+            "max_k": 4
+          },
+          "reason": "",
+          "rounds_per_epoch": 0
+        },
+        {
+          "c_install_s": 4.918688794656207,
+          "c_install_sigma": 0.022202756070156673,
+          "c_wait_s": 0.0,
+          "exec_s_by_epoch": [
+            7.387151623046332,
+            6.500814039355442,
+            6.500814039355442,
+            6.500814039355442,
+            6.500814039355442,
+            6.500814039355442,
+            7.7265560570045935,
+            7.7265560570045935
+          ],
+          "exec_s_per_epoch": 7.387151623046332,
+          "exec_sigma": 0.18112483240325924,
+          "exec_sigma_by_epoch": [
+            0.18112483240325924,
+            0.2743606078445814,
+            0.2743606078445814,
+            0.2743606078445814,
+            0.2743606078445814,
+            0.2743606078445814,
+            0.2743606078445814,
+            0.2743606078445814
+          ],
+          "feasible": true,
+          "install_cost_by_object": {
+            "obj2": 4.918688794656207
+          },
+          "install_objects": [
+            "obj2"
+          ],
+          "material_by_type": {},
+          "material_bytes_per_epoch": 0,
+          "mem_peak_bytes": 0,
+          "online_bytes_per_epoch": 0,
+          "plan": {
+            "argmax_k": 4,
+            "embedding": "wmask",
+            "linear": "wmask",
+            "max_k": 2
+          },
+          "reason": "",
+          "rounds_per_epoch": 0
+        },
+        {
+          "c_install_s": 2.4509945627092766,
+          "c_install_sigma": 0.03183728741120922,
+          "c_wait_s": 0.49210987689791397,
+          "exec_s_by_epoch": [
+            15.774909586932042,
+            9.00721106426642,
+            9.00721106426642,
+            9.00721106426642,
+            9.00721106426642,
+            9.00721106426642,
+            9.369212122363125,
+            9.369212122363125
+          ],
+          "exec_s_per_epoch": 15.774909586932042,
+          "exec_sigma": 0.42002070003486064,
+          "exec_sigma_by_epoch": [
+            0.42002070003486064,
+            0.2341047327963932,
+            0.2341047327963932,
+            0.2341047327963932,
+            0.2341047327963932,
+            0.2341047327963932,
+            0.2341047327963932,
+            0.2341047327963932
+          ],
+          "feasible": true,
+          "install_cost_by_object": {
+            "obj3": 2.4509945627092766
+          },
+          "install_objects": [
+            "obj3"
+          ],
+          "material_by_type": {},
+          "material_bytes_per_epoch": 0,
+          "mem_peak_bytes": 0,
+          "online_bytes_per_epoch": 0,
+          "plan": {
+            "argmax_k": 2,
+            "embedding": "wmask",
+            "linear": "wmask",
+            "max_k": 2
+          },
+          "reason": "",
+          "rounds_per_epoch": 0
+        }
+      ],
+      "config": {
+        "dwell_prior": 5.0,
+        "env_change_rel": 0.25,
+        "epoch_corr": 0.0,
+        "hysteresis_s": 0.5,
+        "ignore_install": false,
+        "min_residency": 1,
+        "stationary_survival": false,
+        "use_uncertainty": true,
+        "z": 1.0
+      },
+      "decision": {
+        "chosen": {
+          "argmax_k": 4,
+          "embedding": "wmask",
+          "linear": "wmask",
+          "max_k": 2
+        },
+        "lower_bound_gain": 4.326339427556119,
+        "q_best": 33.43419615727368,
+        "q_keep": 38.410293663785765,
+        "reason": "LOWER_BOUND_GAIN_EXCEEDS_HYSTERESIS",
+        "switched": true,
+        "u_diff": 0.649758078955964
+      },
+      "epoch": 2,
+      "id": 24,
+      "single_shape": {
+        "chosen": {
+          "argmax_k": 4,
+          "embedding": "wmask",
+          "linear": "wmask",
+          "max_k": 2
+        },
+        "differs": false,
+        "q_keep": 80.68217455492068,
+        "switched": true
+      },
+      "state": {
+        "contract_hash": "9c357c649b5264717a658c4edd57fcb149ef354c8759809088f8ee20896f4b88",
+        "incumbent": {
+          "argmax_k": 4,
+          "embedding": "wmask",
+          "linear": "generic",
+          "max_k": 4
+        },
+        "installed": {},
+        "kv_bucket": 32,
+        "model_version": "gpt2@test",
+        "remaining_epochs": 8,
+        "session_id": "vec24",
+        "stock": {}
+      },
+      "survival": [
+        1.0,
+        0.8,
+        0.6400000000000001,
+        0.5120000000000001,
+        0.4096000000000001,
+        0.3276800000000001,
+        0.2621440000000001,
+        0.20971520000000007
+      ],
+      "telemetry": [
+        {
+          "bandwidth_bps": 121650204.9656792,
+          "cpu_load": 0.0,
+          "epoch": 0,
+          "rtt_s": 0.01498437838251722,
+          "seq": 0,
+          "t": 0.0
+        }
+      ]
+    },
+    {
+      "candidates": [
+        {
+          "c_install_s": 4.664374834890498,
+          "c_install_sigma": 0.0,
+          "c_wait_s": 0.0,
+          "exec_s_by_epoch": [
+            6.88456562043954,
+            5.552081166945338,
+            6.348269525809383,
+            6.348269525809383
+          ],
+          "exec_s_per_epoch": 6.88456562043954,
+          "exec_sigma": 0.3674580243647505,
+          "exec_sigma_by_epoch": [
+            0.3674580243647505,
+            0.14949071441658932,
+            0.14949071441658932,
+            0.14949071441658932
+          ],
+          "feasible": true,
+          "install_cost_by_object": {
+            "lm_head": 4.664374834890498
+          },
+          "install_objects": [
+            "lm_head"
+          ],
+          "material_by_type": {},
+          "material_bytes_per_epoch": 0,
+          "mem_peak_bytes": 0,
+          "online_bytes_per_epoch": 0,
+          "plan": {
+            "argmax_k": 8,
+            "embedding": "generic",
+            "linear": "wmask",
+            "max_k": 2
+          },
+          "reason": "",
+          "rounds_per_epoch": 0
+        },
+        {
+          "c_install_s": 8.95796206273145,
+          "c_install_sigma": 0.1269209281865194,
+          "c_wait_s": 0.0,
+          "exec_s_by_epoch": [
+            9.533663676885844,
+            7.1134876558206415,
+            8.50776093397073,
+            8.50776093397073
+          ],
+          "exec_s_per_epoch": 9.533663676885844,
+          "exec_sigma": 0.06609201630286592,
+          "exec_sigma_by_epoch": [
+            0.06609201630286592,
+            0.03259048965447953,
+            0.03259048965447953,
+            0.03259048965447953
+          ],
+          "feasible": true,
+          "install_cost_by_object": {
+            "obj0": 8.95796206273145
+          },
+          "install_objects": [
+            "obj0"
+          ],
+          "material_by_type": {},
+          "material_bytes_per_epoch": 0,
+          "mem_peak_bytes": 0,
+          "online_bytes_per_epoch": 0,
+          "plan": {
+            "argmax_k": 4,
+            "embedding": "generic",
+            "linear": "wmask",
+            "max_k": 4
+          },
+          "reason": "",
+          "rounds_per_epoch": 0
+        },
+        {
+          "c_install_s": 19.846868699857385,
+          "c_install_sigma": 0.17254752204125828,
+          "c_wait_s": 0.0,
+          "exec_s_by_epoch": [
+            15.964524169291803,
+            2.4649227256998745,
+            2.765486927461601,
+            2.765486927461601
+          ],
+          "exec_s_per_epoch": 15.964524169291803,
+          "exec_sigma": 0.1415442340449112,
+          "exec_sigma_by_epoch": [
+            0.1415442340449112,
+            0.06084917392539454,
+            0.06084917392539454,
+            0.06084917392539454
+          ],
+          "feasible": false,
+          "install_cost_by_object": {
+            "obj1": 19.846868699857385
+          },
+          "install_objects": [
+            "obj1"
+          ],
+          "material_by_type": {},
+          "material_bytes_per_epoch": 0,
+          "mem_peak_bytes": 0,
+          "online_bytes_per_epoch": 0,
+          "plan": {
+            "argmax_k": 2,
+            "embedding": "generic",
+            "linear": "wmask",
+            "max_k": 2
+          },
+          "reason": "INSUFFICIENT_MATERIAL",
+          "rounds_per_epoch": 0
+        },
+        {
+          "c_install_s": 14.577771377448618,
+          "c_install_sigma": 0.04138142161376306,
+          "c_wait_s": 0.0,
+          "exec_s_by_epoch": [
+            14.246522003883927,
+            3.0700382792642653,
+            3.2099725769026235,
+            3.2099725769026235
+          ],
+          "exec_s_per_epoch": 14.246522003883927,
+          "exec_sigma": 0.40675912580985224,
+          "exec_sigma_by_epoch": [
+            0.40675912580985224,
+            0.2603273861417958,
+            0.2603273861417958,
+            0.2603273861417958
+          ],
+          "feasible": true,
+          "install_cost_by_object": {
+            "obj2": 14.577771377448618
+          },
+          "install_objects": [
+            "obj2"
+          ],
+          "material_by_type": {},
+          "material_bytes_per_epoch": 0,
+          "mem_peak_bytes": 0,
+          "online_bytes_per_epoch": 0,
+          "plan": {
+            "argmax_k": 4,
+            "embedding": "wmask",
+            "linear": "wmask",
+            "max_k": 4
+          },
+          "reason": "",
+          "rounds_per_epoch": 0
+        },
+        {
+          "c_install_s": 6.4879987570945925,
+          "c_install_sigma": 0.03800937655666863,
+          "c_wait_s": 0.5469700783632656,
+          "exec_s_by_epoch": [
+            12.8052810494604,
+            2.5753888297329315,
+            2.9267241530754027,
+            2.9267241530754027
+          ],
+          "exec_s_per_epoch": 12.8052810494604,
+          "exec_sigma": 0.30448203255531586,
+          "exec_sigma_by_epoch": [
+            0.30448203255531586,
+            0.21581346778009383,
+            0.21581346778009383,
+            0.21581346778009383
+          ],
+          "feasible": true,
+          "install_cost_by_object": {
+            "obj3": 6.4879987570945925
+          },
+          "install_objects": [
+            "obj3"
+          ],
+          "material_by_type": {},
+          "material_bytes_per_epoch": 0,
+          "mem_peak_bytes": 0,
+          "online_bytes_per_epoch": 0,
+          "plan": {
+            "argmax_k": 8,
+            "embedding": "generic",
+            "linear": "generic",
+            "max_k": 4
+          },
+          "reason": "",
+          "rounds_per_epoch": 0
+        }
+      ],
+      "config": {
+        "dwell_prior": 5.0,
+        "env_change_rel": 0.25,
+        "epoch_corr": 0.0,
+        "hysteresis_s": 0.0,
+        "ignore_install": false,
+        "min_residency": 0,
+        "stationary_survival": true,
+        "use_uncertainty": false,
+        "z": 1.0
+      },
+      "decision": {
+        "chosen": {
+          "argmax_k": 8,
+          "embedding": "generic",
+          "linear": "generic",
+          "max_k": 4
+        },
+        "lower_bound_gain": 1.5284736530921492,
+        "q_best": 28.26908702080199,
+        "q_keep": 29.79756067389414,
+        "reason": "LOWER_BOUND_GAIN_EXCEEDS_HYSTERESIS",
+        "switched": true,
+        "u_diff": 0.0
+      },
+      "epoch": 3,
+      "id": 25,
+      "single_shape": {
+        "chosen": {
+          "argmax_k": 8,
+          "embedding": "generic",
+          "linear": "wmask",
+          "max_k": 2
+        },
+        "differs": true,
+        "q_keep": 32.202637316648655,
+        "switched": false
+      },
+      "state": {
+        "contract_hash": "9c357c649b5264717a658c4edd57fcb149ef354c8759809088f8ee20896f4b88",
+        "incumbent": {
+          "argmax_k": 8,
+          "embedding": "generic",
+          "linear": "wmask",
+          "max_k": 2
+        },
+        "installed": {},
+        "kv_bucket": 32,
+        "model_version": "gpt2@test",
+        "remaining_epochs": 4,
+        "session_id": "vec25",
+        "stock": {}
+      },
+      "survival": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "telemetry": [
+        {
+          "bandwidth_bps": 260778455.57004884,
+          "cpu_load": 0.0,
+          "epoch": 0,
+          "rtt_s": 0.00697197066042886,
+          "seq": 0,
+          "t": 0.0
+        }
+      ]
+    },
+    {
+      "candidates": [
+        {
+          "c_install_s": 0.0,
+          "c_install_sigma": 0.0,
+          "c_wait_s": 0.0,
+          "exec_s_by_epoch": [
+            19.69347549105529,
+            9.658986970319653,
+            9.658986970319653,
+            9.658986970319653,
+            9.658986970319653
+          ],
+          "exec_s_per_epoch": 19.69347549105529,
+          "exec_sigma": 0.04028461817353108,
+          "exec_sigma_by_epoch": [
+            0.04028461817353108,
+            0.25259332288936936,
+            0.25259332288936936,
+            0.25259332288936936,
+            0.25259332288936936
+          ],
+          "feasible": true,
+          "install_cost_by_object": {},
+          "install_objects": [],
+          "material_by_type": {},
+          "material_bytes_per_epoch": 0,
+          "mem_peak_bytes": 0,
+          "online_bytes_per_epoch": 0,
+          "plan": {
+            "argmax_k": 4,
+            "embedding": "wmask",
+            "linear": "generic",
+            "max_k": 2
+          },
+          "reason": "",
+          "rounds_per_epoch": 0
+        },
+        {
+          "c_install_s": 15.87405322417493,
+          "c_install_sigma": 0.010735588930050267,
+          "c_wait_s": 0.0,
+          "exec_s_by_epoch": [
+            6.418373060552744,
+            1.3365488395513494,
+            1.3365488395513494,
+            1.3365488395513494,
+            1.3365488395513494
+          ],
+          "exec_s_per_epoch": 6.418373060552744,
+          "exec_sigma": 0.3862782713594051,
+          "exec_sigma_by_epoch": [
+            0.3862782713594051,
+            0.0598396290706113,
+            0.0598396290706113,
+            0.0598396290706113,
+            0.0598396290706113
+          ],
+          "feasible": true,
+          "install_cost_by_object": {
+            "obj0": 15.87405322417493
+          },
+          "install_objects": [
+            "obj0"
+          ],
+          "material_by_type": {},
+          "material_bytes_per_epoch": 0,
+          "mem_peak_bytes": 0,
+          "online_bytes_per_epoch": 0,
+          "plan": {
+            "argmax_k": 2,
+            "embedding": "wmask",
+            "linear": "wmask",
+            "max_k": 2
+          },
+          "reason": "",
+          "rounds_per_epoch": 0
+        },
+        {
+          "c_install_s": 19.373687860311918,
+          "c_install_sigma": 0.0056219031687346765,
+          "c_wait_s": 0.0,
+          "exec_s_by_epoch": [
+            4.334728231558026,
+            8.706714004135886,
+            8.706714004135886,
+            8.706714004135886,
+            8.706714004135886
+          ],
+          "exec_s_per_epoch": 4.334728231558026,
+          "exec_sigma": 0.31336415700730935,
+          "exec_sigma_by_epoch": [
+            0.31336415700730935,
+            0.10667112196411689,
+            0.10667112196411689,
+            0.10667112196411689,
+            0.10667112196411689
+          ],
+          "feasible": true,
+          "install_cost_by_object": {
+            "obj1": 19.373687860311918
+          },
+          "install_objects": [
+            "obj1"
+          ],
+          "material_by_type": {},
+          "material_bytes_per_epoch": 0,
+          "mem_peak_bytes": 0,
+          "online_bytes_per_epoch": 0,
+          "plan": {
+            "argmax_k": 2,
+            "embedding": "wmask",
+            "linear": "generic",
+            "max_k": 4
+          },
+          "reason": "",
+          "rounds_per_epoch": 0
+        }
+      ],
+      "config": {
+        "dwell_prior": 5.0,
+        "env_change_rel": 0.25,
+        "epoch_corr": 0.0,
+        "hysteresis_s": 0.5,
+        "ignore_install": false,
+        "min_residency": 1,
+        "stationary_survival": false,
+        "use_uncertainty": true,
+        "z": 1.0
+      },
+      "decision": {
+        "chosen": {
+          "argmax_k": 2,
+          "embedding": "wmask",
+          "linear": "wmask",
+          "max_k": 2
+        },
+        "lower_bound_gain": 30.553287829631277,
+        "q_best": 27.710579462140174,
+        "q_keep": 58.84944899172493,
+        "reason": "LOWER_BOUND_GAIN_EXCEEDS_HYSTERESIS",
+        "switched": true,
+        "u_diff": 0.5855816999534774
+      },
+      "epoch": 2,
+      "id": 26,
+      "single_shape": {
+        "chosen": {
+          "argmax_k": 2,
+          "embedding": "wmask",
+          "linear": "generic",
+          "max_k": 4
+        },
+        "differs": true,
+        "q_keep": 99.52764514397577,
+        "switched": true
+      },
+      "state": {
+        "contract_hash": "9c357c649b5264717a658c4edd57fcb149ef354c8759809088f8ee20896f4b88",
+        "incumbent": {
+          "argmax_k": 4,
+          "embedding": "wmask",
+          "linear": "generic",
+          "max_k": 2
+        },
+        "installed": {},
+        "kv_bucket": 32,
+        "model_version": "gpt2@test",
+        "remaining_epochs": 7,
+        "session_id": "vec26",
+        "stock": {}
+      },
+      "survival": [
+        1.0,
+        0.8888888888888888,
+        0.7901234567901234,
+        0.7023319615912207,
+        0.624295076969974,
+        0.5549289573066435,
+        0.49327018427257197
+      ],
+      "telemetry": [
+        {
+          "bandwidth_bps": 847332699.6618648,
+          "cpu_load": 0.0,
+          "epoch": 0,
+          "rtt_s": 0.01863694948934813,
+          "seq": 0,
+          "t": 0.0
+        },
+        {
+          "bandwidth_bps": 847332699.6618648,
+          "cpu_load": 0.0,
+          "epoch": 1,
+          "rtt_s": 0.01863694948934813,
+          "seq": 1,
+          "t": 1.0
+        },
+        {
+          "bandwidth_bps": 847332699.6618648,
+          "cpu_load": 0.0,
+          "epoch": 2,
+          "rtt_s": 0.01863694948934813,
+          "seq": 2,
+          "t": 2.0
+        },
+        {
+          "bandwidth_bps": 847332699.6618648,
+          "cpu_load": 0.0,
+          "epoch": 3,
+          "rtt_s": 0.01863694948934813,
+          "seq": 3,
+          "t": 3.0
+        },
+        {
+          "bandwidth_bps": 847332699.6618648,
+          "cpu_load": 0.0,
+          "epoch": 4,
+          "rtt_s": 0.01863694948934813,
+          "seq": 4,
+          "t": 4.0
+        }
+      ]
+    },
+    {
+      "candidates": [
+        {
+          "c_install_s": 0.0,
+          "c_install_sigma": 0.0,
+          "c_wait_s": 0.0,
+          "exec_s_by_epoch": [
+            17.34206813893766,
+            6.887103209351209,
+            6.887103209351209,
+            6.887103209351209,
+            6.887103209351209,
+            7.141310690182326,
+            7.141310690182326,
+            7.141310690182326,
+            7.141310690182326
+          ],
+          "exec_s_per_epoch": 17.34206813893766,
+          "exec_sigma": 0.28888407754339074,
+          "exec_sigma_by_epoch": [
+            0.28888407754339074,
+            0.07240484909358239,
+            0.07240484909358239,
+            0.07240484909358239,
+            0.07240484909358239,
+            0.07240484909358239,
+            0.07240484909358239,
+            0.07240484909358239,
+            0.07240484909358239
+          ],
+          "feasible": true,
+          "install_cost_by_object": {},
+          "install_objects": [],
+          "material_by_type": {},
+          "material_bytes_per_epoch": 0,
+          "mem_peak_bytes": 0,
+          "online_bytes_per_epoch": 0,
+          "plan": {
+            "argmax_k": 4,
+            "embedding": "generic",
+            "linear": "wmask",
+            "max_k": 4
+          },
+          "reason": "",
+          "rounds_per_epoch": 0
+        },
+        {
+          "c_install_s": 17.08370530167277,
+          "c_install_sigma": 0.014098671055421752,
+          "c_wait_s": 0.0,
+          "exec_s_by_epoch": [
+            10.657511645093786,
+            1.623477408987795,
+            1.623477408987795,
+            1.623477408987795,
+            1.623477408987795,
+            1.6816756403940984,
+            1.6816756403940984,
+            1.6816756403940984,
+            1.6816756403940984
+          ],
+          "exec_s_per_epoch": 10.657511645093786,
+          "exec_sigma": 0.4344250764375838,
+          "exec_sigma_by_epoch": [
+            0.4344250764375838,
+            0.2508545722112003,
+            0.2508545722112003,
+            0.2508545722112003,
+            0.2508545722112003,
+            0.2508545722112003,
+            0.2508545722112003,
+            0.2508545722112003,
+            0.2508545722112003
+          ],
+          "feasible": true,
+          "install_cost_by_object": {
+            "obj0": 17.08370530167277
+          },
+          "install_objects": [
+            "obj0"
+          ],
+          "material_by_type": {},
+          "material_bytes_per_epoch": 0,
+          "mem_peak_bytes": 0,
+          "online_bytes_per_epoch": 0,
+          "plan": {
+            "argmax_k": 4,
+            "embedding": "generic",
+            "linear": "generic",
+            "max_k": 4
+          },
+          "reason": "",
+          "rounds_per_epoch": 0
+        },
+        {
+          "c_install_s": 2.840375091656031,
+          "c_install_sigma": 0.07289470128874671,
+          "c_wait_s": 0.0,
+          "exec_s_by_epoch": [
+            9.475397209003585,
+            3.3207749602528054,
+            3.3207749602528054,
+            3.3207749602528054,
+            3.3207749602528054,
+            3.342876720985648,
+            3.342876720985648,
+            3.342876720985648,
+            3.342876720985648
+          ],
+          "exec_s_per_epoch": 9.475397209003585,
+          "exec_sigma": 0.04357261424690142,
+          "exec_sigma_by_epoch": [
+            0.04357261424690142,
+            0.23647510587515808,
+            0.23647510587515808,
+            0.23647510587515808,
+            0.23647510587515808,
+            0.23647510587515808,
+            0.23647510587515808,
+            0.23647510587515808,
+            0.23647510587515808
+          ],
+          "feasible": false,
+          "install_cost_by_object": {
+            "obj1": 2.840375091656031
+          },
+          "install_objects": [
+            "obj1"
+          ],
+          "material_by_type": {},
+          "material_bytes_per_epoch": 0,
+          "mem_peak_bytes": 0,
+          "online_bytes_per_epoch": 0,
+          "plan": {
+            "argmax_k": 4,
+            "embedding": "wmask",
+            "linear": "wmask",
+            "max_k": 4
+          },
+          "reason": "INSUFFICIENT_MATERIAL",
+          "rounds_per_epoch": 0
+        },
+        {
+          "c_install_s": 4.418997133276468,
+          "c_install_sigma": 0.07078595714448377,
+          "c_wait_s": 0.0,
+          "exec_s_by_epoch": [
+            7.54600146964907,
+            2.6027442878187106,
+            2.6027442878187106,
+            2.6027442878187106,
+            2.6027442878187106,
+            3.101209335712796,
+            3.101209335712796,
+            3.101209335712796,
+            3.101209335712796
+          ],
+          "exec_s_per_epoch": 7.54600146964907,
+          "exec_sigma": 0.5392608832968545,
+          "exec_sigma_by_epoch": [
+            0.5392608832968545,
+            0.018252478153479777,
+            0.018252478153479777,
+            0.018252478153479777,
+            0.018252478153479777,
+            0.018252478153479777,
+            0.018252478153479777,
+            0.018252478153479777,
+            0.018252478153479777
+          ],
+          "feasible": false,
+          "install_cost_by_object": {
+            "obj2": 4.418997133276468
+          },
+          "install_objects": [
+            "obj2"
+          ],
+          "material_by_type": {},
+          "material_bytes_per_epoch": 0,
+          "mem_peak_bytes": 0,
+          "online_bytes_per_epoch": 0,
+          "plan": {
+            "argmax_k": 8,
+            "embedding": "wmask",
+            "linear": "generic",
+            "max_k": 2
+          },
+          "reason": "INSUFFICIENT_MATERIAL",
+          "rounds_per_epoch": 0
+        }
+      ],
+      "config": {
+        "dwell_prior": 5.0,
+        "env_change_rel": 0.25,
+        "epoch_corr": 0.5,
+        "hysteresis_s": 0.5,
+        "ignore_install": false,
+        "min_residency": 1,
+        "stationary_survival": false,
+        "use_uncertainty": true,
+        "z": 0.5
+      },
+      "decision": {
+        "chosen": {
+          "argmax_k": 4,
+          "embedding": "generic",
+          "linear": "wmask",
+          "max_k": 4
+        },
+        "lower_bound_gain": -1.1561529645121222,
+        "q_best": 29.96280951804615,
+        "q_keep": 29.96280951804615,
+        "reason": "INCUMBENT_OPTIMAL",
+        "switched": false,
+        "u_diff": 0.8061449234935162
+      },
+      "epoch": 4,
+      "id": 27,
+      "single_shape": {
+        "chosen": {
+          "argmax_k": 4,
+          "embedding": "generic",
+          "linear": "generic",
+          "max_k": 4
+        },
+        "differs": true,
+        "q_keep": 48.981232233295806,
+        "switched": true
+      },
+      "state": {
+        "contract_hash": "9c357c649b5264717a658c4edd57fcb149ef354c8759809088f8ee20896f4b88",
+        "incumbent": {
+          "argmax_k": 4,
+          "embedding": "generic",
+          "linear": "wmask",
+          "max_k": 4
+        },
+        "installed": {},
+        "kv_bucket": 32,
+        "model_version": "gpt2@test",
+        "remaining_epochs": 7,
+        "session_id": "vec27",
+        "stock": {}
+      },
+      "survival": [
+        1.0,
+        0.6666666666666667,
+        0.44444444444444453,
+        0.2962962962962964,
+        0.19753086419753096,
+        0.13168724279835398,
+        0.08779149519890267
+      ],
+      "telemetry": [
+        {
+          "bandwidth_bps": 931229527.150303,
+          "cpu_load": 0.0,
+          "epoch": 0,
+          "rtt_s": 0.020458412487872356,
+          "seq": 0,
+          "t": 0.0
+        },
+        {
+          "bandwidth_bps": 465614763.5751515,
+          "cpu_load": 0.0,
+          "epoch": 1,
+          "rtt_s": 0.020458412487872356,
+          "seq": 1,
+          "t": 1.0
+        },
+        {
+          "bandwidth_bps": 232807381.78757575,
+          "cpu_load": 0.0,
+          "epoch": 2,
+          "rtt_s": 0.020458412487872356,
+          "seq": 2,
+          "t": 2.0
+        },
+        {
+          "bandwidth_bps": 232807381.78757575,
+          "cpu_load": 0.0,
+          "epoch": 3,
+          "rtt_s": 0.020458412487872356,
+          "seq": 3,
+          "t": 3.0
+        },
+        {
+          "bandwidth_bps": 232807381.78757575,
+          "cpu_load": 0.0,
+          "epoch": 4,
+          "rtt_s": 0.020458412487872356,
+          "seq": 4,
+          "t": 4.0
+        }
+      ]
+    },
+    {
+      "candidates": [
+        {
+          "c_install_s": 0.0,
+          "c_install_sigma": 0.0,
+          "c_wait_s": 0.0,
+          "exec_s_by_epoch": [
+            8.37702943036789,
+            9.587954576519627,
+            9.587954576519627
+          ],
+          "exec_s_per_epoch": 8.37702943036789,
+          "exec_sigma": 0.5664358201071776,
+          "exec_sigma_by_epoch": [
+            0.5664358201071776,
+            0.19900269983653338,
+            0.19900269983653338
+          ],
+          "feasible": true,
+          "install_cost_by_object": {},
+          "install_objects": [],
+          "material_by_type": {},
+          "material_bytes_per_epoch": 0,
+          "mem_peak_bytes": 0,
+          "online_bytes_per_epoch": 0,
+          "plan": {
+            "argmax_k": 8,
+            "embedding": "generic",
+            "linear": "generic",
+            "max_k": 2
+          },
+          "reason": "",
+          "rounds_per_epoch": 0
+        },
+        {
+          "c_install_s": 12.901684289664209,
+          "c_install_sigma": 0.049781361490535116,
+          "c_wait_s": 1.3767269584825768,
+          "exec_s_by_epoch": [
+            19.454716195823593,
+            2.4434864401374816,
+            2.4434864401374816
+          ],
+          "exec_s_per_epoch": 19.454716195823593,
+          "exec_sigma": 0.5518927060423103,
+          "exec_sigma_by_epoch": [
+            0.5518927060423103,
+            0.17890048851338392,
+            0.17890048851338392
+          ],
+          "feasible": true,
+          "install_cost_by_object": {
+            "obj0": 12.901684289664209
+          },
+          "install_objects": [
+            "obj0"
+          ],
+          "material_by_type": {},
+          "material_bytes_per_epoch": 0,
+          "mem_peak_bytes": 0,
+          "online_bytes_per_epoch": 0,
+          "plan": {
+            "argmax_k": 8,
+            "embedding": "generic",
+            "linear": "wmask",
+            "max_k": 4
+          },
+          "reason": "",
+          "rounds_per_epoch": 0
+        },
+        {
+          "c_install_s": 15.15723410868182,
+          "c_install_sigma": 0.11755443616806496,
+          "c_wait_s": 0.2793365274105526,
+          "exec_s_by_epoch": [
+            12.60685347093882,
+            7.942981424971737,
+            7.942981424971737
+          ],
+          "exec_s_per_epoch": 12.60685347093882,
+          "exec_sigma": 0.20498494584819513,
+          "exec_sigma_by_epoch": [
+            0.20498494584819513,
+            0.11183867955739125,
+            0.11183867955739125
+          ],
+          "feasible": true,
+          "install_cost_by_object": {
+            "obj1": 15.15723410868182
+          },
+          "install_objects": [
+            "obj1"
+          ],
+          "material_by_type": {},
+          "material_bytes_per_epoch": 0,
+          "mem_peak_bytes": 0,
+          "online_bytes_per_epoch": 0,
+          "plan": {
+            "argmax_k": 2,
+            "embedding": "generic",
+            "linear": "generic",
+            "max_k": 4
+          },
+          "reason": "",
+          "rounds_per_epoch": 0
+        },
+        {
+          "c_install_s": 0.33529133557116175,
+          "c_install_sigma": 0.022156421830307374,
+          "c_wait_s": 0.0,
+          "exec_s_by_epoch": [
+            18.266885323008143,
+            5.95037366843324,
+            5.95037366843324
+          ],
+          "exec_s_per_epoch": 18.266885323008143,
+          "exec_sigma": 0.31922748563097264,
+          "exec_sigma_by_epoch": [
+            0.31922748563097264,
+            0.19082394444825593,
+            0.19082394444825593
+          ],
+          "feasible": true,
+          "install_cost_by_object": {
+            "obj2": 0.33529133557116175
+          },
+          "install_objects": [
+            "obj2"
+          ],
+          "material_by_type": {},
+          "material_bytes_per_epoch": 0,
+          "mem_peak_bytes": 0,
+          "online_bytes_per_epoch": 0,
+          "plan": {
+            "argmax_k": 4,
+            "embedding": "wmask",
+            "linear": "generic",
+            "max_k": 4
+          },
+          "reason": "",
+          "rounds_per_epoch": 0
+        },
+        {
+          "c_install_s": 0.6335946803376702,
+          "c_install_sigma": 0.029486775261837718,
+          "c_wait_s": 0.0,
+          "exec_s_by_epoch": [
+            9.603381177182392,
+            4.610573035934775,
+            4.610573035934775
+          ],
+          "exec_s_per_epoch": 9.603381177182392,
+          "exec_sigma": 0.28940923988551315,
+          "exec_sigma_by_epoch": [
+            0.28940923988551315,
+            0.14736329240724805,
+            0.14736329240724805
+          ],
+          "feasible": true,
+          "install_cost_by_object": {
+            "obj3": 0.6335946803376702
+          },
+          "install_objects": [
+            "obj3"
+          ],
+          "material_by_type": {},
+          "material_bytes_per_epoch": 0,
+          "mem_peak_bytes": 0,
+          "online_bytes_per_epoch": 0,
+          "plan": {
+            "argmax_k": 8,
+            "embedding": "wmask",
+            "linear": "generic",
+            "max_k": 4
+          },
+          "reason": "",
+          "rounds_per_epoch": 0
+        }
+      ],
+      "config": {
+        "dwell_prior": 5.0,
+        "env_change_rel": 0.25,
+        "epoch_corr": 0.0,
+        "hysteresis_s": 0.5,
+        "ignore_install": false,
+        "min_residency": 1,
+        "stationary_survival": false,
+        "use_uncertainty": true,
+        "z": 1.0
+      },
+      "decision": {
+        "chosen": {
+          "argmax_k": 8,
+          "embedding": "wmask",
+          "linear": "generic",
+          "max_k": 4
+        },
+        "lower_bound_gain": 4.622037074855282,
+        "q_best": 16.876201029266138,
+        "q_keep": 22.18368402055615,
+        "reason": "LOWER_BOUND_GAIN_EXCEEDS_HYSTERESIS",
+        "switched": true,
+        "u_diff": 0.6854459164347302
+      },
+      "epoch": 2,
+      "id": 28,
+      "single_shape": {
+        "chosen": {
+          "argmax_k": 8,
+          "embedding": "generic",
+          "linear": "generic",
+          "max_k": 2
+        },
+        "differs": true,
+        "q_keep": 20.439951810097654,
+        "switched": false
+      },
+      "state": {
+        "contract_hash": "9c357c649b5264717a658c4edd57fcb149ef354c8759809088f8ee20896f4b88",
+        "incumbent": {
+          "argmax_k": 8,
+          "embedding": "generic",
+          "linear": "generic",
+          "max_k": 2
+        },
+        "installed": {},
+        "kv_bucket": 32,
+        "model_version": "gpt2@test",
+        "remaining_epochs": 3,
+        "session_id": "vec28",
+        "stock": {}
+      },
+      "survival": [
+        1.0,
+        0.8,
+        0.6400000000000001
+      ],
+      "telemetry": [
+        {
+          "bandwidth_bps": 521186383.2652639,
+          "cpu_load": 0.0,
+          "epoch": 0,
+          "rtt_s": 0.006751260235663872,
+          "seq": 0,
+          "t": 0.0
+        }
+      ]
+    },
+    {
+      "candidates": [
+        {
+          "c_install_s": 4.03507775327919,
+          "c_install_sigma": 0.0,
+          "c_wait_s": 0.0,
+          "exec_s_by_epoch": [
+            9.77646434658895,
+            1.1085639487778505,
+            1.1085639487778505,
+            1.2678879889102774,
+            1.2678879889102774
+          ],
+          "exec_s_per_epoch": 9.77646434658895,
+          "exec_sigma": 0.5657929498491541,
+          "exec_sigma_by_epoch": [
+            0.5657929498491541,
+            0.021593201918366865,
+            0.021593201918366865,
+            0.021593201918366865,
+            0.021593201918366865
+          ],
+          "feasible": true,
+          "install_cost_by_object": {
+            "lm_head": 4.03507775327919
+          },
+          "install_objects": [
+            "lm_head"
+          ],
+          "material_by_type": {},
+          "material_bytes_per_epoch": 0,
+          "mem_peak_bytes": 0,
+          "online_bytes_per_epoch": 0,
+          "plan": {
+            "argmax_k": 8,
+            "embedding": "generic",
+            "linear": "generic",
+            "max_k": 2
+          },
+          "reason": "",
+          "rounds_per_epoch": 0
+        },
+        {
+          "c_install_s": 6.897533898059544,
+          "c_install_sigma": 0.053323210020340156,
+          "c_wait_s": 0.42624636097879054,
+          "exec_s_by_epoch": [
+            15.708392974767715,
+            9.952776888623756,
+            9.952776888623756,
+            10.292083919258959,
+            10.292083919258959
+          ],
+          "exec_s_per_epoch": 15.708392974767715,
+          "exec_sigma": 0.256156669161415,
+          "exec_sigma_by_epoch": [
+            0.256156669161415,
+            0.09285280748062118,
+            0.09285280748062118,
+            0.09285280748062118,
+            0.09285280748062118
+          ],
+          "feasible": true,
+          "install_cost_by_object": {
+            "obj1": 6.897533898059544
+          },
+          "install_objects": [
+            "obj1"
+          ],
+          "material_by_type": {},
+          "material_bytes_per_epoch": 0,
+          "mem_peak_bytes": 0,
+          "online_bytes_per_epoch": 0,
+          "plan": {
+            "argmax_k": 8,
+            "embedding": "generic",
+            "linear": "wmask",
+            "max_k": 2
+          },
+          "reason": "",
+          "rounds_per_epoch": 0
+        },
+        {
+          "c_install_s": 6.1943119278149394,
+          "c_install_sigma": 0.004589445926062585,
+          "c_wait_s": 0.0,
+          "exec_s_by_epoch": [
+            14.454535671256806,
+            4.15418084638047,
+            4.15418084638047,
+            4.683941537344646,
+            4.683941537344646
+          ],
+          "exec_s_per_epoch": 14.454535671256806,
+          "exec_sigma": 0.08344837459379724,
+          "exec_sigma_by_epoch": [
+            0.08344837459379724,
+            0.20081978300653416,
+            0.20081978300653416,
+            0.20081978300653416,
+            0.20081978300653416
+          ],
+          "feasible": false,
+          "install_cost_by_object": {
+            "obj2": 6.1943119278149394
+          },
+          "install_objects": [
+            "obj2"
+          ],
+          "material_by_type": {},
+          "material_bytes_per_epoch": 0,
+          "mem_peak_bytes": 0,
+          "online_bytes_per_epoch": 0,
+          "plan": {
+            "argmax_k": 4,
+            "embedding": "generic",
+            "linear": "wmask",
+            "max_k": 4
+          },
+          "reason": "INSUFFICIENT_MATERIAL",
+          "rounds_per_epoch": 0
+        },
+        {
+          "c_install_s": 8.613751223809892,
+          "c_install_sigma": 0.1671654545869766,
+          "c_wait_s": 0.0,
+          "exec_s_by_epoch": [
+            6.820123215548101,
+            3.054266497135638,
+            3.054266497135638,
+            3.2982248461552626,
+            3.2982248461552626
+          ],
+          "exec_s_per_epoch": 6.820123215548101,
+          "exec_sigma": 0.40267055147117786,
+          "exec_sigma_by_epoch": [
+            0.40267055147117786,
+            0.029160151092832796,
+            0.029160151092832796,
+            0.029160151092832796,
+            0.029160151092832796
+          ],
+          "feasible": true,
+          "install_cost_by_object": {
+            "obj3": 8.613751223809892
+          },
+          "install_objects": [
+            "obj3"
+          ],
+          "material_by_type": {},
+          "material_bytes_per_epoch": 0,
+          "mem_peak_bytes": 0,
+          "online_bytes_per_epoch": 0,
+          "plan": {
+            "argmax_k": 8,
+            "embedding": "generic",
+            "linear": "wmask",
+            "max_k": 4
+          },
+          "reason": "",
+          "rounds_per_epoch": 0
+        }
+      ],
+      "config": {
+        "dwell_prior": 5.0,
+        "env_change_rel": 0.25,
+        "epoch_corr": 0.5,
+        "hysteresis_s": 0.5,
+        "ignore_install": false,
+        "min_residency": 1,
+        "stationary_survival": false,
+        "use_uncertainty": true,
+        "z": 0.5
+      },
+      "decision": {
+        "chosen": {
+          "argmax_k": 8,
+          "embedding": "generic",
+          "linear": "generic",
+          "max_k": 2
+        },
+        "lower_bound_gain": -6.673269699473365,
+        "q_best": 16.576359756687957,
+        "q_keep": 16.576359756687957,
+        "reason": "INCUMBENT_OPTIMAL",
+        "switched": false,
+        "u_diff": 0.7559344854226401
+      },
+      "epoch": 0,
+      "id": 29,
+      "single_shape": {
+        "chosen": {
+          "argmax_k": 8,
+          "embedding": "generic",
+          "linear": "wmask",
+          "max_k": 4
+        },
+        "differs": true,
+        "q_keep": 36.89964030077261,
+        "switched": true
+      },
+      "state": {
+        "contract_hash": "9c357c649b5264717a658c4edd57fcb149ef354c8759809088f8ee20896f4b88",
+        "incumbent": {
+          "argmax_k": 8,
+          "embedding": "generic",
+          "linear": "generic",
+          "max_k": 2
+        },
+        "installed": {},
+        "kv_bucket": 32,
+        "model_version": "gpt2@test",
+        "remaining_epochs": 5,
+        "session_id": "vec29",
+        "stock": {}
+      },
+      "survival": [
+        1.0,
+        0.8,
+        0.6400000000000001,
+        0.5120000000000001,
+        0.4096000000000001
+      ],
+      "telemetry": []
+    },
+    {
+      "candidates": [
+        {
+          "c_install_s": 0.0,
+          "c_install_sigma": 0.0,
+          "c_wait_s": 0.0,
+          "exec_s_by_epoch": [
+            15.360852354674451,
+            2.6610238568466347,
+            2.6610238568466347,
+            2.6610238568466347,
+            2.6610238568466347
+          ],
+          "exec_s_per_epoch": 15.360852354674451,
+          "exec_sigma": 0.06467749539746577,
+          "exec_sigma_by_epoch": [
+            0.06467749539746577,
+            0.23817886461813584,
+            0.23817886461813584,
+            0.23817886461813584,
+            0.23817886461813584
+          ],
+          "feasible": true,
+          "install_cost_by_object": {},
+          "install_objects": [],
+          "material_by_type": {},
+          "material_bytes_per_epoch": 0,
+          "mem_peak_bytes": 0,
+          "online_bytes_per_epoch": 0,
+          "plan": {
+            "argmax_k": 2,
+            "embedding": "wmask",
+            "linear": "generic",
+            "max_k": 4
+          },
+          "reason": "",
+          "rounds_per_epoch": 0
+        },
+        {
+          "c_install_s": 10.157844870255206,
+          "c_install_sigma": 0.09843397911801151,
+          "c_wait_s": 0.0,
+          "exec_s_by_epoch": [
+            19.905284095941646,
+            3.4943235441976803,
+            3.4943235441976803,
+            3.4943235441976803,
+            3.4943235441976803
+          ],
+          "exec_s_per_epoch": 19.905284095941646,
+          "exec_sigma": 0.18190518963773716,
+          "exec_sigma_by_epoch": [
+            0.18190518963773716,
+            0.03373059353704729,
+            0.03373059353704729,
+            0.03373059353704729,
+            0.03373059353704729
+          ],
+          "feasible": true,
+          "install_cost_by_object": {
+            "obj0": 10.157844870255206
+          },
+          "install_objects": [
+            "obj0"
+          ],
+          "material_by_type": {},
+          "material_bytes_per_epoch": 0,
+          "mem_peak_bytes": 0,
+          "online_bytes_per_epoch": 0,
+          "plan": {
+            "argmax_k": 4,
+            "embedding": "wmask",
+            "linear": "generic",
+            "max_k": 2
+          },
+          "reason": "",
+          "rounds_per_epoch": 0
+        },
+        {
+          "c_install_s": 17.72719263716777,
+          "c_install_sigma": 0.12484062675642818,
+          "c_wait_s": 0.0,
+          "exec_s_by_epoch": [
+            14.318433876679375,
+            7.1568150559721895,
+            7.1568150559721895,
+            7.1568150559721895,
+            7.1568150559721895
+          ],
+          "exec_s_per_epoch": 14.318433876679375,
+          "exec_sigma": 0.5532127373823824,
+          "exec_sigma_by_epoch": [
+            0.5532127373823824,
+            0.16286110358289935,
+            0.16286110358289935,
+            0.16286110358289935,
+            0.16286110358289935
+          ],
+          "feasible": true,
+          "install_cost_by_object": {
+            "obj1": 17.72719263716777
+          },
+          "install_objects": [
+            "obj1"
+          ],
+          "material_by_type": {},
+          "material_bytes_per_epoch": 0,
+          "mem_peak_bytes": 0,
+          "online_bytes_per_epoch": 0,
+          "plan": {
+            "argmax_k": 8,
+            "embedding": "wmask",
+            "linear": "generic",
+            "max_k": 2
+          },
+          "reason": "",
+          "rounds_per_epoch": 0
+        }
+      ],
+      "config": {
+        "dwell_prior": 5.0,
+        "env_change_rel": 0.25,
+        "epoch_corr": 0.0,
+        "hysteresis_s": 0.0,
+        "ignore_install": false,
+        "min_residency": 0,
+        "stationary_survival": true,
+        "use_uncertainty": false,
+        "z": 1.0
+      },
+      "decision": {
+        "chosen": {
+          "argmax_k": 2,
+          "embedding": "wmask",
+          "linear": "generic",
+          "max_k": 4
+        },
+        "lower_bound_gain": -19.702074735628678,
+        "q_best": 31.326995495754254,
+        "q_keep": 31.326995495754254,
+        "reason": "INCUMBENT_OPTIMAL",
+        "switched": false,
+        "u_diff": 0.0
+      },
+      "epoch": 3,
+      "id": 30,
+      "single_shape": {
+        "chosen": {
+          "argmax_k": 2,
+          "embedding": "wmask",
+          "linear": "generic",
+          "max_k": 4
+        },
+        "differs": false,
+        "q_keep": 107.52596648272116,
+        "switched": false
+      },
+      "state": {
+        "contract_hash": "9c357c649b5264717a658c4edd57fcb149ef354c8759809088f8ee20896f4b88",
+        "incumbent": {
+          "argmax_k": 2,
+          "embedding": "wmask",
+          "linear": "generic",
+          "max_k": 4
+        },
+        "installed": {},
+        "kv_bucket": 32,
+        "model_version": "gpt2@test",
+        "remaining_epochs": 7,
+        "session_id": "vec30",
+        "stock": {}
+      },
+      "survival": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "telemetry": []
+    },
+    {
+      "candidates": [
+        {
+          "c_install_s": 3.5878294097504564,
+          "c_install_sigma": 0.0,
+          "c_wait_s": 0.0,
+          "exec_s_by_epoch": [
+            13.381346074211375,
+            9.168345331686089,
+            9.168345331686089,
+            9.168345331686089,
+            9.168345331686089
+          ],
+          "exec_s_per_epoch": 13.381346074211375,
+          "exec_sigma": 0.38734291599259807,
+          "exec_sigma_by_epoch": [
+            0.38734291599259807,
+            0.18012698896611049,
+            0.18012698896611049,
+            0.18012698896611049,
+            0.18012698896611049
+          ],
+          "feasible": true,
+          "install_cost_by_object": {
+            "lm_head": 3.5878294097504564
+          },
+          "install_objects": [
+            "lm_head"
+          ],
+          "material_by_type": {},
+          "material_bytes_per_epoch": 0,
+          "mem_peak_bytes": 0,
+          "online_bytes_per_epoch": 0,
+          "plan": {
+            "argmax_k": 2,
+            "embedding": "generic",
+            "linear": "generic",
+            "max_k": 4
+          },
+          "reason": "",
+          "rounds_per_epoch": 0
+        },
+        {
+          "c_install_s": 13.938251458042107,
+          "c_install_sigma": 0.10916013688180382,
+          "c_wait_s": 0.0,
+          "exec_s_by_epoch": [
+            9.12620676645166,
+            3.057949859784349,
+            3.057949859784349,
+            3.057949859784349,
+            3.057949859784349
+          ],
+          "exec_s_per_epoch": 9.12620676645166,
+          "exec_sigma": 0.22692187507291584,
+          "exec_sigma_by_epoch": [
+            0.22692187507291584,
+            0.10252826358025398,
+            0.10252826358025398,
+            0.10252826358025398,
+            0.10252826358025398
+          ],
+          "feasible": true,
+          "install_cost_by_object": {
+            "obj0": 13.938251458042107
+          },
+          "install_objects": [
+            "obj0"
+          ],
+          "material_by_type": {},
+          "material_bytes_per_epoch": 0,
+          "mem_peak_bytes": 0,
+          "online_bytes_per_epoch": 0,
+          "plan": {
+            "argmax_k": 2,
+            "embedding": "wmask",
+            "linear": "wmask",
+            "max_k": 2
+          },
+          "reason": "",
+          "rounds_per_epoch": 0
+        },
+        {
+          "c_install_s": 19.61814153789647,
+          "c_install_sigma": 0.19262761853352028,
+          "c_wait_s": 0.0,
+          "exec_s_by_epoch": [
+            8.103472802927225,
+            7.426408880120931,
+            7.426408880120931,
+            7.426408880120931,
+            7.426408880120931
+          ],
+          "exec_s_per_epoch": 8.103472802927225,
+          "exec_sigma": 0.5944063160398141,
+          "exec_sigma_by_epoch": [
+            0.5944063160398141,
+            0.29026663993213864,
+            0.29026663993213864,
+            0.29026663993213864,
+            0.29026663993213864
+          ],
+          "feasible": true,
+          "install_cost_by_object": {
+            "obj1": 19.61814153789647
+          },
+          "install_objects": [
+            "obj1"
+          ],
+          "material_by_type": {},
+          "material_bytes_per_epoch": 0,
+          "mem_peak_bytes": 0,
+          "online_bytes_per_epoch": 0,
+          "plan": {
+            "argmax_k": 2,
+            "embedding": "generic",
+            "linear": "wmask",
+            "max_k": 4
+          },
+          "reason": "",
+          "rounds_per_epoch": 0
+        },
+        {
+          "c_install_s": 0.5681642864213265,
+          "c_install_sigma": 0.08118655527184247,
+          "c_wait_s": 1.5199373910028935,
+          "exec_s_by_epoch": [
+            11.360965219795442,
+            2.183888992401337,
+            2.183888992401337,
+            2.183888992401337,
+            2.183888992401337
+          ],
+          "exec_s_per_epoch": 11.360965219795442,
+          "exec_sigma": 0.23556878606070394,
+          "exec_sigma_by_epoch": [
+            0.23556878606070394,
+            0.11958019377921622,
+            0.11958019377921622,
+            0.11958019377921622,
+            0.11958019377921622
+          ],
+          "feasible": true,
+          "install_cost_by_object": {
+            "obj2": 0.5681642864213265
+          },
+          "install_objects": [
+            "obj2"
+          ],
+          "material_by_type": {},
+          "material_bytes_per_epoch": 0,
+          "mem_peak_bytes": 0,
+          "online_bytes_per_epoch": 0,
+          "plan": {
+            "argmax_k": 2,
+            "embedding": "wmask",
+            "linear": "generic",
+            "max_k": 2
+          },
+          "reason": "",
+          "rounds_per_epoch": 0
+        }
+      ],
+      "config": {
+        "dwell_prior": 5.0,
+        "env_change_rel": 0.25,
+        "epoch_corr": 1.0,
+        "hysteresis_s": 0.5,
+        "ignore_install": true,
+        "min_residency": 1,
+        "stationary_survival": false,
+        "use_uncertainty": true,
+        "z": 1.0
+      },
+      "decision": {
+        "chosen": {
+          "argmax_k": 2,
+          "embedding": "wmask",
+          "linear": "wmask",
+          "max_k": 2
+        },
+        "lower_bound_gain": 11.55409563862577,
+        "q_best": 13.139765957418618,
+        "q_keep": 25.414799322049365,
+        "reason": "LOWER_BOUND_GAIN_EXCEEDS_HYSTERESIS",
+        "switched": true,
+        "u_diff": 0.7209377260049782
+      },
+      "epoch": 3,
+      "id": 31,
+      "single_shape": {
+        "chosen": {
+          "argmax_k": 2,
+          "embedding": "generic",
+          "linear": "wmask",
+          "max_k": 4
+        },
+        "differs": true,
+        "q_keep": 30.944362796613806,
+        "switched": true
+      },
+      "state": {
+        "contract_hash": "9c357c649b5264717a658c4edd57fcb149ef354c8759809088f8ee20896f4b88",
+        "incumbent": {
+          "argmax_k": 2,
+          "embedding": "generic",
+          "linear": "generic",
+          "max_k": 4
+        },
+        "installed": {},
+        "kv_bucket": 32,
+        "model_version": "gpt2@test",
+        "remaining_epochs": 3,
+        "session_id": "vec31",
+        "stock": {}
+      },
+      "survival": [
+        1.0,
+        0.75,
+        0.5625
+      ],
+      "telemetry": [
+        {
+          "bandwidth_bps": 392399943.7320489,
+          "cpu_load": 0.0,
+          "epoch": 0,
+          "rtt_s": 0.005553114122626195,
+          "seq": 0,
+          "t": 0.0
+        },
+        {
+          "bandwidth_bps": 392399943.7320489,
+          "cpu_load": 0.0,
+          "epoch": 1,
+          "rtt_s": 0.005553114122626195,
+          "seq": 1,
+          "t": 1.0
+        },
+        {
+          "bandwidth_bps": 196199971.86602446,
+          "cpu_load": 0.0,
+          "epoch": 2,
+          "rtt_s": 0.005553114122626195,
+          "seq": 2,
+          "t": 2.0
+        },
+        {
+          "bandwidth_bps": 196199971.86602446,
+          "cpu_load": 0.0,
+          "epoch": 3,
+          "rtt_s": 0.005553114122626195,
+          "seq": 3,
+          "t": 3.0
+        }
+      ]
+    }
+  ],
+  "instances_scheduled": 12,
+  "instances_scheduled_single_shape_differs": 8,
+  "semantics": "For each instance feed the telemetry samples to StateAwareController(config).observe in order, then call decide(state, candidates, epoch). Qhat(p) = c_install (unless ignore_install) + sum_j s_j exec_j + c_wait_s over H = remaining_epochs with the survival vector given (s_j = (1 - 1/D)^j, D = (dwell_prior + sum completed dwells + current age) / (1 + completed), or all ones when stationary_survival); exec_j = exec_s_by_epoch[min(j, n - 1)] when the candidate carries that list (n its length), else exec_s_per_epoch. U_diff = sqrt(var_keep + var_p); with a_j = s_j sigma_j (sigma_j = exec_sigma_by_epoch[min(j, n - 1)], else exec_sigma) var = sum a_j^2 + epoch_corr ((sum a_j)^2 - sum a_j^2) + c_install_sigma^2, lower_bound_gain = Qhat(keep) - Qhat(p) - z U_diff. Switch iff the best feasible challenger has lower_bound_gain > hysteresis_s and > 0 (min_residency never binds on a fresh controller). A scheduled instance also records single_shape: the decision on the same candidates with the lists dropped."
+}

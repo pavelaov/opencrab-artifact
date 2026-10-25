@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="no-referrer">
+<title>OpenCrab private generation</title>
+<style>
+  :root { color-scheme: light dark; font-family: system-ui, sans-serif; }
+  body { margin: 0; padding: 16px; max-width: 880px; margin-inline: auto; line-height: 1.4; }
+  h1 { font-size: 1.25rem; margin: 0 0 4px; }
+  .muted { opacity: 0.7; font-size: 0.9rem; }
+  section { border: 1px solid #8884; border-radius: 8px; padding: 12px; margin: 12px 0; }
+  dl { display: grid; grid-template-columns: max-content 1fr; gap: 4px 12px; margin: 0; font-size: 0.9rem; }
+  dt { opacity: 0.7; } dd { margin: 0; font-family: ui-monospace, monospace; word-break: break-all; }
+  textarea { width: 100%; box-sizing: border-box; min-height: 72px; font: inherit; }
+  .row { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; margin-top: 8px; }
+  button { font: inherit; padding: 6px 14px; border-radius: 6px; border: 1px solid #8886; cursor: pointer; }
+  button:disabled { opacity: 0.5; cursor: default; }
+  #out { min-height: 64px; white-space: pre-wrap; font-family: ui-monospace, monospace; border: 1px dashed #8886; padding: 8px; border-radius: 6px; }
+  #log { font-size: 0.8rem; max-height: 220px; overflow: auto; font-family: ui-monospace, monospace; }
+  .ok { color: #2a7; } .bad { color: #c33; }
+  input[type=number] { width: 5em; font: inherit; }
+</style>
+</head>
+<body>
+<h1>OpenCrab private generation</h1>
+<p class="muted">This page talks only to the local sidecar (P1). The prompt is tokenized here and never sent to the model service; the service receives masked protocol frames and public metadata only. No third-party script is loaded.</p>
+
+<section id="binding-section">
+  <strong>Session binding</strong>
+  <dl id="binding">
+    <dt>sidecar</dt><dd id="b-sidecar">...</dd>
+    <dt>token</dt><dd id="b-token">...</dd>
+    <dt>model service</dt><dd id="b-server">...</dd>
+    <dt>model version</dt><dd id="b-model">...</dd>
+    <dt>numeric contract</dt><dd id="b-contract">...</dd>
+    <dt>profile</dt><dd id="b-profile">...</dd>
+    <dt>dealer mode</dt><dd id="b-dealer">...</dd>
+    <dt>session id</dt><dd id="b-session">...</dd>
+  </dl>
+</section>
+
+<section>
+  <label for="prompt"><strong>Prompt</strong> (stays local)</label>
+  <textarea id="prompt" placeholder="Type a prompt">Hell</textarea>
+  <div class="row">
+    <label>tokens <input id="n" type="number" min="1" max="256" value="8"></label>
+    <label>policy
+      <select id="policy">
+        <option>B4_opencrab</option><option>B2_remaining_plus_install</option>
+        <option>B1_naive</option><option>B0_fixed</option>
+      </select>
+    </label>
+    <button id="go">Generate</button>
+    <button id="cancel" disabled>Cancel</button>
+    <button id="resume" disabled>Resume</button>
+    <span id="state" class="muted">idle</span>
+  </div>
+</section>
+
+<section>
+  <strong>Released tokens</strong>
+  <div id="out"></div>
+</section>
+
+<section>
+  <strong>Public epoch log</strong>
+  <div id="log"></div>
+</section>
+
+<script src="app.js"></script>
+</body>
+</html>

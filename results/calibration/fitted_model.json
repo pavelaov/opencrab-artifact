@@ -1,0 +1,151 @@
+{
+ "components": {
+  "a2h_exact": {
+   "compute_fixed_s": 0.0,
+   "compute_per_byte_s": 0.0,
+   "compute_per_mac_s": 7.90628977840567e-06,
+   "n_train": 36,
+   "sigma_compute_s": 0.01070290197373912,
+   "source": "run_calibration",
+   "status": "MEASURED_NATIVE"
+  },
+  "argmax_k2": {
+   "compute_fixed_s": 0.026158216064138477,
+   "compute_per_byte_s": 0.0,
+   "compute_per_mac_s": 4.951647882243771e-05,
+   "n_train": 27,
+   "sigma_compute_s": 0.08120248521134144,
+   "source": "run_calibration",
+   "status": "MEASURED_NATIVE"
+  },
+  "argmax_k4": {
+   "compute_fixed_s": 1.4518796799881717,
+   "compute_per_byte_s": 1.1804629593646488e-05,
+   "compute_per_mac_s": 0.0,
+   "n_train": 27,
+   "sigma_compute_s": 2.9296894065517436,
+   "source": "run_calibration",
+   "status": "MEASURED_NATIVE"
+  },
+  "argmax_k8": {
+   "compute_fixed_s": 0.25164112293070257,
+   "compute_per_byte_s": 3.672809680344217e-06,
+   "compute_per_mac_s": 0.0,
+   "n_train": 27,
+   "sigma_compute_s": 1.082149848772744,
+   "source": "run_calibration",
+   "status": "MEASURED_NATIVE"
+  },
+  "embedding_generic": {
+   "compute_fixed_s": 0.0,
+   "compute_per_byte_s": 7.566918193882284e-09,
+   "compute_per_mac_s": 4.950551403641066e-10,
+   "n_train": 54,
+   "sigma_compute_s": 0.3492748449268195,
+   "source": "run_calibration",
+   "status": "MEASURED_NATIVE"
+  },
+  "embedding_wmask": {
+   "compute_fixed_s": 0.8357425819554797,
+   "compute_per_byte_s": 0.0,
+   "compute_per_mac_s": 8.150003177879893e-09,
+   "n_train": 54,
+   "sigma_compute_s": 0.09929626768101499,
+   "source": "run_calibration",
+   "status": "MEASURED_NATIVE"
+  },
+  "gelu_clip12": {
+   "compute_fixed_s": 0.010251856906601778,
+   "compute_per_byte_s": 0.0,
+   "compute_per_mac_s": 8.462605990987062e-06,
+   "n_train": 36,
+   "sigma_compute_s": 0.034242050249239736,
+   "source": "run_calibration",
+   "status": "MEASURED_NATIVE"
+  },
+  "install_wmask": {
+   "compute_fixed_s": 0.017074742405242736,
+   "compute_per_byte_s": 0.0,
+   "compute_per_mac_s": 2.992153583474705e-08,
+   "n_train": 72,
+   "sigma_compute_s": 0.022434021851076003,
+   "source": "run_calibration",
+   "status": "MEASURED_NATIVE"
+  },
+  "layernorm_rows": {
+   "compute_fixed_s": 0.02395704724345395,
+   "compute_per_byte_s": 0.0,
+   "compute_per_mac_s": 1.54247089845576e-06,
+   "n_train": 18,
+   "sigma_compute_s": 0.0020254982756428416,
+   "source": "run_calibration",
+   "status": "MEASURED_NATIVE"
+  },
+  "linear_generic": {
+   "compute_fixed_s": 0.0018062396611581775,
+   "compute_per_byte_s": 7.846847818524162e-09,
+   "compute_per_mac_s": 2.4992761990332597e-09,
+   "n_train": 90,
+   "sigma_compute_s": 0.0255458596996044,
+   "source": "run_calibration",
+   "status": "MEASURED_NATIVE"
+  },
+  "linear_wmask": {
+   "compute_fixed_s": 0.05542577045660008,
+   "compute_per_byte_s": 0.0,
+   "compute_per_mac_s": 1.0033135638533515e-08,
+   "n_train": 90,
+   "sigma_compute_s": 0.017213813629893656,
+   "source": "run_calibration",
+   "status": "MEASURED_NATIVE"
+  },
+  "matmul_shared": {
+   "compute_fixed_s": 0.004758341143206059,
+   "compute_per_byte_s": 7.730567319225629e-09,
+   "compute_per_mac_s": 2.6597433330681352e-09,
+   "n_train": 90,
+   "sigma_compute_s": 0.01943885507967745,
+   "source": "run_calibration",
+   "status": "MEASURED_NATIVE"
+  },
+  "ring_to_field": {
+   "compute_fixed_s": 0.0,
+   "compute_per_byte_s": 0.0,
+   "compute_per_mac_s": 9.644380132367813e-06,
+   "n_train": 36,
+   "sigma_compute_s": 0.0452491759527441,
+   "source": "run_calibration",
+   "status": "MEASURED_NATIVE"
+  },
+  "softmax_rows_k2": {
+   "compute_fixed_s": 0.04467005384062333,
+   "compute_per_byte_s": 1.833212876618309e-08,
+   "compute_per_mac_s": 0.0,
+   "n_train": 81,
+   "sigma_compute_s": 0.019157375814356992,
+   "source": "run_calibration",
+   "status": "MEASURED_NATIVE"
+  },
+  "softmax_rows_k4": {
+   "compute_fixed_s": 0.06999400131368724,
+   "compute_per_byte_s": 0.0,
+   "compute_per_mac_s": 1.074552290271548e-05,
+   "n_train": 81,
+   "sigma_compute_s": 0.05310366434953472,
+   "source": "run_calibration",
+   "status": "MEASURED_NATIVE"
+  },
+  "trunc_faithful": {
+   "compute_fixed_s": 0.003405501316604322,
+   "compute_per_byte_s": 0.0,
+   "compute_per_mac_s": 3.8077889807367065e-06,
+   "n_train": 36,
+   "sigma_compute_s": 0.015286685056793597,
+   "source": "run_calibration",
+   "status": "MEASURED_NATIVE"
+  }
+ },
+ "label": "MEASURED_NATIVE",
+ "rel_bw": 0.1,
+ "rel_rtt": 0.1
+}
